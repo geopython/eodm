@@ -4,7 +4,9 @@ Package and CLI application used to perform ETL operations on EO data.
 
 ## Usage
 
-Below are example uses of the CLI application
+Below are example uses of the CLI application. Note the shell piping operator, the intended
+use case is such that output of one command is piped into the next. With this a clear interface
+is required between the commands. For this purpose the [STAC](https://stacspec.org/en) Item is chosen.
 
 ```shell
 eodm extract stac_api items https://earth-search.aws.element84.com/v1 sentinel-2-l2a --bbox 49.1,18.1,49.2,18.2 --datetime-interval 2023-06-01/2023-06-30 \

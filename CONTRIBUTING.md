@@ -66,9 +66,26 @@ typer eodm.__main__ utils docs --name eodm --output docs/cli.md
 ### About
 
 - What is the software application or feature?
+
+The application is a library and a CLI application
+
 - Who’s it intended for?
+
+The package is intended for EO scientists and data engineers
+
 - What problem does the software solve?
+
+It serves as a library of common features for extracting, transforming and loading EO data
+as well as a CLI application
+
 - How is it going to work?
+
+There are two ways to use the software.
+
+- CLI Application - the purpose is to collect common functions for EO data ETL and allow cli orchestrators
+like kubernetes, argo workflows to be used for these operations
+- Library - collection common python functions for use in python like orchestrators such
+as prefect, flyte, hamilton etc. or to be used directly in backend systems
 
 ### User interface
 

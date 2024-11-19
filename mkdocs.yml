@@ -3,6 +3,7 @@ site_name: eodm - EO Data Mover
 nav:
   - Home: index.md
   - CLI: cli.md
+  - API: api.md
 
 theme:
   name: material
@@ -23,6 +24,18 @@ plugins:
     handlers:
       python:
         paths: [src]
+        options:
+            heading_level: 3
+            annotations_path: brief
+            show_root_heading: true
+            show_if_no_docstring: true
+            merge_init_into_class: true
 
 markdown_extensions:
   - pymdownx.snippets
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences

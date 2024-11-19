@@ -32,7 +32,9 @@ class BBox:
 def bbox(value: str) -> BBox:
     coords = value.split(",")
     if len(coords) != 4:
-        raise ValueError("Invalid number of coordinates for bbox. Expected 4")
+        raise ValueError(
+            f"Invalid number of coordinates for bbox. Expected 4, got {len(coords)}"
+        )
 
     ll_x, ll_y, ur_x, ur_y = [float(x) for x in coords]
     return BBox(ll_x, ll_y, ur_x, ur_y)
@@ -80,7 +82,7 @@ DateTimeIntervalType = Annotated[
 
 class FSSpecStacIO(StacIO):
     """
-    Extension of StacIO to allow working with different filesystems using fsspec.
+    Extension of StacIO to allow working with different filesystems in STAC using fsspec.
     """
 
     def write_text(self, dest: HREF, txt: str, *args: Any, **kwargs: Any) -> None:

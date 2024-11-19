@@ -16,7 +16,7 @@ $ eodm [OPTIONS] COMMAND [ARGS]...
 
 * `extract`: Commands for extracting data from various...
 * `load`: Commands for loading data into various...
-* `transform`: Commands for various data and metadata...
+* `transform`: Commands for data and metadata...
 * `version`: Prints software version
 
 ## `eodm extract`
@@ -35,17 +35,53 @@ $ eodm extract [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `stac_api`: Extract data from a STAC API
-* `stac_catalog`: Extract data from a STAC Catalog
+* `openeo`: Extract data from openEO results
+* `stac-api`: Extract data from a STAC API
+* `stac-catalog`: Extract data from a STAC Catalog
 
-### `eodm extract stac_api`
+### `eodm extract openeo`
+
+Extract data from openEO results
+
+**Usage**:
+
+```console
+$ eodm extract openeo [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `results`
+
+#### `eodm extract openeo results`
+
+**Usage**:
+
+```console
+$ eodm extract openeo results [OPTIONS] ASSET_NAME [RESULTS]
+```
+
+**Arguments**:
+
+* `ASSET_NAME`: [required]
+* `[RESULTS]`: [default: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='utf-8'>]
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+### `eodm extract stac-api`
 
 Extract data from a STAC API
 
 **Usage**:
 
 ```console
-$ eodm extract stac_api [OPTIONS] COMMAND [ARGS]...
+$ eodm extract stac-api [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -57,12 +93,12 @@ $ eodm extract stac_api [OPTIONS] COMMAND [ARGS]...
 * `collections`
 * `items`
 
-#### `eodm extract stac_api collections`
+#### `eodm extract stac-api collections`
 
 **Usage**:
 
 ```console
-$ eodm extract stac_api collections [OPTIONS] URL
+$ eodm extract stac-api collections [OPTIONS] URL
 ```
 
 **Arguments**:
@@ -73,12 +109,12 @@ $ eodm extract stac_api collections [OPTIONS] URL
 
 * `--help`: Show this message and exit.
 
-#### `eodm extract stac_api items`
+#### `eodm extract stac-api items`
 
 **Usage**:
 
 ```console
-$ eodm extract stac_api items [OPTIONS] URL COLLECTION
+$ eodm extract stac-api items [OPTIONS] URL COLLECTION
 ```
 
 **Arguments**:
@@ -88,18 +124,18 @@ $ eodm extract stac_api items [OPTIONS] URL COLLECTION
 
 **Options**:
 
-* `--bbox TEXT`
-* `--datetime TEXT`
+* `--bbox BBOX`: format: ll_x,ll_y,ur_x,ur_y
+* `--datetime-interval DATETIME_INTERVAL`: ISO format: single, start/end, start/.., ../end for open bounds
 * `--help`: Show this message and exit.
 
-### `eodm extract stac_catalog`
+### `eodm extract stac-catalog`
 
 Extract data from a STAC Catalog
 
 **Usage**:
 
 ```console
-$ eodm extract stac_catalog [OPTIONS] COMMAND [ARGS]...
+$ eodm extract stac-catalog [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -108,16 +144,18 @@ $ eodm extract stac_catalog [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `collection`
-* `collections`
-* `items`
+* `collection`: Extract a collection from a STAC Catalog
+* `collections`: Extract collections from a STAC Catalog
+* `items`: Extract items from a STAC Catalog
 
-#### `eodm extract stac_catalog collection`
+#### `eodm extract stac-catalog collection`
+
+Extract a collection from a STAC Catalog
 
 **Usage**:
 
 ```console
-$ eodm extract stac_catalog collection [OPTIONS] STAC_CATALOG_PATH COLLECTION_ID
+$ eodm extract stac-catalog collection [OPTIONS] STAC_CATALOG_PATH COLLECTION_ID
 ```
 
 **Arguments**:
@@ -129,12 +167,14 @@ $ eodm extract stac_catalog collection [OPTIONS] STAC_CATALOG_PATH COLLECTION_ID
 
 * `--help`: Show this message and exit.
 
-#### `eodm extract stac_catalog collections`
+#### `eodm extract stac-catalog collections`
+
+Extract collections from a STAC Catalog
 
 **Usage**:
 
 ```console
-$ eodm extract stac_catalog collections [OPTIONS] STAC_CATALOG_PATH
+$ eodm extract stac-catalog collections [OPTIONS] STAC_CATALOG_PATH
 ```
 
 **Arguments**:
@@ -145,21 +185,23 @@ $ eodm extract stac_catalog collections [OPTIONS] STAC_CATALOG_PATH
 
 * `--help`: Show this message and exit.
 
-#### `eodm extract stac_catalog items`
+#### `eodm extract stac-catalog items`
+
+Extract items from a STAC Catalog
 
 **Usage**:
 
 ```console
-$ eodm extract stac_catalog items [OPTIONS] STAC_CATALOG_PATH [COLLECTION_ID]
+$ eodm extract stac-catalog items [OPTIONS] STAC_CATALOG_PATH
 ```
 
 **Arguments**:
 
 * `STAC_CATALOG_PATH`: [required]
-* `[COLLECTION_ID]`
 
 **Options**:
 
+* `--collection-id TEXT`
 * `--help`: Show this message and exit.
 
 ## `eodm load`
@@ -178,17 +220,17 @@ $ eodm load [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `stac_api`: Load metadata to a STAC API
-* `stac_catalog`: Load data and metadata to a STAC catalog
+* `stac-api`: Load metadata to a STAC API
+* `stac-catalog`: Load data and metadata to a STAC catalog
 
-### `eodm load stac_api`
+### `eodm load stac-api`
 
 Load metadata to a STAC API
 
 **Usage**:
 
 ```console
-$ eodm load stac_api [OPTIONS] COMMAND [ARGS]...
+$ eodm load stac-api [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -197,16 +239,18 @@ $ eodm load stac_api [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `collection`
-* `collections`
-* `items`
+* `collection`: Create and load a single collection to a...
+* `collections`: Load multiple collections to a stac API
+* `items`: Load multiple items into a STAC API
 
-#### `eodm load stac_api collection`
+#### `eodm load stac-api collection`
+
+Create and load a single collection to a STAC API.
 
 **Usage**:
 
 ```console
-$ eodm load stac_api collection [OPTIONS] URL ID DESCRIPTION TITLE
+$ eodm load stac-api collection [OPTIONS] URL ID DESCRIPTION TITLE
 ```
 
 **Arguments**:
@@ -219,52 +263,61 @@ $ eodm load stac_api collection [OPTIONS] URL ID DESCRIPTION TITLE
 **Options**:
 
 * `--verify / --no-verify`: [default: verify]
+* `--update / --no-update`: [default: no-update]
 * `--help`: Show this message and exit.
 
-#### `eodm load stac_api collections`
+#### `eodm load stac-api collections`
+
+Load multiple collections to a stac API
 
 **Usage**:
 
 ```console
-$ eodm load stac_api collections [OPTIONS] URL COLLECTIONS
+$ eodm load stac-api collections [OPTIONS] URL [COLLECTIONS]
 ```
 
 **Arguments**:
 
 * `URL`: [required]
-* `COLLECTIONS`: [required]
+* `[COLLECTIONS]`: [default: <_io.TextIOWrapper name='<stdout>' mode='w' encoding='utf-8'>]
 
 **Options**:
 
 * `--verify / --no-verify`: [default: verify]
+* `--update / --no-update`: [default: no-update]
+* `--skip-existing / --no-skip-existing`: [default: no-skip-existing]
 * `--help`: Show this message and exit.
 
-#### `eodm load stac_api items`
+#### `eodm load stac-api items`
+
+Load multiple items into a STAC API
 
 **Usage**:
 
 ```console
-$ eodm load stac_api items [OPTIONS] URL ITEMS
+$ eodm load stac-api items [OPTIONS] URL [ITEMS]
 ```
 
 **Arguments**:
 
 * `URL`: [required]
-* `ITEMS`: [required]
+* `[ITEMS]`: [default: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='utf-8'>]
 
 **Options**:
 
 * `--verify / --no-verify`: [default: verify]
+* `--update / --no-update`: [default: no-update]
+* `--skip-existing / --no-skip-existing`: [default: no-skip-existing]
 * `--help`: Show this message and exit.
 
-### `eodm load stac_catalog`
+### `eodm load stac-catalog`
 
 Load data and metadata to a STAC catalog
 
 **Usage**:
 
 ```console
-$ eodm load stac_catalog [OPTIONS] COMMAND [ARGS]...
+$ eodm load stac-catalog [OPTIONS] COMMAND [ARGS]...
 ```
 
 **Options**:
@@ -273,20 +326,24 @@ $ eodm load stac_catalog [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `catalog`
-* `collection`
+* `catalog`: Create a STAC Catalog
+* `collection`: Create and add a STAC Collection to an...
+* `collections`: Load STAC Collections to an existing STAC...
+* `items`: Load STAC Items to an existing STAC Catalog.
 
-#### `eodm load stac_catalog catalog`
+#### `eodm load stac-catalog catalog`
+
+Create a STAC Catalog
 
 **Usage**:
 
 ```console
-$ eodm load stac_catalog catalog [OPTIONS] BASE_PATH ID DESCRIPTION TITLE
+$ eodm load stac-catalog catalog [OPTIONS] CATALOG_PATH ID DESCRIPTION TITLE
 ```
 
 **Arguments**:
 
-* `BASE_PATH`: [required]
+* `CATALOG_PATH`: [required]
 * `ID`: [required]
 * `DESCRIPTION`: [required]
 * `TITLE`: [required]
@@ -295,28 +352,72 @@ $ eodm load stac_catalog catalog [OPTIONS] BASE_PATH ID DESCRIPTION TITLE
 
 * `--help`: Show this message and exit.
 
-#### `eodm load stac_catalog collection`
+#### `eodm load stac-catalog collection`
+
+Create and add a STAC Collection to an existing STAC Catalog
 
 **Usage**:
 
 ```console
-$ eodm load stac_catalog collection [OPTIONS] CATALOG_BASE_PATH ID DESCRIPTION TITLE
+$ eodm load stac-catalog collection [OPTIONS] CATALOG_PATH ID DESCRIPTION TITLE
 ```
 
 **Arguments**:
 
-* `CATALOG_BASE_PATH`: [required]
+* `CATALOG_PATH`: [required]
 * `ID`: [required]
 * `DESCRIPTION`: [required]
 * `TITLE`: [required]
 
 **Options**:
 
+* `--help`: Show this message and exit.
+
+#### `eodm load stac-catalog collections`
+
+Load STAC Collections to an existing STAC Catalog
+
+**Usage**:
+
+```console
+$ eodm load stac-catalog collections [OPTIONS] CATALOG_PATH [COLLECTIONS]
+```
+
+**Arguments**:
+
+* `CATALOG_PATH`: [required]
+* `[COLLECTIONS]`: [default: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='utf-8'>]
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+#### `eodm load stac-catalog items`
+
+Load STAC Items to an existing STAC Catalog. Each item will be sorted to its
+collection
+
+**Usage**:
+
+```console
+$ eodm load stac-catalog items [OPTIONS] CATALOG_PATH [ITEMS]
+```
+
+**Arguments**:
+
+* `CATALOG_PATH`: [required]
+* `[ITEMS]`: [default: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='utf-8'>]
+
+**Options**:
+
+* `--source-profile TEXT`
+* `--target-profile TEXT`
+* `--chunk-size INTEGER`: [default: 100000]
 * `--help`: Show this message and exit.
 
 ## `eodm transform`
 
-Commands for various data and metadata transformations
+Commands for data and metadata transformations
 
 **Usage**:
 
@@ -330,10 +431,12 @@ $ eodm transform [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `data`
-* `metadata`
+* `data`: Commands for data transformations
+* `metadata`: Commands for metadata transformations
 
 ### `eodm transform data`
+
+Commands for data transformations
 
 **Usage**:
 
@@ -347,30 +450,56 @@ $ eodm transform data [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `snowmap`
+* `ensure-cog`: Creates COG images from all assets in ITEMS
+* `snowmap`: Creates snowmap images from ITEMS
 
-#### `eodm transform data snowmap`
+#### `eodm transform data ensure-cog`
+
+Creates COG images from all assets in ITEMS
 
 **Usage**:
 
 ```console
-$ eodm transform data snowmap [OPTIONS] ITEMS
+$ eodm transform data ensure-cog [OPTIONS] [ITEMS]
 ```
 
 **Arguments**:
 
-* `ITEMS`: [required]
+* `[ITEMS]`: [default: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='utf-8'>]
 
 **Options**:
 
-* `--bbox TEXT`
+* `--overview-level INTEGER`: [default: 3]
+* `--output-dir TEXT`: [default: /tmp]
+* `--help`: Show this message and exit.
+
+#### `eodm transform data snowmap`
+
+Creates snowmap images from ITEMS
+
+**Usage**:
+
+```console
+$ eodm transform data snowmap [OPTIONS] [ITEMS]
+```
+
+**Arguments**:
+
+* `[ITEMS]`: [default: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='utf-8'>]
+
+**Options**:
+
+* `--bbox BBOX`: format: ll_x,ll_y,ur_x,ur_y
 * `--green-band TEXT`: [default: green]
 * `--swir-band TEXT`: [default: swir16]
 * `--scl-band TEXT`: [default: scl]
 * `--groupby TEXT`: [default: solar_day]
+* `--output-dir TEXT`: [default: /tmp]
 * `--help`: Show this message and exit.
 
 ### `eodm transform metadata`
+
+Commands for metadata transformations
 
 **Usage**:
 
@@ -384,16 +513,23 @@ $ eodm transform metadata [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `band-subset`
-* `wrap-items`
+* `band-subset`: Subsets provided STAC ITEMS to only...
+* `wrap-items`: Wrap FILES in STAC items using...
 
 #### `eodm transform metadata band-subset`
+
+Subsets provided STAC ITEMS to only include the specified BANDS
 
 **Usage**:
 
 ```console
-$ eodm transform metadata band-subset [OPTIONS]
+$ eodm transform metadata band-subset [OPTIONS] BANDS [ITEMS]
 ```
+
+**Arguments**:
+
+* `BANDS`: Comma separated list of bands  [required]
+* `[ITEMS]`: [default: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='utf-8'>]
 
 **Options**:
 
@@ -401,21 +537,22 @@ $ eodm transform metadata band-subset [OPTIONS]
 
 #### `eodm transform metadata wrap-items`
 
+Wrap FILES in STAC items using STRPTIME_FORMAT to extract the date and assign to COLLECTION
+
 **Usage**:
 
 ```console
-$ eodm transform metadata wrap-items [OPTIONS] FILES OUTPUT_DIRECTORY COLLECTION
+$ eodm transform metadata wrap-items [OPTIONS] COLLECTION STRPTIME_FORMAT [FILES]
 ```
 
 **Arguments**:
 
-* `FILES`: [required]
-* `OUTPUT_DIRECTORY`: [required]
 * `COLLECTION`: [required]
+* `STRPTIME_FORMAT`: [required]
+* `[FILES]`: [default: <_io.TextIOWrapper name='<stdin>' mode='r' encoding='utf-8'>]
 
 **Options**:
 
-* `--id TEXT`
 * `--help`: Show this message and exit.
 
 ## `eodm version`

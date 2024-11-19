@@ -25,7 +25,7 @@ def items(
     client = pystac_client.Client.open(url)
 
     if bbox:
-        _bbox = bbox.as_list()
+        _bbox = list(bbox)
 
     dt = None
     if datetime_interval:

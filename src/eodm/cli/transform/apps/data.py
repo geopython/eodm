@@ -3,7 +3,7 @@ import os.path
 import sys
 import threading
 from datetime import datetime
-from typing import Annotated
+from typing import Annotated, cast
 
 import pystac
 import rasterio
@@ -37,7 +37,7 @@ def snowmap(
 
     _bbox = None
     if bbox:
-        _bbox = bbox.as_tuple()
+        _bbox = cast(tuple[float, float, float, float], tuple(bbox))
 
     items_ = []
     for line in items.readlines():

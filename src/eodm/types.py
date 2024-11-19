@@ -1,5 +1,5 @@
 from datetime import datetime
-from typing import Annotated, Any
+from typing import Annotated, Any, Generator
 
 import fsspec
 from dateutil.parser import parse
@@ -22,11 +22,8 @@ class BBox:
     def __str__(self) -> str:
         return f"BBox({self.ll_x}, {self.ll_y}, {self.ur_x}, {self.ur_y})"
 
-    def as_tuple(self) -> tuple[float, float, float, float]:
-        return (self.ll_x, self.ll_y, self.ur_x, self.ur_y)
-
-    def as_list(self) -> list[float]:
-        return [self.ll_x, self.ll_y, self.ur_x, self.ur_y]
+    def __iter__(self) -> Generator[float, None, None]:
+        yield from (self.ll_x, self.ll_y, self.ur_x, self.ur_y)
 
 
 def _bbox(value: str) -> BBox:

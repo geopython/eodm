@@ -13,7 +13,7 @@ from odc.stac import configure_rio, load
 from pandas import to_datetime
 from rio_cogeo import cog_profiles, cog_translate
 
-from ...types import BBoxType
+from ....types import BBoxType
 
 configure_rio(cloud_defaults=True)
 

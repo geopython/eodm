@@ -29,7 +29,7 @@ class BBox:
         return [self.ll_x, self.ll_y, self.ur_x, self.ur_y]
 
 
-def bbox(value: str) -> BBox:
+def _bbox(value: str) -> BBox:
     coords = value.split(",")
     if len(coords) != 4:
         raise ValueError(
@@ -49,7 +49,7 @@ class DatetimeInterval:
         return f"{self.lower.isoformat()}/{self.upper.isoformat()}"
 
 
-def datetime_interval(value: str) -> DatetimeInterval:
+def _datetime_interval(value: str) -> DatetimeInterval:
     dts = value.split("/")
     if not (0 < len(dts) < 3):
         raise ValueError("Invalid datetime interval")
@@ -70,11 +70,13 @@ def datetime_interval(value: str) -> DatetimeInterval:
     return DatetimeInterval(start, end)
 
 
-BBoxType = Annotated[BBox | None, Option(parser=bbox, help="format: ll_x,ll_y,ur_x,ur_y")]
+BBoxType = Annotated[
+    BBox | None, Option(parser=_bbox, help="format: ll_x,ll_y,ur_x,ur_y")
+]
 DateTimeIntervalType = Annotated[
     DatetimeInterval | None,
     Option(
-        parser=datetime_interval,
+        parser=_datetime_interval,
         help="ISO format: single, start/end, start/.., ../end for open bounds",
     ),
 ]

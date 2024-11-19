@@ -2,9 +2,9 @@ import pkg_resources
 import typer
 from dotenv import load_dotenv
 
-from .extract import app as extract
-from .load import app as load
-from .transform import app as transform
+from .cli.extract import app as extract
+from .cli.load import app as load
+from .cli.transform import app as transform
 
 CLI_NAME = "eodm"
 

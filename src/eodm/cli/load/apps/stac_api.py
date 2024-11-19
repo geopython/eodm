@@ -6,7 +6,7 @@ import httpx
 import pystac
 import typer
 
-from ...types import DEFAULT_EXTENT
+from ....types import DEFAULT_EXTENT
 
 app = typer.Typer(no_args_is_help=True)
 

@@ -1,5 +1,6 @@
 from datetime import datetime
-from typing import Annotated, Generator
+from enum import Enum
+from typing import Annotated, Iterator
 
 from dateutil.parser import parse
 from typer import Option
@@ -15,7 +16,7 @@ class BBox:
     def __str__(self) -> str:
         return f"BBox({self.ll_x}, {self.ll_y}, {self.ur_x}, {self.ur_y})"
 
-    def __iter__(self) -> Generator[float, None, None]:
+    def __iter__(self) -> Iterator[float]:
         yield from (self.ll_x, self.ll_y, self.ur_x, self.ur_y)
 
 
@@ -60,6 +61,11 @@ def _datetime_interval(value: str) -> DatetimeInterval:
     return DatetimeInterval(start, end)
 
 
+class Output(str, Enum):
+    default = "default"
+    json = "json"
+
+
 BBoxType = Annotated[
     BBox | None, Option(parser=_bbox, help="format: ll_x,ll_y,ur_x,ur_y")
 ]
@@ -69,4 +75,7 @@ DateTimeIntervalType = Annotated[
         parser=_datetime_interval,
         help="ISO format: single, start/end, start/.., ../end for open bounds",
     ),
+]
+OutputType = Annotated[
+    Output, Option("--output", "-o", help="Output format. Default to STDOUT multiline")
 ]

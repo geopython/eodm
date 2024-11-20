@@ -3,7 +3,7 @@ import json
 import pystac_client
 import typer
 
-from ....types import BBoxType, DateTimeIntervalType
+from eodm.cli._types import BBoxType, DateTimeIntervalType
 
 app = typer.Typer(no_args_is_help=True)
 

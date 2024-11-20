@@ -5,7 +5,7 @@ import fsspec
 import typer
 from pystac import HREF, Catalog, StacIO
 
-from ...errors import ExtractError
+from eodm.cli._errors import ExtractError
 
 app = typer.Typer(no_args_is_help=True)
 

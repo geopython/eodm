@@ -14,8 +14,9 @@ from pystac import (
     StacIO,
 )
 
-from ....types import DEFAULT_EXTENT, FSSpecStacIO
-from ...errors import LoadError
+from eodm.cli._errors import LoadError
+from eodm.cli._globals import DEFAULT_EXTENT
+from eodm.stac_contrib import FSSpecStacIO
 
 app = typer.Typer(name="stac-catalog", no_args_is_help=True)
 

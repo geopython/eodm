@@ -1,15 +1,8 @@
 from datetime import datetime
-from typing import Annotated, Any, Generator
+from typing import Annotated, Generator
 
-import fsspec
 from dateutil.parser import parse
-from pystac import HREF, Extent, SpatialExtent, StacIO, TemporalExtent
 from typer import Option
-
-DEFAULT_EXTENT = Extent(
-    spatial=SpatialExtent.from_coordinates([[-180, -90], [180, 90]]),
-    temporal=TemporalExtent.from_now(),
-)
 
 
 class BBox:
@@ -77,28 +70,3 @@ DateTimeIntervalType = Annotated[
         help="ISO format: single, start/end, start/.., ../end for open bounds",
     ),
 ]
-
-
-class FSSpecStacIO(StacIO):
-    """
-    Extension of StacIO to allow working with different filesystems in STAC using fsspec.
-    """
-
-    def write_text(self, dest: HREF, txt: str, *args: Any, **kwargs: Any) -> None:
-        if fs := kwargs.get("filesystem"):
-            with fs.open(dest, "w", *args, **kwargs) as f:
-                f.write(txt)
-        else:
-            with fsspec.open(dest, "w", *args, **kwargs) as f:
-                f.write(txt)
-
-    def read_text(self, source: HREF, *args: Any, **kwargs: Any) -> str:
-        if fs := kwargs.get("filesystem"):
-            with fs.open(source, "r", *args, **kwargs) as f:
-                return f.read()
-        else:
-            with fsspec.open(source, "r", *args, **kwargs) as f:
-                return f.read()
-
-
-__all__ = ["BBoxType", "DateTimeIntervalType", "FSSpecStacIO"]

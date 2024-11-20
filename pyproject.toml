@@ -77,3 +77,25 @@ ignore_missing_imports = true
 
 [tool.pytest.ini_options]
 addopts = "--cov=src"
+
+[tool.coverage.report]
+exclude_also = [
+    "def __repr__",
+    "if self.debug:",
+    "if settings.DEBUG",
+    "raise AssertionError",
+    "raise NotImplementedError",
+    "if 0:",
+    "if __name__ == .__main__.:",
+    "if TYPE_CHECKING:",
+    "class .*\\bProtocol\\):",
+    "@(abc\\.)?abstractmethod",
+    ]
+
+[tool.coverage.run]
+omit = [
+    "*/__init__.py",
+    "*/__main__.py",
+    "src/eodm/cli/_errors.py",
+    "src/eodm/cli/_globals.py",
+    ]

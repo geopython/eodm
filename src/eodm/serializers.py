@@ -1,38 +1,37 @@
 import json
 from typing import Iterable, Protocol
 
-from eodm.cli._types import Output
-
 
 class Mappable(Protocol):
     def to_dict(self): ...
 
 
-def default_serializer(items: Iterable[Mappable]) -> None:
-    """Serializes a list of Mappables (implementing to_dict()) to json and prints each
+def default_serializer(items: Iterable[Mappable]) -> Iterable[str]:
+    """Serializes a list of Mappables (implementing to_dict()) to json strings
     individually
+
 
     Args:
         items (Iterable[Mappable]): A collection of Mappable items
+
+    Returns:
+        Iterable[str]: item as a string
+
+    Yields:
+        Iterator[Iterable[str]]: Collection of json strings
     """
+
     for item in items:
-        print(json.dumps(item.to_dict()))
+        yield json.dumps(item.to_dict())
 
 
-def json_serializer(items: Iterable[Mappable]) -> None:
+def json_serializer(items: Iterable[Mappable]) -> str:
     """Serializes a list of Mappables (implementing to_dict()) to a json list
 
     Args:
         items (Iterable[Mappable]): A collection of Mappable items
+
+    Returns:
+        str: items as a json list
     """
-    print(json.dumps([item.to_dict() for item in items]))
-
-
-def serialize(data: Iterable[Mappable], output_type: Output) -> None:
-    match output_type:
-        case Output.default:
-            default_serializer(data)
-        case Output.json:
-            json_serializer(data)
-        case _:
-            default_serializer(data)
+    return json.dumps([item.to_dict() for item in items])

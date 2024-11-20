@@ -9,7 +9,7 @@ class Mappable(Protocol):
 
 
 def default_serializer(items: Iterable[Mappable]) -> None:
-    """Serializes a list of Mappables (containing to_dict()) to json and prints each
+    """Serializes a list of Mappables (implementing to_dict()) to json and prints each
     individually
 
     Args:
@@ -20,7 +20,7 @@ def default_serializer(items: Iterable[Mappable]) -> None:
 
 
 def json_serializer(items: Iterable[Mappable]) -> None:
-    """Serializes a list of Mappables (containing to_dict()) to a json list
+    """Serializes a list of Mappables (implementing to_dict()) to a json list
 
     Args:
         items (Iterable[Mappable]): A collection of Mappable items

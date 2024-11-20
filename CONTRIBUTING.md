@@ -322,3 +322,14 @@ git push && git push --tags
 - [EURAC STAC](https://stac.eurac.edu/)
 - [EOEPCA develop STAC](https://eoapi.develop.eoepca.org/stac/)
 - [EOX hub-int STAC](https://stac.hub-int.eox.at/)
+
+### Inspiration
+
+- [vs harvester](https://gitlab.eox.at/vs/vs/-/tree/main/harvester/src/harvester?ref_type=heads)
+- [vs preprocessor](https://gitlab.eox.at/vs/vs/-/tree/main/preprocessor?ref_type=heads)
+- [vs registrar](https://gitlab.eox.at/vs/vs/-/tree/main/core/src/registrar?ref_type=heads)
+- [EOEPCA registration library](https://github.com/EOEPCA/registration-library/tree/main)
+- [osc-cataloguer](https://github.com/constantinius/open-science-catalog-cataloguer/tree/main)
+- [eodash-catalog](https://github.com/eurodatacube/eodash-catalog)
+- [eodag](https://eodag.readthedocs.io/en/stable/)
+- [mapchete](https://mapchete.readthedocs.io/en/stable/)

@@ -6,7 +6,7 @@ import httpx
 import pystac
 import typer
 
-from eodm.stac_contrib import DEFAULT_EXTENT
+from eodm.cli._globals import DEFAULT_EXTENT
 
 app = typer.Typer(no_args_is_help=True)
 

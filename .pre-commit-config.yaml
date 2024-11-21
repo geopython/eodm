@@ -6,3 +6,12 @@ repos:
     - push
   repo: https://github.com/commitizen-tools/commitizen
   rev: v3.30.1
+- repo: local
+  hooks:
+  - id: pytest
+    name: pytest
+    entry: ./.venv/bin/pytest tests
+    language: system
+    types: [python]
+    pass_filenames: false
+    always_run: true

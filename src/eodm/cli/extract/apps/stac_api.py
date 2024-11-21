@@ -22,6 +22,7 @@ def items(
     collection: str,
     bbox: BBoxType = None,
     datetime_interval: DateTimeIntervalType = None,
+    limit: int = 10,
     output: OutputType = Output.default,
 ):
     """
@@ -38,6 +39,7 @@ def items(
         url=url,
         collections=[collection],
         bbox=_bbox,
+        limit=limit,
         datetime_interval=dt,
     )
     serialize(items, output_type=output)

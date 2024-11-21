@@ -1,9 +1,15 @@
-from typing import cast
+from typing import Annotated, cast
 
 import typer
 
+from eodm.cli._globals import DEFAULT_BBOX, DEFAULT_DATETIME_INTERVAL
 from eodm.cli._serialization import serialize
-from eodm.cli._types import BBoxType, DateTimeIntervalType, Output, OutputType
+from eodm.cli._types import (
+    BBoxType,
+    DateTimeIntervalType,
+    Output,
+    OutputType,
+)
 from eodm.extract import extract_stac_api_collections, extract_stac_api_items
 
 app = typer.Typer(no_args_is_help=True)
@@ -20,13 +26,22 @@ def main():
 def items(
     url: str,
     collection: str,
-    bbox: BBoxType = None,
-    datetime_interval: DateTimeIntervalType = None,
-    limit: int | None = None,
+    bbox: BBoxType = DEFAULT_BBOX,
+    datetime_interval: DateTimeIntervalType = DEFAULT_DATETIME_INTERVAL,
+    limit: Annotated[
+        int,
+        typer.Option(
+            "--limit",
+            "-l",
+            parser=lambda x: x if x else None,
+            metavar="INT",
+            help="Limit query.",
+        ),
+    ] = 0,
     output: OutputType = Output.default,
 ):
     """
-    Extract items from a STAC API collection
+    Extract items from a collection found in a STAC API
     """
 
     _bbox = None
@@ -50,7 +65,7 @@ def items(
 @app.command(no_args_is_help=True)
 def collections(url: str, output: OutputType = Output.default):
     """
-    Extract collections from STAC API
+    Extract all collections from STAC API
     """
 
     collections = extract_stac_api_collections(url)

@@ -14,13 +14,13 @@ class BBox:
         self.ur_y = ur_y
 
     def __str__(self) -> str:
-        return f"BBox({self.ll_x}, {self.ll_y}, {self.ur_x}, {self.ur_y})"
+        return f"{self.ll_x},{self.ll_y},{self.ur_x},{self.ur_y}"
 
     def __iter__(self) -> Iterator[float]:
         yield from (self.ll_x, self.ll_y, self.ur_x, self.ur_y)
 
 
-def parse_bbox(value: str) -> BBox:
+def bbox(value: str) -> BBox:
     coords = value.split(",")
     if len(coords) != 4:
         raise ValueError(
@@ -40,7 +40,7 @@ class DatetimeInterval:
         return f"{self.lower.isoformat()}/{self.upper.isoformat()}"
 
 
-def parse_datetime_interval(value: str) -> DatetimeInterval:
+def datetime_interval(value: str) -> DatetimeInterval:
     dts = value.split("/")
     if not (0 < len(dts) < 3):
         raise ValueError("Invalid datetime interval")
@@ -67,12 +67,15 @@ class Output(str, Enum):
 
 
 BBoxType = Annotated[
-    BBox | None, Option(parser=parse_bbox, help="format: ll_x,ll_y,ur_x,ur_y")
+    BBox | str,
+    Option("--bbox", "-b", parser=bbox, help="WGS 84 format:minx,miny,maxx,maxy"),
 ]
 DateTimeIntervalType = Annotated[
-    DatetimeInterval | None,
+    DatetimeInterval | str,
     Option(
-        parser=parse_datetime_interval,
+        "--datetime-interval",
+        "-d",
+        parser=datetime_interval,
         help="ISO format: single, start/end, start/.., ../end for open bounds",
     ),
 ]

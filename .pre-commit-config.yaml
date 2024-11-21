@@ -1,11 +1,4 @@
 repos:
-- hooks:
-  - id: commitizen
-  - id: commitizen-branch
-    stages:
-    - push
-  repo: https://github.com/commitizen-tools/commitizen
-  rev: v3.30.1
 - repo: local
   hooks:
   - id: pytest
@@ -15,3 +8,21 @@ repos:
     types: [python]
     pass_filenames: false
     always_run: true
+  - id: mypy
+    name: mypy
+    entry: mypy .
+    language: python
+    types: [python]
+    pass_filenames: false
+- repo: https://github.com/astral-sh/ruff-pre-commit
+  rev: v0.7.4
+  hooks:
+    - id: ruff
+    - id: ruff-format
+- hooks:
+  - id: commitizen
+  - id: commitizen-branch
+    stages:
+    - push
+  repo: https://github.com/commitizen-tools/commitizen
+  rev: v3.30.1

@@ -13,6 +13,7 @@ from odc.stac import configure_rio, load
 from pandas import to_datetime
 from rio_cogeo import cog_profiles, cog_translate
 
+from eodm.cli._globals import DEFAULT_BBOX
 from eodm.cli._types import BBoxType
 
 configure_rio(cloud_defaults=True)
@@ -25,7 +26,7 @@ HEADERS = {"Content-Type": "application/json"}
 @app.command(no_args_is_help=True)
 def snowmap(
     items: Annotated[typer.FileText, typer.Argument()] = sys.stdin,  # type: ignore
-    bbox: BBoxType = None,
+    bbox: BBoxType = DEFAULT_BBOX,
     green_band: str = "green",
     swir_band: str = "swir16",
     scl_band: str = "scl",

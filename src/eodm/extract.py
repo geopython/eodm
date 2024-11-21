@@ -9,7 +9,7 @@ def extract_stac_api_items(
     collections: list[str] | None = None,
     bbox: tuple[float, float, float, float] | None = None,
     datetime_interval: str | None = None,
-    limit: int = 10,
+    limit: int | None = None,
 ) -> Iterator[Item]:
     """Extracts items from a STAC API
 

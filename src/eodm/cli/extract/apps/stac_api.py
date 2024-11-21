@@ -22,12 +22,14 @@ def items(
     collection: str,
     bbox: BBoxType = None,
     datetime_interval: DateTimeIntervalType = None,
-    limit: int = 10,
+    limit: int | None = None,
     output: OutputType = Output.default,
 ):
     """
-    Extract items from STAC API
+    Extract items from a STAC API collection
     """
+
+    _bbox = None
     if bbox:
         _bbox = cast(tuple[float, float, float, float], tuple(bbox))
 
@@ -39,8 +41,8 @@ def items(
         url=url,
         collections=[collection],
         bbox=_bbox,
-        limit=limit,
         datetime_interval=dt,
+        limit=limit,
     )
     serialize(items, output_type=output)
 

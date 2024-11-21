@@ -1,5 +1,7 @@
 # eodm - EO Data Mover
 
+![build](https://github.com/geopython/eodm/actions/workflows/main/badge.svg)
+
 Library and CLI application used to group functions and aid in running ETL operations on EO data.
 
 ## CLI Usage

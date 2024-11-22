@@ -18,6 +18,12 @@ on:
   release:
     types:
       - released
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-20.04

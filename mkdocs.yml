@@ -2,6 +2,7 @@ site_name: eodm - EO Data Mover
 
 nav:
   - Home: index.md
+  - Examples: examples.md
   - CLI: cli.md
   - API: api.md
 

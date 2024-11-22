@@ -1,6 +1,21 @@
 name: build ⚙️
 
-on: [ push, pull_request ]
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '!**.md'
+      - 'docs/**'
+  pull_request:
+    branches:
+      - main
+    paths-ignore:
+      - '!**.md'
+      - 'docs/**'
+  release:
+    types:
+      - released
 
 jobs:
   test:

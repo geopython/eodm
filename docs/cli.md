@@ -90,10 +90,12 @@ $ eodm extract stac-api [OPTIONS] COMMAND [ARGS]...
 
 **Commands**:
 
-* `collections`
-* `items`
+* `collections`: Extract all collections from STAC API
+* `items`: Extract items from a collection found in a...
 
 #### `eodm extract stac-api collections`
+
+Extract all collections from STAC API
 
 **Usage**:
 
@@ -107,9 +109,12 @@ $ eodm extract stac-api collections [OPTIONS] URL
 
 **Options**:
 
+* `-o, --output [default|json]`: Output format. Default to STDOUT multiline  [default: default]
 * `--help`: Show this message and exit.
 
 #### `eodm extract stac-api items`
+
+Extract items from a collection found in a STAC API
 
 **Usage**:
 
@@ -124,8 +129,10 @@ $ eodm extract stac-api items [OPTIONS] URL COLLECTION
 
 **Options**:
 
-* `--bbox BBOX`: format: ll_x,ll_y,ur_x,ur_y
-* `--datetime-interval DATETIME_INTERVAL`: ISO format: single, start/end, start/.., ../end for open bounds
+* `-b, --bbox BBOX`: WGS 84 format:minx,miny,maxx,maxy  [default: -180.0,-90.0,180.0, 90.0]
+* `-d, --datetime-interval DATETIME_INTERVAL`: ISO format: single, start/end, start/.., ../end for open bounds  [default: 1900-01-01 00:00:00/..]
+* `-l, --limit INT`: Limit query.  [default: 0]
+* `-o, --output [default|json]`: Output format. Default to STDOUT multiline  [default: default]
 * `--help`: Show this message and exit.
 
 ### `eodm extract stac-catalog`
@@ -240,7 +247,7 @@ $ eodm load stac-api [OPTIONS] COMMAND [ARGS]...
 **Commands**:
 
 * `collection`: Create and load a single collection to a...
-* `collections`: Load multiple collections to a stac API
+* `collections`: Load multiple collections to a stac API.
 * `items`: Load multiple items into a STAC API
 
 #### `eodm load stac-api collection`
@@ -268,7 +275,8 @@ $ eodm load stac-api collection [OPTIONS] URL ID DESCRIPTION TITLE
 
 #### `eodm load stac-api collections`
 
-Load multiple collections to a stac API
+Load multiple collections to a stac API. Collections can be piped from STDIN or a file
+with Collection jsons on each line
 
 **Usage**:
 
@@ -286,6 +294,7 @@ $ eodm load stac-api collections [OPTIONS] URL [COLLECTIONS]
 * `--verify / --no-verify`: [default: verify]
 * `--update / --no-update`: [default: no-update]
 * `--skip-existing / --no-skip-existing`: [default: no-skip-existing]
+* `-o, --output [default|json]`: Output format. Default to STDOUT multiline  [default: default]
 * `--help`: Show this message and exit.
 
 #### `eodm load stac-api items`
@@ -308,6 +317,7 @@ $ eodm load stac-api items [OPTIONS] URL [ITEMS]
 * `--verify / --no-verify`: [default: verify]
 * `--update / --no-update`: [default: no-update]
 * `--skip-existing / --no-skip-existing`: [default: no-skip-existing]
+* `-o, --output [default|json]`: Output format. Default to STDOUT multiline  [default: default]
 * `--help`: Show this message and exit.
 
 ### `eodm load stac-catalog`
@@ -489,7 +499,7 @@ $ eodm transform data snowmap [OPTIONS] [ITEMS]
 
 **Options**:
 
-* `--bbox BBOX`: format: ll_x,ll_y,ur_x,ur_y
+* `-b, --bbox BBOX`: WGS 84 format:minx,miny,maxx,maxy  [default: -180.0,-90.0,180.0, 90.0]
 * `--green-band TEXT`: [default: green]
 * `--swir-band TEXT`: [default: swir16]
 * `--scl-band TEXT`: [default: scl]

@@ -7,10 +7,11 @@ import pystac
 import typer
 
 from eodm.cli._globals import DEFAULT_EXTENT
+from eodm.cli._serialization import serialize
+from eodm.cli._types import Output, OutputType
+from eodm.load import load_stac_api_collections, load_stac_api_items
 
 app = typer.Typer(no_args_is_help=True)
-
-HEADERS = {"Content-Type": "application/json"}
 
 
 @app.callback()
@@ -40,13 +41,13 @@ def collection(
     )
 
     response = httpx.post(
-        collections_endpoint, json=collection.to_dict(), headers=HEADERS, verify=verify
+        collections_endpoint, json=collection.to_dict(), headers={}, verify=verify
     )
 
     if update and response.status_code == 409:
         collection_endpoint = f"{collections_endpoint}/{collection.id}"
         response = httpx.put(
-            collection_endpoint, json=collection.to_dict(), headers=HEADERS, verify=verify
+            collection_endpoint, json=collection.to_dict(), headers={}, verify=verify
         )
 
     response.raise_for_status()
@@ -59,30 +60,26 @@ def collections(
     verify: bool = True,
     update: bool = False,
     skip_existing: bool = False,
+    output: OutputType = Output.default,
 ) -> None:
     """
-    Load multiple collections to a stac API
+    Load multiple collections to a stac API. Collections can be piped from STDIN or a file
+    with Collection jsons on each line
     """
 
-    collections_endpoint = f"{url}/collections"
-    for line in collections.readlines():
-        collection_dict = json.loads(line)
-        response = httpx.post(
-            collections_endpoint, json=collection_dict, headers=HEADERS, verify=verify
-        )
-        if response.status_code == 409:
-            if update:
-                collection_endpoint = f"{collections_endpoint}/{collection_dict['id']}"
-                response = httpx.put(
-                    collection_endpoint,
-                    json=collection_dict,
-                    headers=HEADERS,
-                    verify=verify,
-                )
-            if skip_existing:
-                continue
-
-        response.raise_for_status()
+    _collections = [
+        pystac.Collection.from_dict(json.loads(line)) for line in collections.readlines()
+    ]
+    serialize(
+        load_stac_api_collections(
+            url=url,
+            collections=_collections,
+            verify=verify,
+            update=update,
+            skip_existing=skip_existing,
+        ),
+        output_type=output,
+    )
 
 
 @app.command(no_args_is_help=True)
@@ -92,24 +89,20 @@ def items(
     verify: bool = True,
     update: bool = False,
     skip_existing: bool = False,
+    output: OutputType = Output.default,
 ) -> None:
     """
     Load multiple items into a STAC API
     """
 
-    for line in items.readlines():
-        item_dict = json.loads(line)
-        collection_id = item_dict["collection"]
-        items_endpoint = f"{url}/collections/{collection_id}/items"
-        response = httpx.post(
-            items_endpoint, json=item_dict, headers=HEADERS, verify=verify
-        )
-        if response.status_code == 409:
-            if update:
-                item_endpoint = f"{items_endpoint}/{item_dict['id']}"
-                response = httpx.put(
-                    item_endpoint, json=item_dict, headers=HEADERS, verify=verify
-                )
-            if skip_existing:
-                continue
-        response.raise_for_status()
+    _items = [pystac.Item.from_dict(json.loads(line)) for line in items.readlines()]
+    serialize(
+        load_stac_api_items(
+            url=url,
+            items=_items,
+            verify=verify,
+            update=update,
+            skip_existing=skip_existing,
+        ),
+        output_type=output,
+    )

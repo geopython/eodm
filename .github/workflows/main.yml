@@ -32,4 +32,4 @@ jobs:
       - name: Check with mypy
         run: poetry run mypy .
       - name: Run tests
-        run: poetry run pytest -v
+        run: poetry run pytest -v --cov=src

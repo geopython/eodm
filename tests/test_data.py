@@ -1,6 +1,6 @@
 from pystac import Collection, Item
 
-STAC_ITEMS = (
+STAC_ITEMS = list(
     Item.from_dict(item)
     for item in [
         {
@@ -2901,7 +2901,7 @@ STAC_ITEMS = (
     ]
 )
 
-STAC_COLLECTIONS = (
+STAC_COLLECTIONS = list(
     Collection.from_dict(collection)
     for collection in [
         {

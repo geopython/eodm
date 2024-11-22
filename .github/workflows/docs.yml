@@ -5,12 +5,14 @@ on:
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
+      - '.github/workflows/docs.yml'
   pull_request:
     branches:
       - main
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
+      - '.github/workflows/docs.yml'
   release:
     types:
       - released
@@ -26,6 +28,17 @@ jobs:
       - uses: actions/setup-python@v5
         with:
             python-version: 3.x
+      - name: Install poetry
+        uses: abatilo/actions-poetry@v2
+      - name: Setup a virtual environment
+        run: |
+          poetry config virtualenvs.create true --local
+          poetry config virtualenvs.in-project true --local
+      - uses: actions/cache@v3
+        name: Define a cache for the virtual environment based on the dependencies lock file
+        with:
+          path: ./.venv
+          key: venv-${{ hashFiles('poetry.lock') }}
       - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v4
         with:

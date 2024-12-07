@@ -10,6 +10,8 @@ def extract_stac_api_items(
     bbox: tuple[float, float, float, float] | None = None,
     datetime_interval: str | None = None,
     limit: int | None = None,
+    query: dict | None = None,
+    filter: dict | None = None,
 ) -> Iterator[Item]:
     """Extracts items from a STAC API
 
@@ -19,6 +21,8 @@ def extract_stac_api_items(
         bbox (tuple[float, float, float, float] | None, optional): Bounding box to search. Defaults to None.
         datetime_interval (str | None, optional): Datetime interval to search. Defaults to None.
         limit (int, optional): Limit query to given number. Defaults to 10.
+        query (optional): STACAPI Query extension
+        filter (optional): STACAPI CQL Filter extension
 
     Yields:
         Iterator[Item]: pystac Items
@@ -31,6 +35,8 @@ def extract_stac_api_items(
         bbox=bbox,
         datetime=datetime_interval,
         limit=limit,
+        query=query,
+        filter=filter,
     )
 
     yield from search.item_collection()

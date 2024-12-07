@@ -158,6 +158,14 @@ Before you start coding, we recommend creating an isolated virtual
 environment to avoid any problems with your installed Python packages.
 As the project uses poetry we can leverage some of its features.
 
+**Installing poetry:** To install poetry run the following command
+
+```shell
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+To create an environment run:
+
 ```shell
 poetry env use /path/to/python
 poetry shell
@@ -183,7 +191,8 @@ sessions in docker or locally.
 {}
 ```
 
-Ruff and mypy are used for linting and static type checking.
+Ruff and mypy are used for linting and static type checking. For this you will need to install
+the ruff and mypy VSCode extensions.
 
 `.vscode/settings.json`
 

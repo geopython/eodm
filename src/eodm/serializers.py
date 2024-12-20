@@ -22,7 +22,7 @@ def default_serializer(items: Iterable[Mappable]) -> Iterable[str]:
     """
 
     for item in items:
-        yield json.dumps(item.to_dict())
+        yield json.dumps(item.to_dict(), default=str)
 
 
 def json_serializer(items: Iterable[Mappable]) -> str:
@@ -34,4 +34,4 @@ def json_serializer(items: Iterable[Mappable]) -> str:
     Returns:
         str: items as a json list
     """
-    return json.dumps([item.to_dict() for item in items])
+    return json.dumps([item.to_dict() for item in items], default=str)

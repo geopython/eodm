@@ -1,0 +1,25 @@
+{
+    "type": "FeatureCollection",
+    "features": [],
+    "properties": {
+        "id": "d4737201-04fd-50a2-b7b7-fcd467d1f39b",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=GIP_R2DENT_B06"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

@@ -331,6 +331,9 @@ git push && git push --tags
 - [EURAC STAC](https://stac.eurac.edu/)
 - [EOEPCA develop STAC](https://eoapi.develop.eoepca.org/stac/)
 - [EOX hub-int STAC](https://stac.hub-int.eox.at/)
+- [Creodias OpenSearch](https://finder.creodias.eu/resto/api/collections/describe.xml)
+  - [Creodias Sentinel1](https://finder.creodias.eu/resto/api/collections/Sentinel1/describe.xml)
+  - [Creodias Sentinel2](https://finder.creodias.eu/resto/api/collections/Sentinel2/describe.xml)
 
 ### Inspiration
 

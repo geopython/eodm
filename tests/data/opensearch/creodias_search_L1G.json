@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            25.7480659,
+                            54.0732269
+                        ],
+                        [
+                            29.2076416,
+                            54.0594826
+                        ],
+                        [
+                            29.1100826,
+                            52.110817
+                        ],
+                        [
+                            25.8034248,
+                            52.1236305
+                        ],
+                        [
+                            25.7480659,
+                            54.0732269
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "LANDSAT-5",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "LS05_RFUI_TM__GEO_1P_19841201T083636_19841201T083704_004003_0184_0023_0502",
+                "description": "Landsat-5 was launched on 1 March 1984 and the mission ended on 5 June 2013. It launched the Thematic Mapper (TM) which was a multispectral scanning radiometer operating in the visible and Infra-Red regions of the Electromagnetic Spectrum. It was characterized by 185 km swath width and 30 m resolution for visible (VIS), near infrared (NIR) and shortwave infrared (SWIR) while 120 m resolution for thermal infrared. The acquired Landsat TM scene covers approximately 183 x 172.8 km. The objective of Landsat-5 and any other Landsat mission was to image repetitively Earth's land and coastal areas with the aim of monitoring changes to those areas over time [https://creodias.eu/eodata/landsat-5/].",
+                "startDate": "1984-12-01T08:36:50.668000Z",
+                "completionDate": "1984-12-01T08:36:50.668000Z",
+                "productType": "L1G",
+                "platform": "LANDSAT-5",
+                "resolution": 120.0,
+                "orbitNumber": 4003,
+                "updated": "2016-07-09T19:44:49.086174Z",
+                "published": "2016-07-09T19:44:49.086174Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/11d915fb-d55c-59a9-8498-f4160dd0b22c",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 11d915fb-d55c-59a9-8498-f4160dd0b22c",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/LANDSAT-5/11d915fb-d55c-59a9-8498-f4160dd0b22c.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        27.47785375,
+                        53.09202195
+                    ]
+                },
+                "instrument": "TM",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "LEVEL1G",
+                "sensorMode": "SAM",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Landsat-5/TM/L1G/1984/12/01/LS05_RFUI_TM__GEO_1P_19841201T083636_19841201T083704_004003_0184_0023_0502/LS05_RFUI_TM__GEO_1P_19841201T083636_19841201T083704_004003_0184_0023_0502.BP.PNG",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>25.7480659,54.0732269 29.2076416,54.0594826 29.1100826,52.110817 25.8034248,52.1236305 25.7480659,54.0732269</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Landsat-5/TM/L1G/1984/12/01/LS05_RFUI_TM__GEO_1P_19841201T083636_19841201T083704_004003_0184_0023_0502",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "11d915fb-d55c-59a9-8498-f4160dd0b22c"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            41.3367157,
+                            51.2280617
+                        ],
+                        [
+                            44.6188431,
+                            51.2847977
+                        ],
+                        [
+                            44.6342812,
+                            49.3133545
+                        ],
+                        [
+                            41.4846954,
+                            49.2604294
+                        ],
+                        [
+                            41.3367157,
+                            51.2280617
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "LANDSAT-5",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "LS05_RFUI_TM__GEO_1P_19841001T072936_19841001T073005_003114_0173_0025_8359",
+                "description": "Landsat-5 was launched on 1 March 1984 and the mission ended on 5 June 2013. It launched the Thematic Mapper (TM) which was a multispectral scanning radiometer operating in the visible and Infra-Red regions of the Electromagnetic Spectrum. It was characterized by 185 km swath width and 30 m resolution for visible (VIS), near infrared (NIR) and shortwave infrared (SWIR) while 120 m resolution for thermal infrared. The acquired Landsat TM scene covers approximately 183 x 172.8 km. The objective of Landsat-5 and any other Landsat mission was to image repetitively Earth's land and coastal areas with the aim of monitoring changes to those areas over time [https://creodias.eu/eodata/landsat-5/].",
+                "startDate": "1984-10-01T07:29:51.087000Z",
+                "completionDate": "1984-10-01T07:29:51.087000Z",
+                "productType": "L1G",
+                "platform": "LANDSAT-5",
+                "resolution": 120.0,
+                "orbitNumber": 3114,
+                "updated": "2016-07-09T19:44:54.926839Z",
+                "published": "2016-07-09T19:44:54.926839Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/091ea7fa-aa1a-57cf-aa0a-3cd4eb0bf869",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 091ea7fa-aa1a-57cf-aa0a-3cd4eb0bf869",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/LANDSAT-5/091ea7fa-aa1a-57cf-aa0a-3cd4eb0bf869.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        42.98549845,
+                        50.27261355
+                    ]
+                },
+                "instrument": "TM",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "LEVEL1G",
+                "sensorMode": "SAM",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Landsat-5/TM/L1G/1984/10/01/LS05_RFUI_TM__GEO_1P_19841001T072936_19841001T073005_003114_0173_0025_8359/LS05_RFUI_TM__GEO_1P_19841001T072936_19841001T073005_003114_0173_0025_8359.BP.PNG",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>41.3367157,51.2280617 44.6188431,51.2847977 44.6342812,49.3133545 41.4846954,49.2604294 41.3367157,51.2280617</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Landsat-5/TM/L1G/1984/10/01/LS05_RFUI_TM__GEO_1P_19841001T072936_19841001T073005_003114_0173_0025_8359",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "091ea7fa-aa1a-57cf-aa0a-3cd4eb0bf869"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -2.4899368,
+                            56.9032784
+                        ],
+                        [
+                            1.197536,
+                            56.8337364
+                        ],
+                        [
+                            0.993512,
+                            54.8981705
+                        ],
+                        [
+                            -2.5148101,
+                            54.9628487
+                        ],
+                        [
+                            -2.4899368,
+                            56.9032784
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "LANDSAT-5",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "LS05_RFUI_TM__GEO_1P_19840901T103323_19840901T103351_002679_0203_0021_A35E",
+                "description": "Landsat-5 was launched on 1 March 1984 and the mission ended on 5 June 2013. It launched the Thematic Mapper (TM) which was a multispectral scanning radiometer operating in the visible and Infra-Red regions of the Electromagnetic Spectrum. It was characterized by 185 km swath width and 30 m resolution for visible (VIS), near infrared (NIR) and shortwave infrared (SWIR) while 120 m resolution for thermal infrared. The acquired Landsat TM scene covers approximately 183 x 172.8 km. The objective of Landsat-5 and any other Landsat mission was to image repetitively Earth's land and coastal areas with the aim of monitoring changes to those areas over time [https://creodias.eu/eodata/landsat-5/].",
+                "startDate": "1984-09-01T10:33:37.343000Z",
+                "completionDate": "1984-09-01T10:33:37.343000Z",
+                "productType": "L1G",
+                "platform": "LANDSAT-5",
+                "resolution": 120.0,
+                "orbitNumber": 2679,
+                "updated": "2016-07-09T19:45:03.229044Z",
+                "published": "2016-07-09T19:45:03.229044Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/8cfa5a83-13e8-579b-80e6-cb6efd7798d4",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 8cfa5a83-13e8-579b-80e6-cb6efd7798d4",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/LANDSAT-5/8cfa5a83-13e8-579b-80e6-cb6efd7798d4.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -0.65863705,
+                        55.90072445
+                    ]
+                },
+                "instrument": "TM",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "LEVEL1G",
+                "sensorMode": "SAM",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Landsat-5/TM/L1G/1984/09/01/LS05_RFUI_TM__GEO_1P_19840901T103323_19840901T103351_002679_0203_0021_A35E/LS05_RFUI_TM__GEO_1P_19840901T103323_19840901T103351_002679_0203_0021_A35E.BP.PNG",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-2.4899368,56.9032784 1.197536,56.8337364 0.993512,54.8981705 -2.5148101,54.9628487 -2.4899368,56.9032784</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Landsat-5/TM/L1G/1984/09/01/LS05_RFUI_TM__GEO_1P_19840901T103323_19840901T103351_002679_0203_0021_A35E",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "8cfa5a83-13e8-579b-80e6-cb6efd7798d4"
+        }
+    ],
+    "properties": {
+        "id": "ac06ab8f-4502-573e-b209-a190c2511cf3",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=L1G"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

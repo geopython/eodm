@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -6.689985,
+                            48.729637
+                        ],
+                        [
+                            -5.605243,
+                            48.858677
+                        ],
+                        [
+                            -5.229157,
+                            47.423672
+                        ],
+                        [
+                            -6.284278,
+                            47.295074
+                        ],
+                        [
+                            -6.689985,
+                            48.729637
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1A_S4_GRDH_1SDH_20141005T181251_20141005T181315_002698_003039_B597_COG.SAFE",
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "startDate": "2014-10-05T18:12:51.050000Z",
+                "completionDate": "2014-10-05T18:13:15.007000Z",
+                "productType": "S4_GRDH_1S-COG",
+                "platform": "S1A",
+                "resolution": 0.0,
+                "orbitNumber": 2698,
+                "updated": "2024-06-11T20:35:50.137980Z",
+                "published": "2023-04-24T17:37:48.303969Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/19ee8211-150c-4728-b63b-673b4bd30e26",
+                        "size": 180804698,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 19ee8211-150c-4728-b63b-673b4bd30e26",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/19ee8211-150c-4728-b63b-673b4bd30e26.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -5.95323047493842,
+                        48.0799604250883
+                    ]
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": "LEVEL1",
+                "sensorMode": "SM",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Sentinel-1/SAR/S4_GRDH_1S-COG/2014/10/05/S1A_S4_GRDH_1SDH_20141005T181251_20141005T181315_002698_003039_B597_COG.SAFE/preview/thumbnail.png",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-6.689985,48.729637 -5.605243,48.858677 -5.229157,47.423672 -6.284278,47.295074 -6.689985,48.729637</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/SAR/S4_GRDH_1S-COG/2014/10/05/S1A_S4_GRDH_1SDH_20141005T181251_20141005T181315_002698_003039_B597_COG.SAFE",
+                "orbitDirection": "ASCENDING",
+                "timeliness": "Fast-24h",
+                "relativeOrbitNumber": 3,
+                "processingBaseline": 0
+            },
+            "id": "19ee8211-150c-4728-b63b-673b4bd30e26"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -6.69184,
+                            48.733143
+                        ],
+                        [
+                            -5.607026,
+                            48.862198
+                        ],
+                        [
+                            -5.230987,
+                            47.427643
+                        ],
+                        [
+                            -6.286183,
+                            47.29903
+                        ],
+                        [
+                            -6.69184,
+                            48.733143
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1A_S4_GRDH_1SDV_20141017T181251_20141017T181315_002873_0033FE_7283_COG.SAFE",
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "startDate": "2014-10-17T18:12:51.113000Z",
+                "completionDate": "2014-10-17T18:13:15.063000Z",
+                "productType": "S4_GRDH_1S-COG",
+                "platform": "S1A",
+                "resolution": 0.0,
+                "orbitNumber": 2873,
+                "updated": "2024-06-11T20:05:32.182273Z",
+                "published": "2023-04-25T20:22:24.739759Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/7d5d1409-b9f0-42e1-9f6d-79ece222fcfc",
+                        "size": 191548870,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 7d5d1409-b9f0-42e1-9f6d-79ece222fcfc",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/7d5d1409-b9f0-42e1-9f6d-79ece222fcfc.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -5.9550735205734,
+                        48.0836973403641
+                    ]
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": "LEVEL1",
+                "sensorMode": "SM",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Sentinel-1/SAR/S4_GRDH_1S-COG/2014/10/17/S1A_S4_GRDH_1SDV_20141017T181251_20141017T181315_002873_0033FE_7283_COG.SAFE/preview/thumbnail.png",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-6.69184,48.733143 -5.607026,48.862198 -5.230987,47.427643 -6.286183,47.29903 -6.69184,48.733143</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/SAR/S4_GRDH_1S-COG/2014/10/17/S1A_S4_GRDH_1SDV_20141017T181251_20141017T181315_002873_0033FE_7283_COG.SAFE",
+                "orbitDirection": "ASCENDING",
+                "timeliness": "Fast-24h",
+                "relativeOrbitNumber": 1,
+                "processingBaseline": 0
+            },
+            "id": "7d5d1409-b9f0-42e1-9f6d-79ece222fcfc"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            8.66523,
+                            45.247894
+                        ],
+                        [
+                            9.677365,
+                            45.375641
+                        ],
+                        [
+                            9.817395,
+                            44.849354
+                        ],
+                        [
+                            8.814535,
+                            44.721756
+                        ],
+                        [
+                            8.66523,
+                            45.247894
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1A_S4_GRDH_1SDH_20141018T171432_20141018T171440_002887_00344A_D278_COG.SAFE",
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "startDate": "2014-10-18T17:14:32.140000Z",
+                "completionDate": "2014-10-18T17:14:40.935000Z",
+                "productType": "S4_GRDH_1S-COG",
+                "platform": "S1A",
+                "resolution": 0.0,
+                "orbitNumber": 2887,
+                "updated": "2024-06-11T20:02:17.949840Z",
+                "published": "2023-04-25T22:58:46.352381Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/528d5ead-1b9d-4eec-9783-274f68407273",
+                        "size": 103744640,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 528d5ead-1b9d-4eec-9783-274f68407273",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/528d5ead-1b9d-4eec-9783-274f68407273.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        9.24336528590711,
+                        45.0490330210455
+                    ]
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": "LEVEL1",
+                "sensorMode": "SM",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Sentinel-1/SAR/S4_GRDH_1S-COG/2014/10/18/S1A_S4_GRDH_1SDH_20141018T171432_20141018T171440_002887_00344A_D278_COG.SAFE/preview/thumbnail.png",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>8.66523,45.247894 9.677365,45.375641 9.817395,44.849354 8.814535,44.721756 8.66523,45.247894</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/SAR/S4_GRDH_1S-COG/2014/10/18/S1A_S4_GRDH_1SDH_20141018T171432_20141018T171440_002887_00344A_D278_COG.SAFE",
+                "orbitDirection": "ASCENDING",
+                "timeliness": "Fast-24h",
+                "relativeOrbitNumber": 15,
+                "processingBaseline": 0
+            },
+            "id": "528d5ead-1b9d-4eec-9783-274f68407273"
+        }
+    ],
+    "properties": {
+        "id": "6f2a233b-4d1a-5a08-b1f1-3fd171312e30",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=S4_GRDH_1S-COG"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

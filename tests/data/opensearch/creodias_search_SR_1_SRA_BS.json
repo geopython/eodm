@@ -1,0 +1,538 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -113.121,
+                            -3.00106
+                        ],
+                        [
+                            -113.563,
+                            -4.99467
+                        ],
+                        [
+                            -114.008,
+                            -6.98784
+                        ],
+                        [
+                            -114.455,
+                            -8.98045
+                        ],
+                        [
+                            -114.905,
+                            -10.9724
+                        ],
+                        [
+                            -115.36,
+                            -12.9635
+                        ],
+                        [
+                            -115.819,
+                            -14.9538
+                        ],
+                        [
+                            -116.285,
+                            -16.943
+                        ],
+                        [
+                            -116.757,
+                            -18.931
+                        ],
+                        [
+                            -117.237,
+                            -20.9178
+                        ],
+                        [
+                            -117.726,
+                            -22.9032
+                        ],
+                        [
+                            -118.225,
+                            -24.887
+                        ],
+                        [
+                            -118.223,
+                            -24.8874
+                        ],
+                        [
+                            -117.724,
+                            -22.9036
+                        ],
+                        [
+                            -117.235,
+                            -20.9182
+                        ],
+                        [
+                            -116.755,
+                            -18.9314
+                        ],
+                        [
+                            -116.283,
+                            -16.9434
+                        ],
+                        [
+                            -115.817,
+                            -14.9542
+                        ],
+                        [
+                            -115.358,
+                            -12.9639
+                        ],
+                        [
+                            -114.904,
+                            -10.9728
+                        ],
+                        [
+                            -114.453,
+                            -8.98085
+                        ],
+                        [
+                            -114.006,
+                            -6.98824
+                        ],
+                        [
+                            -113.562,
+                            -4.99507
+                        ],
+                        [
+                            -113.119,
+                            -3.00145
+                        ],
+                        [
+                            -113.121,
+                            -3.00106
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-3",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S3A_SR_1_SRA_BS_20160301T173034_20160301T173645_20180202T230655_0371_001_226______LR1_R_NT_003.SEN3",
+                "description": "Sentinel-3 is a constellation of two radar imaging satellites developed to support Copernicus ocean, land, atmospheric, emergency, security and cryospheric applications. Both S3A, launched in February 2016, and S3B, launched in April 2018, are part of the Copernicus Programme- the European Union’s Earth observation program, managed by the European Commission (COM) [https://www.eoportal.org/satellite-missions/copernicus-sentinel-3]. The spacecraft carries four main instruments: OLCI (Ocean and Land Colour Instrument), SLSTR (Sea and Land Surface Temperature Instrument), SRAL (SAR Radar Altimeter) and MWR (Microwave Radiometer). The SENTINEL-3 mission is jointly operated by the European Space Agency (ESA) and supported by EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites) [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-3].",
+                "startDate": "2016-03-01T17:30:33.787000Z",
+                "completionDate": "2016-03-01T17:36:44.961000Z",
+                "productType": "SR_1_SRA_BS",
+                "platform": "S3A",
+                "resolution": 0.0,
+                "orbitNumber": 199,
+                "updated": "2024-08-08T17:59:35.338994Z",
+                "published": "2019-04-25T23:20:17.062706Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/a9df15cb-d289-5986-ab5b-9767118a9a45",
+                        "size": 237072917,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for a9df15cb-d289-5986-ab5b-9767118a9a45",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-3/a9df15cb-d289-5986-ab5b-9767118a9a45.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -115.74836688988327,
+                        -14.52495745363315
+                    ]
+                },
+                "instrument": "SRAL",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "1",
+                "sensorMode": "Earth Observation",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-113.121,-3.00106 -113.563,-4.99467 -114.008,-6.98784 -114.455,-8.98045 -114.905,-10.9724 -115.36,-12.9635 -115.819,-14.9538 -116.285,-16.943 -116.757,-18.931 -117.237,-20.9178 -117.726,-22.9032 -118.225,-24.887 -118.223,-24.8874 -117.724,-22.9036 -117.235,-20.9182 -116.755,-18.9314 -116.283,-16.9434 -115.817,-14.9542 -115.358,-12.9639 -114.904,-10.9728 -114.453,-8.98085 -114.006,-6.98824 -113.562,-4.99507 -113.119,-3.00145 -113.121,-3.00106</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-3/SRAL/SR_1_SRA_BS/2016/03/01/S3A_SR_1_SRA_BS_20160301T173034_20160301T173645_20180202T230655_0371_001_226______LR1_R_NT_003.SEN3",
+                "orbitDirection": "ASCENDING",
+                "timeliness": "NT",
+                "relativeOrbitNumber": 226,
+                "processingBaseline": 0
+            },
+            "id": "a9df15cb-d289-5986-ab5b-9767118a9a45"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -3.94429,
+                            -57.4097
+                        ],
+                        [
+                            -5.09813,
+                            -59.2188
+                        ],
+                        [
+                            -6.36554,
+                            -61.0184
+                        ],
+                        [
+                            -7.76846,
+                            -62.8067
+                        ],
+                        [
+                            -9.33454,
+                            -64.5814
+                        ],
+                        [
+                            -11.099,
+                            -66.3397
+                        ],
+                        [
+                            -13.1072,
+                            -68.0779
+                        ],
+                        [
+                            -15.4181,
+                            -69.7909
+                        ],
+                        [
+                            -18.1095,
+                            -71.4719
+                        ],
+                        [
+                            -21.2845,
+                            -73.1115
+                        ],
+                        [
+                            -21.2793,
+                            -73.1125
+                        ],
+                        [
+                            -18.1046,
+                            -71.4728
+                        ],
+                        [
+                            -15.4135,
+                            -69.7917
+                        ],
+                        [
+                            -13.1028,
+                            -68.0787
+                        ],
+                        [
+                            -11.0949,
+                            -66.3404
+                        ],
+                        [
+                            -9.33067,
+                            -64.5821
+                        ],
+                        [
+                            -7.7648,
+                            -62.8073
+                        ],
+                        [
+                            -6.36206,
+                            -61.019
+                        ],
+                        [
+                            -5.09482,
+                            -59.2194
+                        ],
+                        [
+                            -3.94113,
+                            -57.4103
+                        ],
+                        [
+                            -3.94429,
+                            -57.4097
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-3",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S3A_SR_1_SRA_BS_20160301T092105_20160301T092552_20180202T230137_0287_001_221______LR1_R_NT_003.SEN3",
+                "description": "Sentinel-3 is a constellation of two radar imaging satellites developed to support Copernicus ocean, land, atmospheric, emergency, security and cryospheric applications. Both S3A, launched in February 2016, and S3B, launched in April 2018, are part of the Copernicus Programme- the European Union’s Earth observation program, managed by the European Commission (COM) [https://www.eoportal.org/satellite-missions/copernicus-sentinel-3]. The spacecraft carries four main instruments: OLCI (Ocean and Land Colour Instrument), SLSTR (Sea and Land Surface Temperature Instrument), SRAL (SAR Radar Altimeter) and MWR (Microwave Radiometer). The SENTINEL-3 mission is jointly operated by the European Space Agency (ESA) and supported by EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites) [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-3].",
+                "startDate": "2016-03-01T09:21:05.202000Z",
+                "completionDate": "2016-03-01T09:25:52.442000Z",
+                "productType": "SR_1_SRA_BS",
+                "platform": "S3A",
+                "resolution": 0.0,
+                "orbitNumber": 194,
+                "updated": "2024-08-08T17:59:35.499569Z",
+                "published": "2019-04-25T23:19:27.757535Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/30e8c4cc-3e76-5a37-9d62-e2b9432a9718",
+                        "size": 112512431,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 30e8c4cc-3e76-5a37-9d62-e2b9432a9718",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-3/30e8c4cc-3e76-5a37-9d62-e2b9432a9718.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -11.87155542544,
+                        -66.20462039086058
+                    ]
+                },
+                "instrument": "SRAL",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "1",
+                "sensorMode": "Earth Observation",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-3.94429,-57.4097 -5.09813,-59.2188 -6.36554,-61.0184 -7.76846,-62.8067 -9.33454,-64.5814 -11.099,-66.3397 -13.1072,-68.0779 -15.4181,-69.7909 -18.1095,-71.4719 -21.2845,-73.1115 -21.2793,-73.1125 -18.1046,-71.4728 -15.4135,-69.7917 -13.1028,-68.0787 -11.0949,-66.3404 -9.33067,-64.5821 -7.7648,-62.8073 -6.36206,-61.019 -5.09482,-59.2194 -3.94113,-57.4103 -3.94429,-57.4097</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-3/SRAL/SR_1_SRA_BS/2016/03/01/S3A_SR_1_SRA_BS_20160301T092105_20160301T092552_20180202T230137_0287_001_221______LR1_R_NT_003.SEN3",
+                "orbitDirection": "ASCENDING",
+                "timeliness": "NT",
+                "relativeOrbitNumber": 221,
+                "processingBaseline": 0
+            },
+            "id": "30e8c4cc-3e76-5a37-9d62-e2b9432a9718"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -103.918,
+                            -24.9981
+                        ],
+                        [
+                            -104.419,
+                            -23.0142
+                        ],
+                        [
+                            -104.908,
+                            -21.0288
+                        ],
+                        [
+                            -105.389,
+                            -19.042
+                        ],
+                        [
+                            -105.862,
+                            -17.0538
+                        ],
+                        [
+                            -106.328,
+                            -15.0645
+                        ],
+                        [
+                            -106.787,
+                            -13.0742
+                        ],
+                        [
+                            -107.242,
+                            -11.083
+                        ],
+                        [
+                            -107.693,
+                            -9.09094
+                        ],
+                        [
+                            -108.14,
+                            -7.09822
+                        ],
+                        [
+                            -108.585,
+                            -5.10492
+                        ],
+                        [
+                            -109.028,
+                            -3.11118
+                        ],
+                        [
+                            -109.03,
+                            -3.11157
+                        ],
+                        [
+                            -108.587,
+                            -5.10532
+                        ],
+                        [
+                            -108.142,
+                            -7.09861
+                        ],
+                        [
+                            -107.695,
+                            -9.09134
+                        ],
+                        [
+                            -107.244,
+                            -11.0834
+                        ],
+                        [
+                            -106.789,
+                            -13.0746
+                        ],
+                        [
+                            -106.329,
+                            -15.0649
+                        ],
+                        [
+                            -105.864,
+                            -17.0542
+                        ],
+                        [
+                            -105.391,
+                            -19.0424
+                        ],
+                        [
+                            -104.91,
+                            -21.0292
+                        ],
+                        [
+                            -104.42,
+                            -23.0146
+                        ],
+                        [
+                            -103.92,
+                            -24.9985
+                        ],
+                        [
+                            -103.918,
+                            -24.9981
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-3",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S3A_SR_1_SRA_BS_20160327T051140_20160327T051752_20180203T004041_0371_002_204______LR1_R_NT_003.SEN3",
+                "description": "Sentinel-3 is a constellation of two radar imaging satellites developed to support Copernicus ocean, land, atmospheric, emergency, security and cryospheric applications. Both S3A, launched in February 2016, and S3B, launched in April 2018, are part of the Copernicus Programme- the European Union’s Earth observation program, managed by the European Commission (COM) [https://www.eoportal.org/satellite-missions/copernicus-sentinel-3]. The spacecraft carries four main instruments: OLCI (Ocean and Land Colour Instrument), SLSTR (Sea and Land Surface Temperature Instrument), SRAL (SAR Radar Altimeter) and MWR (Microwave Radiometer). The SENTINEL-3 mission is jointly operated by the European Space Agency (ESA) and supported by EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites) [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-3].",
+                "startDate": "2016-03-27T05:11:40.444000Z",
+                "completionDate": "2016-03-27T05:17:51.560000Z",
+                "productType": "SR_1_SRA_BS",
+                "platform": "S3A",
+                "resolution": 0.0,
+                "orbitNumber": 562,
+                "updated": "2024-08-08T17:58:15.946559Z",
+                "published": "2019-04-25T23:06:02.698326Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/74de3557-db1e-5b54-8c34-09f12b92aa87",
+                        "size": 237086035,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 74de3557-db1e-5b54-8c34-09f12b92aa87",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-3/74de3557-db1e-5b54-8c34-09f12b92aa87.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -106.63976995486534,
+                        -13.595421723001774
+                    ]
+                },
+                "instrument": "SRAL",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "1",
+                "sensorMode": "Earth Observation",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-103.918,-24.9981 -104.419,-23.0142 -104.908,-21.0288 -105.389,-19.042 -105.862,-17.0538 -106.328,-15.0645 -106.787,-13.0742 -107.242,-11.083 -107.693,-9.09094 -108.14,-7.09822 -108.585,-5.10492 -109.028,-3.11118 -109.03,-3.11157 -108.587,-5.10532 -108.142,-7.09861 -107.695,-9.09134 -107.244,-11.0834 -106.789,-13.0746 -106.329,-15.0649 -105.864,-17.0542 -105.391,-19.0424 -104.91,-21.0292 -104.42,-23.0146 -103.92,-24.9985 -103.918,-24.9981</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-3/SRAL/SR_1_SRA_BS/2016/03/27/S3A_SR_1_SRA_BS_20160327T051140_20160327T051752_20180203T004041_0371_002_204______LR1_R_NT_003.SEN3",
+                "orbitDirection": "DESCENDING",
+                "timeliness": "NT",
+                "relativeOrbitNumber": 204,
+                "processingBaseline": 0
+            },
+            "id": "74de3557-db1e-5b54-8c34-09f12b92aa87"
+        }
+    ],
+    "properties": {
+        "id": "269220cd-a5ef-57d2-b666-9283255fbe6f",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=SR_1_SRA_BS"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

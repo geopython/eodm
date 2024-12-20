@@ -36,6 +36,7 @@ $ eodm extract [OPTIONS] COMMAND [ARGS]...
 **Commands**:
 
 * `openeo`: Extract data from openEO results
+* `opensearch`: Extract features from a OpenSearch API
 * `stac-api`: Extract data from a STAC API
 * `stac-catalog`: Extract data from a STAC Catalog
 
@@ -72,6 +73,45 @@ $ eodm extract openeo results [OPTIONS] ASSET_NAME [RESULTS]
 
 **Options**:
 
+* `--help`: Show this message and exit.
+
+### `eodm extract opensearch`
+
+Extract features from a OpenSearch API
+
+**Usage**:
+
+```console
+$ eodm extract opensearch [OPTIONS] COMMAND [ARGS]...
+```
+
+**Options**:
+
+* `--help`: Show this message and exit.
+
+**Commands**:
+
+* `features`: Extract features found in an OpenSearch...
+
+#### `eodm extract opensearch features`
+
+Extract features found in an OpenSearch API given a product type
+
+**Usage**:
+
+```console
+$ eodm extract opensearch features [OPTIONS] URL PRODUCT_TYPE
+```
+
+**Arguments**:
+
+* `URL`: [required]
+* `PRODUCT_TYPE`: [required]
+
+**Options**:
+
+* `-l, --limit INT`: Limit number of results  [default: 0]
+* `-o, --output [default|json]`: Output format. Default to STDOUT multiline  [default: default]
 * `--help`: Show this message and exit.
 
 ### `eodm extract stac-api`

@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -67.822517,
+                            -3.94684
+                        ],
+                        [
+                            -67.0914,
+                            -3.786812
+                        ],
+                        [
+                            -66.887863,
+                            -4.734609
+                        ],
+                        [
+                            -67.619751,
+                            -4.895443
+                        ],
+                        [
+                            -67.822517,
+                            -3.94684
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1A_S3_OCN__2SDV_20160615T224635_20160615T224651_011727_011FB7_F164.SAFE",
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "startDate": "2016-06-15T22:46:35.777923Z",
+                "completionDate": "2016-06-15T22:46:51.465766Z",
+                "productType": "S3_OCN__2S",
+                "platform": "S1A",
+                "resolution": 0.0,
+                "orbitNumber": 11727,
+                "updated": "2024-06-09T10:29:14.385082Z",
+                "published": "2018-02-21T18:31:39.105000Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/8b605b19-87af-5cfe-a585-0d61325be84f",
+                        "size": 5609974,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 8b605b19-87af-5cfe-a585-0d61325be84f",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/8b605b19-87af-5cfe-a585-0d61325be84f.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -67.35519,
+                        -4.3411275
+                    ]
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "LEVEL2",
+                "sensorMode": "SM",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-67.822517,-3.94684 -67.0914,-3.786812 -66.887863,-4.734609 -67.619751,-4.895443 -67.822517,-3.94684</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/SAR/OCN/2016/06/15/S1A_S3_OCN__2SDV_20160615T224635_20160615T224651_011727_011FB7_F164.SAFE",
+                "orbitDirection": "ASCENDING",
+                "timeliness": "NRT-10m",
+                "relativeOrbitNumber": 105,
+                "processingBaseline": 0
+            },
+            "id": "8b605b19-87af-5cfe-a585-0d61325be84f"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -67.694939,
+                            -4.54096
+                        ],
+                        [
+                            -66.962883,
+                            -4.380313
+                        ],
+                        [
+                            -66.757706,
+                            -5.331758
+                        ],
+                        [
+                            -67.490654,
+                            -5.493226
+                        ],
+                        [
+                            -67.694939,
+                            -4.54096
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1A_S3_OCN__2SDV_20160826T224629_20160826T224645_012777_014219_F1D8.SAFE",
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "startDate": "2016-08-26T22:46:29.761746Z",
+                "completionDate": "2016-08-26T22:46:45.511520Z",
+                "productType": "S3_OCN__2S",
+                "platform": "S1A",
+                "resolution": 0.0,
+                "orbitNumber": 12777,
+                "updated": "2024-06-09T06:08:16.091405Z",
+                "published": "2018-02-21T21:09:34.797000Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/767412cd-e474-59b3-9407-bba7a2786249",
+                        "size": 5620205,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 767412cd-e474-59b3-9407-bba7a2786249",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/767412cd-e474-59b3-9407-bba7a2786249.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -67.2263225,
+                        -4.9367695
+                    ]
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "LEVEL2",
+                "sensorMode": "SM",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-67.694939,-4.54096 -66.962883,-4.380313 -66.757706,-5.331758 -67.490654,-5.493226 -67.694939,-4.54096</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/SAR/OCN/2016/08/26/S1A_S3_OCN__2SDV_20160826T224629_20160826T224645_012777_014219_F1D8.SAFE",
+                "orbitDirection": "ASCENDING",
+                "timeliness": "NRT-10m",
+                "relativeOrbitNumber": 105,
+                "processingBaseline": 0
+            },
+            "id": "767412cd-e474-59b3-9407-bba7a2786249"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -70.173073,
+                            -10.821748
+                        ],
+                        [
+                            -70.912651,
+                            -10.655869
+                        ],
+                        [
+                            -70.695938,
+                            -9.699451
+                        ],
+                        [
+                            -69.958412,
+                            -9.864404
+                        ],
+                        [
+                            -70.173073,
+                            -10.821748
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1A_S3_OCN__2SDV_20160821T102212_20160821T102228_012697_013F4E_6E5D.SAFE",
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "startDate": "2016-08-21T10:22:12.560444Z",
+                "completionDate": "2016-08-21T10:22:28.415616Z",
+                "productType": "S3_OCN__2S",
+                "platform": "S1A",
+                "resolution": 0.0,
+                "orbitNumber": 12697,
+                "updated": "2024-06-09T06:32:11.950164Z",
+                "published": "2018-02-21T18:29:35.037000Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/1d3c3a2d-7c9c-57b9-a2dd-d2e973d60473",
+                        "size": 5607146,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 1d3c3a2d-7c9c-57b9-a2dd-d2e973d60473",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/1d3c3a2d-7c9c-57b9-a2dd-d2e973d60473.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -70.4355315,
+                        -10.2605995
+                    ]
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "LEVEL2",
+                "sensorMode": "SM",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-70.173073,-10.821748 -70.912651,-10.655869 -70.695938,-9.699451 -69.958412,-9.864404 -70.173073,-10.821748</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/SAR/OCN/2016/08/21/S1A_S3_OCN__2SDV_20160821T102212_20160821T102228_012697_013F4E_6E5D.SAFE",
+                "orbitDirection": "DESCENDING",
+                "timeliness": "NRT-10m",
+                "relativeOrbitNumber": 25,
+                "processingBaseline": 0
+            },
+            "id": "1d3c3a2d-7c9c-57b9-a2dd-d2e973d60473"
+        }
+    ],
+    "properties": {
+        "id": "d44bce0a-8cd7-57fd-be24-1985b677c528",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=S3_OCN__2S"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

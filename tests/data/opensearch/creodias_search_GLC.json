@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -3.0002674,
+                            47.8537018
+                        ],
+                        [
+                            -3.0002624,
+                            46.8656999
+                        ],
+                        [
+                            -1.5598502,
+                            46.8566399
+                        ],
+                        [
+                            -1.5327226,
+                            47.844325
+                        ],
+                        [
+                            -3.0002674,
+                            47.8537018
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "S2GLC",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S2GLC_T30TWT_2017",
+                "description": "The S2GLC 2017 product represents land cover classification of a major portion of the European continent. The classification has been performed using multi-temporal Sentinel-2 data collected during the year 2017 with the methodology developed in the frame of the Sentinel-2 Global Land Cover (S2GLC) project. The Sentinel-2 Global Land Cover (S2GLC) project was founded by the European Space Agency (ESA) through its Scientific Exploitation of Operational Missions (SEOM) element [https://s2glc.cbk.waw.pl/].",
+                "startDate": "2019-07-15T00:00:00Z",
+                "completionDate": "2019-07-15T00:00:00Z",
+                "productType": "GLC",
+                "platform": "",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2019-10-04T09:45:05.365160Z",
+                "published": "2019-10-04T09:45:05.365160Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/f522e1ab-b30d-5bb6-858f-d4f016ca759a",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for f522e1ab-b30d-5bb6-858f-d4f016ca759a",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/S2GLC/f522e1ab-b30d-5bb6-858f-d4f016ca759a.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -2.273272315670215,
+                        47.35662804880287
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/auxdata/S2GLC/2017/S2GLC_T30TWT_2017/thumbnail.png",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-3.0002674,47.8537018 -3.0002624,46.8656999 -1.5598502,46.8566399 -1.5327226,47.844325 -3.0002674,47.8537018</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/auxdata/S2GLC/2017/S2GLC_T30TWT_2017",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "f522e1ab-b30d-5bb6-858f-d4f016ca759a"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -1.8173004,
+                            40.6447996
+                        ],
+                        [
+                            -1.8343345,
+                            39.6557573
+                        ],
+                        [
+                            -0.5552422,
+                            39.6358715
+                        ],
+                        [
+                            -0.5195507,
+                            40.6242099
+                        ],
+                        [
+                            -1.8173004,
+                            40.6447996
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "S2GLC",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S2GLC_T30TXK_2017",
+                "description": "The S2GLC 2017 product represents land cover classification of a major portion of the European continent. The classification has been performed using multi-temporal Sentinel-2 data collected during the year 2017 with the methodology developed in the frame of the Sentinel-2 Global Land Cover (S2GLC) project. The Sentinel-2 Global Land Cover (S2GLC) project was founded by the European Space Agency (ESA) through its Scientific Exploitation of Operational Missions (SEOM) element [https://s2glc.cbk.waw.pl/].",
+                "startDate": "2019-07-15T00:00:00Z",
+                "completionDate": "2019-07-15T00:00:00Z",
+                "productType": "GLC",
+                "platform": "",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2019-10-04T09:45:05.968012Z",
+                "published": "2019-10-04T09:45:05.968012Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/6bfbbd07-bd6e-5913-9dfb-d337434fce19",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 6bfbbd07-bd6e-5913-9dfb-d337434fce19",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/S2GLC/6bfbbd07-bd6e-5913-9dfb-d337434fce19.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -1.1816197156263302,
+                        40.1413540634657
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/auxdata/S2GLC/2017/S2GLC_T30TXK_2017/thumbnail.png",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-1.8173004,40.6447996 -1.8343345,39.6557573 -0.5552422,39.6358715 -0.5195507,40.6242099 -1.8173004,40.6447996</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/auxdata/S2GLC/2017/S2GLC_T30TXK_2017",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "6bfbbd07-bd6e-5913-9dfb-d337434fce19"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            11.5835488,
+                            46.0243651
+                        ],
+                        [
+                            11.5387069,
+                            45.0370344
+                        ],
+                        [
+                            12.9300334,
+                            44.9975876
+                        ],
+                        [
+                            12.9993206,
+                            45.9835452
+                        ],
+                        [
+                            11.5835488,
+                            46.0243651
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "S2GLC",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S2GLC_T32TQR_2017",
+                "description": "The S2GLC 2017 product represents land cover classification of a major portion of the European continent. The classification has been performed using multi-temporal Sentinel-2 data collected during the year 2017 with the methodology developed in the frame of the Sentinel-2 Global Land Cover (S2GLC) project. The Sentinel-2 Global Land Cover (S2GLC) project was founded by the European Space Agency (ESA) through its Scientific Exploitation of Operational Missions (SEOM) element [https://s2glc.cbk.waw.pl/].",
+                "startDate": "2019-07-15T00:00:00Z",
+                "completionDate": "2019-07-15T00:00:00Z",
+                "productType": "GLC",
+                "platform": "",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2019-10-04T09:46:29.508168Z",
+                "published": "2019-10-04T09:46:29.508168Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/31cabbe5-2503-5c61-98c0-597889d7803e",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 31cabbe5-2503-5c61-98c0-597889d7803e",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/S2GLC/31cabbe5-2503-5c61-98c0-597889d7803e.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        12.262905599761416,
+                        45.51206964971298
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/auxdata/S2GLC/2017/S2GLC_T32TQR_2017/thumbnail.png",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>11.5835488,46.0243651 11.5387069,45.0370344 12.9300334,44.9975876 12.9993206,45.9835452 11.5835488,46.0243651</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/auxdata/S2GLC/2017/S2GLC_T32TQR_2017",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "31cabbe5-2503-5c61-98c0-597889d7803e"
+        }
+    ],
+    "properties": {
+        "id": "e71f77d0-2047-50d7-b1f0-1f6ec4748e0f",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=GLC"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

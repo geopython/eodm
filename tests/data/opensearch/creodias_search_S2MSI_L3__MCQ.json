@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -67.6633997800473,
+                            -47.8459210505822
+                        ],
+                        [
+                            -67.6859779308519,
+                            -46.9456284637244
+                        ],
+                        [
+                            -66.3719665271952,
+                            -46.9229975357978
+                        ],
+                        [
+                            -66.3268591302624,
+                            -47.8225702529506
+                        ],
+                        [
+                            -67.6633997800473,
+                            -47.8459210505822
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "GLOBAL-MOSAICS",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "Sentinel-2_mosaic_2022_Q4_19GFH_0_0",
+                "description": null,
+                "startDate": "2022-10-01T00:00:00Z",
+                "completionDate": "2022-12-31T23:59:59Z",
+                "productType": "S2MSI_L3__MCQ",
+                "platform": "SENTINEL-2",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-05-27T06:11:12.974204Z",
+                "published": "2024-05-27T06:11:12.974204Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/11a07784-a9e7-408e-80fc-8a9fdb5227fb",
+                        "size": -1,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 11a07784-a9e7-408e-80fc-8a9fdb5227fb",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/GLOBAL-MOSAICS/11a07784-a9e7-408e-80fc-8a9fdb5227fb.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -67.0120432253483,
+                        -47.3855556048689
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-67.6633997800473,-47.8459210505822 -67.6859779308519,-46.9456284637244 -66.3719665271952,-46.9229975357978 -66.3268591302624,-47.8225702529506 -67.6633997800473,-47.8459210505822</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Global-Mosaics/Sentinel-2/S2MSI_L3__MCQ/2022/10/01/Sentinel-2_mosaic_2022_Q4_19GFH_0_0",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "11a07784-a9e7-408e-80fc-8a9fdb5227fb"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -76.8482764977359,
+                            -13.5621519078138
+                        ],
+                        [
+                            -76.8415341437831,
+                            -12.6576365867391
+                        ],
+                        [
+                            -75.9201557862722,
+                            -12.6624164560249
+                        ],
+                        [
+                            -75.9235264763103,
+                            -13.5672855315152
+                        ],
+                        [
+                            -76.8482764977359,
+                            -13.5621519078138
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "GLOBAL-MOSAICS",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "Sentinel-2_mosaic_2022_Q4_18LUL_0_0",
+                "description": null,
+                "startDate": "2022-10-01T00:00:00Z",
+                "completionDate": "2022-12-31T23:59:59Z",
+                "productType": "S2MSI_L3__MCQ",
+                "platform": "SENTINEL-2",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-05-27T06:14:29.276248Z",
+                "published": "2024-05-27T06:14:29.276248Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/bf40acd0-c7fc-4028-8fe7-5e48aaf45263",
+                        "size": -1,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for bf40acd0-c7fc-4028-8fe7-5e48aaf45263",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/GLOBAL-MOSAICS/bf40acd0-c7fc-4028-8fe7-5e48aaf45263.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -76.3833462281331,
+                        -13.1126483067198
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-76.8482764977359,-13.5621519078138 -76.8415341437831,-12.6576365867391 -75.9201557862722,-12.6624164560249 -75.9235264763103,-13.5672855315152 -76.8482764977359,-13.5621519078138</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Global-Mosaics/Sentinel-2/S2MSI_L3__MCQ/2022/10/01/Sentinel-2_mosaic_2022_Q4_18LUL_0_0",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "bf40acd0-c7fc-4028-8fe7-5e48aaf45263"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -65.248379904345,
+                            -37.0252757843992
+                        ],
+                        [
+                            -65.222381223758,
+                            -36.1237354730787
+                        ],
+                        [
+                            -64.1105839181989,
+                            -36.1392081354843
+                        ],
+                        [
+                            -64.1235861164292,
+                            -37.0412625685979
+                        ],
+                        [
+                            -65.248379904345,
+                            -37.0252757843992
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "GLOBAL-MOSAICS",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "Sentinel-2_mosaic_2022_Q4_20HLE_0_0",
+                "description": null,
+                "startDate": "2022-10-01T00:00:00Z",
+                "completionDate": "2022-12-31T23:59:59Z",
+                "productType": "S2MSI_L3__MCQ",
+                "platform": "SENTINEL-2",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-05-27T06:15:13.682176Z",
+                "published": "2024-05-27T06:15:13.682176Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/69f48998-fa6c-467b-a05d-ebfd1ae0c5c4",
+                        "size": -1,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 69f48998-fa6c-467b-a05d-ebfd1ae0c5c4",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/GLOBAL-MOSAICS/69f48998-fa6c-467b-a05d-ebfd1ae0c5c4.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -64.6762174591536,
+                        -36.5832448204662
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-65.248379904345,-37.0252757843992 -65.222381223758,-36.1237354730787 -64.1105839181989,-36.1392081354843 -64.1235861164292,-37.0412625685979 -65.248379904345,-37.0252757843992</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Global-Mosaics/Sentinel-2/S2MSI_L3__MCQ/2022/10/01/Sentinel-2_mosaic_2022_Q4_20HLE_0_0",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "69f48998-fa6c-467b-a05d-ebfd1ae0c5c4"
+        }
+    ],
+    "properties": {
+        "id": "00c40144-12bc-5096-b0d2-30331171cf67",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=S2MSI_L3__MCQ"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

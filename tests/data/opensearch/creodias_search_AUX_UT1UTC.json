@@ -1,0 +1,227 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-2",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S2__OPER_AUX_UT1UTC_ADG__20231116T000000_V20231117T000000_20241115T000000",
+                "startDate": "2023-11-17T00:00:00Z",
+                "completionDate": "2024-11-15T00:00:00Z",
+                "productType": "AUX_UT1UTC",
+                "platform": "SENTINEL-2",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2023-11-16T18:05:32.959954Z",
+                "published": "2023-11-16T18:05:32.966977Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/98cd5fe8-84aa-11ee-8e00-fa163e7968e5",
+                        "size": 8182,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 98cd5fe8-84aa-11ee-8e00-fa163e7968e5",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-2/98cd5fe8-84aa-11ee-8e00-fa163e7968e5.json"
+                    }
+                ],
+                "description": "The Copernicus Sentinel-2 mission consists of two polar-orbiting satellites that are positioned in the same sun-synchronous orbit, with a phase difference of 180°. It aims to monitor changes in land surface conditions. The satellites have a wide swath width (290 km) and a high revisit time. Sentinel-2 is equipped with an optical instrument payload that samples 13 spectral bands: four bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "AUX",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-2/AUX/AUX_UT1UTC/2023/11/17/S2__OPER_AUX_UT1UTC_ADG__20231116T000000_V20231117T000000_20241115T000000.TGZ",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 1.0
+            },
+            "id": "98cd5fe8-84aa-11ee-8e00-fa163e7968e5"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-2",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S2__OPER_AUX_UT1UTC_ADG__20231221T000000_V20231222T000000_20241220T000000",
+                "startDate": "2023-12-22T00:00:00Z",
+                "completionDate": "2024-12-20T00:00:00Z",
+                "productType": "AUX_UT1UTC",
+                "platform": "SENTINEL-2",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2023-12-21T18:04:55.403765Z",
+                "published": "2023-12-21T18:04:52.493008Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/62aa70ee-a02b-11ee-9756-fa163e7968e5",
+                        "size": 8152,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 62aa70ee-a02b-11ee-9756-fa163e7968e5",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-2/62aa70ee-a02b-11ee-9756-fa163e7968e5.json"
+                    }
+                ],
+                "description": "The Copernicus Sentinel-2 mission consists of two polar-orbiting satellites that are positioned in the same sun-synchronous orbit, with a phase difference of 180°. It aims to monitor changes in land surface conditions. The satellites have a wide swath width (290 km) and a high revisit time. Sentinel-2 is equipped with an optical instrument payload that samples 13 spectral bands: four bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "AUX",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-2/AUX/AUX_UT1UTC/2023/12/22/S2__OPER_AUX_UT1UTC_ADG__20231221T000000_V20231222T000000_20241220T000000.TGZ",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 1.0
+            },
+            "id": "62aa70ee-a02b-11ee-9756-fa163e7968e5"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-2",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S2__OPER_AUX_UT1UTC_ADG__20231207T000000_V20231208T000000_20241206T000000",
+                "startDate": "2023-12-08T00:00:00Z",
+                "completionDate": "2024-12-06T00:00:00Z",
+                "productType": "AUX_UT1UTC",
+                "platform": "SENTINEL-2",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2023-12-07T18:05:28.871676Z",
+                "published": "2023-12-07T18:05:27.387360Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/1cacd790-952b-11ee-8284-fa163e7968e5",
+                        "size": 9312,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 1cacd790-952b-11ee-8284-fa163e7968e5",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-2/1cacd790-952b-11ee-8284-fa163e7968e5.json"
+                    }
+                ],
+                "description": "The Copernicus Sentinel-2 mission consists of two polar-orbiting satellites that are positioned in the same sun-synchronous orbit, with a phase difference of 180°. It aims to monitor changes in land surface conditions. The satellites have a wide swath width (290 km) and a high revisit time. Sentinel-2 is equipped with an optical instrument payload that samples 13 spectral bands: four bands at 10 m, six bands at 20 m and three bands at 60 m spatial resolution [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-2].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "AUX",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-2/AUX/AUX_UT1UTC/2023/12/08/S2__OPER_AUX_UT1UTC_ADG__20231207T000000_V20231208T000000_20241206T000000.TGZ",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 1.0
+            },
+            "id": "1cacd790-952b-11ee-8284-fa163e7968e5"
+        }
+    ],
+    "properties": {
+        "id": "989f9580-0698-57ef-be71-1ffd05133faa",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=AUX_UT1UTC"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

@@ -1,0 +1,310 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            24.529631190614,
+                            -10.0
+                        ],
+                        [
+                            24.0,
+                            -10.0
+                        ],
+                        [
+                            24.0,
+                            -11.0
+                        ],
+                        [
+                            24.764434264443,
+                            -11.0
+                        ],
+                        [
+                            24.529631190614,
+                            -10.0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1-RTC",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S11E024_2018_01_19_010906",
+                "description": "Sentinel-1 Radiometric Terrain Corrected (RTC) SAR Backscatter is a product processed from Sentinel-1 ground range detected (GRD) and is compliant with CEOS Analysis Ready Data for Land (CARD4L) specifications for Normalised Radar Backscatter (NRB) products [https://collections.eurodatacube.com/card4l/].",
+                "startDate": "2018-01-19T16:50:19.561890Z",
+                "completionDate": "2018-01-19T16:50:43.937167Z",
+                "productType": "RTC",
+                "platform": "S1B",
+                "resolution": 20.0,
+                "orbitNumber": 9242,
+                "updated": "2022-02-21T06:43:32.984305Z",
+                "published": "2022-02-21T06:43:32.984305Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/f00e8bb1-69d7-573d-9a31-eca1cb829090",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for f00e8bb1-69d7-573d-9a31-eca1cb829090",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1-RTC/f00e8bb1-69d7-573d-9a31-eca1cb829090.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        24.327066704749967,
+                        -10.530241009436763
+                    ]
+                },
+                "instrument": "C-SAR",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "2",
+                "sensorMode": "IW",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>24.529631190614,-10 24,-10 24,-11 24.764434264443,-11 24.529631190614,-10</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1-RTC/SAR/RTC/2018/01/19/S11E024_2018_01_19_010906",
+                "orbitDirection": "ASCENDING",
+                "timeliness": null,
+                "relativeOrbitNumber": 116,
+                "processingBaseline": null
+            },
+            "id": "f00e8bb1-69d7-573d-9a31-eca1cb829090"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -3.2233766007646,
+                            4.0
+                        ],
+                        [
+                            -4.0,
+                            4.0
+                        ],
+                        [
+                            -4.0,
+                            3.0
+                        ],
+                        [
+                            -3.0174009049788,
+                            3.0
+                        ],
+                        [
+                            -3.2233766007646,
+                            4.0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1-RTC",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "N03W004_2018_01_19_010910",
+                "description": "Sentinel-1 Radiometric Terrain Corrected (RTC) SAR Backscatter is a product processed from Sentinel-1 ground range detected (GRD) and is compliant with CEOS Analysis Ready Data for Land (CARD4L) specifications for Normalised Radar Backscatter (NRB) products [https://collections.eurodatacube.com/card4l/].",
+                "startDate": "2018-01-19T18:32:40.933699Z",
+                "completionDate": "2018-01-19T18:33:30.932581Z",
+                "productType": "RTC",
+                "platform": "S1B",
+                "resolution": 20.0,
+                "orbitNumber": 9244,
+                "updated": "2022-02-21T06:43:54.267152Z",
+                "published": "2022-02-21T06:43:54.267152Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/b44ccefd-5031-5876-af8e-f341f2a1148b",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for b44ccefd-5031-5876-af8e-f341f2a1148b",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1-RTC/b44ccefd-5031-5876-af8e-f341f2a1148b.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -3.558184682409419,
+                        3.4804861052294163
+                    ]
+                },
+                "instrument": "C-SAR",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "2",
+                "sensorMode": "IW",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-3.2233766007646,4.0 -4,4 -4,3 -3.0174009049788,3.0 -3.2233766007646,4.0</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1-RTC/SAR/RTC/2018/01/19/N03W004_2018_01_19_010910",
+                "orbitDirection": "ASCENDING",
+                "timeliness": null,
+                "relativeOrbitNumber": 118,
+                "processingBaseline": null
+            },
+            "id": "b44ccefd-5031-5876-af8e-f341f2a1148b"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -5.0,
+                            1.4452146005033
+                        ],
+                        [
+                            -5.0,
+                            2.0
+                        ],
+                        [
+                            -5.1154550019621,
+                            2.0
+                        ],
+                        [
+                            -5.0,
+                            1.4452146005033
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1-RTC",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "N01W006_2018_01_19_010910",
+                "description": "Sentinel-1 Radiometric Terrain Corrected (RTC) SAR Backscatter is a product processed from Sentinel-1 ground range detected (GRD) and is compliant with CEOS Analysis Ready Data for Land (CARD4L) specifications for Normalised Radar Backscatter (NRB) products [https://collections.eurodatacube.com/card4l/].",
+                "startDate": "2018-01-19T18:32:40.933699Z",
+                "completionDate": "2018-01-19T18:33:05.932397Z",
+                "productType": "RTC",
+                "platform": "S1B",
+                "resolution": 20.0,
+                "orbitNumber": 9244,
+                "updated": "2022-02-21T06:44:59.384377Z",
+                "published": "2022-02-21T06:44:59.384377Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/d6b92cde-b9fc-5c14-b3bf-97eb6081389a",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for d6b92cde-b9fc-5c14-b3bf-97eb6081389a",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1-RTC/d6b92cde-b9fc-5c14-b3bf-97eb6081389a.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -5.038485000654034,
+                        1.8150715335011
+                    ]
+                },
+                "instrument": "C-SAR",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "2",
+                "sensorMode": "IW",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-5,1.4452146005033 -5,2 -5.1154550019621,2.0 -5,1.4452146005033</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1-RTC/SAR/RTC/2018/01/19/N01W006_2018_01_19_010910",
+                "orbitDirection": "ASCENDING",
+                "timeliness": null,
+                "relativeOrbitNumber": 118,
+                "processingBaseline": null
+            },
+            "id": "d6b92cde-b9fc-5c14-b3bf-97eb6081389a"
+        }
+    ],
+    "properties": {
+        "id": "d8396279-b0ff-53e3-b7d6-6f86274530ee",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=RTC"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

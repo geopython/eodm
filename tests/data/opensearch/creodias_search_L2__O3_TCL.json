@@ -1,0 +1,227 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-5P",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S5P_RPRO_L2__O3_TCL_20180430T105025_20180506T131803_02867_03_020401_20230329T120928.nc",
+                "startDate": "2018-04-30T10:50:25Z",
+                "completionDate": "2018-05-06T13:18:03Z",
+                "productType": "L2__O3_TCL",
+                "platform": "S5P",
+                "resolution": 0.0,
+                "orbitNumber": 2867,
+                "updated": "2023-05-16T00:20:33.489467Z",
+                "published": "2023-04-29T08:41:14.124733Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/ffa9dc1c-fb17-4324-b616-22e8e376e788",
+                        "size": 1072903,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for ffa9dc1c-fb17-4324-b616-22e8e376e788",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-5P/ffa9dc1c-fb17-4324-b616-22e8e376e788.json"
+                    }
+                ],
+                "description": "The Copernicus Sentinel-5 Precursor mission dedicated to monitoring our atmosphere, consists of one satellite carrying the TROPOspheric Monitoring Instrument (TROPOMI) instrument. It aims to fill in global atmospheric data gap between the retired ENVISAT and AURA missions and the upcoming Sentinel-5 mission. The primary goal of TROPOMI is to provide daily global observations of key atmospheric constituents related to monitoring and forecasting air quality, the ozone layer, and climate change [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-5p].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "TROPOMI",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": "L2",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-5P/TROPOMI/L2__O3_TCL/2018/04/30/S5P_RPRO_L2__O3_TCL_20180430T105025_20180506T131803_02867_03_020401_20230329T120928.nc",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 20401.0
+            },
+            "id": "ffa9dc1c-fb17-4324-b616-22e8e376e788"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-5P",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S5P_RPRO_L2__O3_TCL_20180430T004123_20180503T123326_02843_03_020401_20230329T120919.nc",
+                "startDate": "2018-04-30T00:41:23Z",
+                "completionDate": "2018-05-03T12:33:26Z",
+                "productType": "L2__O3_TCL",
+                "platform": "S5P",
+                "resolution": 0.0,
+                "orbitNumber": 2843,
+                "updated": "2023-05-18T20:04:24.468934Z",
+                "published": "2023-05-18T20:04:24.468934Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/0d787d85-797a-4d53-97ba-fcd79d4b6c4d",
+                        "size": 1051288,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 0d787d85-797a-4d53-97ba-fcd79d4b6c4d",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-5P/0d787d85-797a-4d53-97ba-fcd79d4b6c4d.json"
+                    }
+                ],
+                "description": "The Copernicus Sentinel-5 Precursor mission dedicated to monitoring our atmosphere, consists of one satellite carrying the TROPOspheric Monitoring Instrument (TROPOMI) instrument. It aims to fill in global atmospheric data gap between the retired ENVISAT and AURA missions and the upcoming Sentinel-5 mission. The primary goal of TROPOMI is to provide daily global observations of key atmospheric constituents related to monitoring and forecasting air quality, the ozone layer, and climate change [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-5p].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "TROPOMI",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": "L2",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-5P/TROPOMI/L2__O3_TCL/2018/04/30/S5P_RPRO_L2__O3_TCL_20180430T004123_20180503T123326_02843_03_020401_20230329T120919.nc",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 20401.0
+            },
+            "id": "0d787d85-797a-4d53-97ba-fcd79d4b6c4d"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-5P",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S5P_NRTI_L2__O3_TCL_20240917T000000_20240918T000000_00000_03_000000_20240919T000001.nc",
+                "startDate": "2024-09-14T23:55:12Z",
+                "completionDate": "2024-09-18T22:30:24Z",
+                "productType": "L2__O3_TCL",
+                "platform": "S5P",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-09-19T01:28:29.788199Z",
+                "published": "2024-09-19T01:22:37.719533Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/bea45860-9aec-4ddc-a2fd-2a370c1f5977",
+                        "size": 1285935,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for bea45860-9aec-4ddc-a2fd-2a370c1f5977",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-5P/bea45860-9aec-4ddc-a2fd-2a370c1f5977.json"
+                    }
+                ],
+                "description": "The Copernicus Sentinel-5 Precursor mission dedicated to monitoring our atmosphere, consists of one satellite carrying the TROPOspheric Monitoring Instrument (TROPOMI) instrument. It aims to fill in global atmospheric data gap between the retired ENVISAT and AURA missions and the upcoming Sentinel-5 mission. The primary goal of TROPOMI is to provide daily global observations of key atmospheric constituents related to monitoring and forecasting air quality, the ozone layer, and climate change [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-5p].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "TROPOMI",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": "L2",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-5P/TROPOMI/L2__O3_TCL/2024/09/14/S5P_NRTI_L2__O3_TCL_20240917T000000_20240918T000000_00000_03_000000_20240919T000001",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0.0
+            },
+            "id": "bea45860-9aec-4ddc-a2fd-2a370c1f5977"
+        }
+    ],
+    "properties": {
+        "id": "d82f3168-a192-5db5-b5af-38620c0efa94",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=L2__O3_TCL"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

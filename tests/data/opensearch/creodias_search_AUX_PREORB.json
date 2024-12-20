@@ -1,0 +1,227 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1A_OPER_AUX_PREORB_OPOD_20231003T000342_V20231002T233003_20231003T060503.EOF",
+                "startDate": "2023-10-02T23:30:03Z",
+                "completionDate": "2023-10-03T06:05:03Z",
+                "productType": "AUX_PREORB",
+                "platform": "SENTINEL-1",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2023-11-03T12:59:37.991355Z",
+                "published": "2023-11-03T12:59:32.899854Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/b064ccb3-bd7c-4d95-a313-1359c54bf75d",
+                        "size": 1179426,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for b064ccb3-bd7c-4d95-a313-1359c54bf75d",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/b064ccb3-bd7c-4d95-a313-1359c54bf75d.json"
+                    }
+                ],
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/AUX/AUX_PREORB/2023/10/02/S1A_OPER_AUX_PREORB_OPOD_20231003T000342_V20231002T233003_20231003T060503.EOF",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0
+            },
+            "id": "b064ccb3-bd7c-4d95-a313-1359c54bf75d"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1A_OPER_AUX_PREORB_OPOD_20231002T154304_V20231002T151620_20231002T215120.EOF",
+                "startDate": "2023-10-02T15:16:20Z",
+                "completionDate": "2023-10-02T21:51:20Z",
+                "productType": "AUX_PREORB",
+                "platform": "SENTINEL-1",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2023-11-03T12:59:31.337726Z",
+                "published": "2023-11-03T12:59:26.509841Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/f18ca62f-bd8a-46d5-9734-54151ec16f8d",
+                        "size": 1179663,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for f18ca62f-bd8a-46d5-9734-54151ec16f8d",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/f18ca62f-bd8a-46d5-9734-54151ec16f8d.json"
+                    }
+                ],
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/AUX/AUX_PREORB/2023/10/02/S1A_OPER_AUX_PREORB_OPOD_20231002T154304_V20231002T151620_20231002T215120.EOF",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0
+            },
+            "id": "f18ca62f-bd8a-46d5-9734-54151ec16f8d"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1A_OPER_AUX_PREORB_OPOD_20231002T140609_V20231002T133736_20231002T201236.EOF",
+                "startDate": "2023-10-02T13:37:36Z",
+                "completionDate": "2023-10-02T20:12:36Z",
+                "productType": "AUX_PREORB",
+                "platform": "SENTINEL-1",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2023-11-03T12:59:33.983150Z",
+                "published": "2023-11-03T12:59:29.143263Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/5560a09d-d4d2-4a26-945f-ee130e8eada1",
+                        "size": 1179629,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 5560a09d-d4d2-4a26-945f-ee130e8eada1",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/5560a09d-d4d2-4a26-945f-ee130e8eada1.json"
+                    }
+                ],
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/AUX/AUX_PREORB/2023/10/02/S1A_OPER_AUX_PREORB_OPOD_20231002T140609_V20231002T133736_20231002T201236.EOF",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0
+            },
+            "id": "5560a09d-d4d2-4a26-945f-ee130e8eada1"
+        }
+    ],
+    "properties": {
+        "id": "c5712528-ae60-5534-bb54-d202da9248b1",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=AUX_PREORB"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

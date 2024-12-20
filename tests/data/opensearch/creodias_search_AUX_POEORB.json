@@ -1,0 +1,227 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-3",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S3A_REP1_AUX_POEORB_POD__20161216T083833_V20160226T215943_20160227T235943_DGNS.EOF",
+                "startDate": "2016-02-26T21:59:43Z",
+                "completionDate": "2016-02-27T23:59:43Z",
+                "productType": "AUX_POEORB",
+                "platform": "SENTINEL-3",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2023-10-25T18:03:45.644138Z",
+                "published": "2023-10-25T16:30:52.016082Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/b30f2bbf-7f02-494a-b3f4-3ea11cd3d14d",
+                        "size": 4410152,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for b30f2bbf-7f02-494a-b3f4-3ea11cd3d14d",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-3/b30f2bbf-7f02-494a-b3f4-3ea11cd3d14d.json"
+                    }
+                ],
+                "description": "Sentinel-3 is a constellation of two radar imaging satellites developed to support Copernicus ocean, land, atmospheric, emergency, security and cryospheric applications. Both S3A, launched in February 2016, and S3B, launched in April 2018, are part of the Copernicus Programme- the European Union’s Earth observation program, managed by the European Commission (COM) [https://www.eoportal.org/satellite-missions/copernicus-sentinel-3]. The spacecraft carries four main instruments: OLCI (Ocean and Land Colour Instrument), SLSTR (Sea and Land Surface Temperature Instrument), SRAL (SAR Radar Altimeter) and MWR (Microwave Radiometer). The SENTINEL-3 mission is jointly operated by the European Space Agency (ESA) and supported by EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites) [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-3].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "AUX",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-3/AUX/AUX_POEORB/2016/02/26/S3A_REP1_AUX_POEORB_POD__20161216T083833_V20160226T215943_20160227T235943_DGNS.EOF",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0
+            },
+            "id": "b30f2bbf-7f02-494a-b3f4-3ea11cd3d14d"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-3",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S3A_REP1_AUX_POEORB_POD__20161216T181714_V20160225T215943_20160226T235943_DGNS.EOF",
+                "startDate": "2016-02-25T21:59:43Z",
+                "completionDate": "2016-02-26T23:59:43Z",
+                "productType": "AUX_POEORB",
+                "platform": "SENTINEL-3",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2023-10-25T18:03:54.474890Z",
+                "published": "2023-10-25T16:30:58.992446Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/da735bfc-a3f3-4f5c-9801-9da14eb8354a",
+                        "size": 4412270,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for da735bfc-a3f3-4f5c-9801-9da14eb8354a",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-3/da735bfc-a3f3-4f5c-9801-9da14eb8354a.json"
+                    }
+                ],
+                "description": "Sentinel-3 is a constellation of two radar imaging satellites developed to support Copernicus ocean, land, atmospheric, emergency, security and cryospheric applications. Both S3A, launched in February 2016, and S3B, launched in April 2018, are part of the Copernicus Programme- the European Union’s Earth observation program, managed by the European Commission (COM) [https://www.eoportal.org/satellite-missions/copernicus-sentinel-3]. The spacecraft carries four main instruments: OLCI (Ocean and Land Colour Instrument), SLSTR (Sea and Land Surface Temperature Instrument), SRAL (SAR Radar Altimeter) and MWR (Microwave Radiometer). The SENTINEL-3 mission is jointly operated by the European Space Agency (ESA) and supported by EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites) [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-3].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "AUX",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-3/AUX/AUX_POEORB/2016/02/25/S3A_REP1_AUX_POEORB_POD__20161216T181714_V20160225T215943_20160226T235943_DGNS.EOF",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0
+            },
+            "id": "da735bfc-a3f3-4f5c-9801-9da14eb8354a"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-3",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S3A_REP1_AUX_POEORB_POD__20161216T073757_V20160223T215943_20160224T235943_DGNS.EOF",
+                "startDate": "2016-02-23T21:59:43Z",
+                "completionDate": "2016-02-24T23:59:43Z",
+                "productType": "AUX_POEORB",
+                "platform": "SENTINEL-3",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2023-10-25T18:03:39.968644Z",
+                "published": "2023-10-25T16:30:48.269750Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/7b44c828-d789-45c4-af45-86d763a883b1",
+                        "size": 4415377,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 7b44c828-d789-45c4-af45-86d763a883b1",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-3/7b44c828-d789-45c4-af45-86d763a883b1.json"
+                    }
+                ],
+                "description": "Sentinel-3 is a constellation of two radar imaging satellites developed to support Copernicus ocean, land, atmospheric, emergency, security and cryospheric applications. Both S3A, launched in February 2016, and S3B, launched in April 2018, are part of the Copernicus Programme- the European Union’s Earth observation program, managed by the European Commission (COM) [https://www.eoportal.org/satellite-missions/copernicus-sentinel-3]. The spacecraft carries four main instruments: OLCI (Ocean and Land Colour Instrument), SLSTR (Sea and Land Surface Temperature Instrument), SRAL (SAR Radar Altimeter) and MWR (Microwave Radiometer). The SENTINEL-3 mission is jointly operated by the European Space Agency (ESA) and supported by EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites) [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-3].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": "AUX",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-3/AUX/AUX_POEORB/2016/02/23/S3A_REP1_AUX_POEORB_POD__20161216T073757_V20160223T215943_20160224T235943_DGNS.EOF",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0
+            },
+            "id": "7b44c828-d789-45c4-af45-86d763a883b1"
+        }
+    ],
+    "properties": {
+        "id": "6f2020b2-0c4d-507b-b95b-4eb49ae1648e",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=AUX_POEORB"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            41.90328,
+                            52.74858
+                        ],
+                        [
+                            45.46413,
+                            52.7881
+                        ],
+                        [
+                            45.44228,
+                            50.60056
+                        ],
+                        [
+                            42.04882,
+                            50.56399
+                        ],
+                        [
+                            41.90328,
+                            52.74858
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "LANDSAT-8-ESA",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "LC81730242016363MTI00",
+                "description": "Landsat-8 was launched on 11 February 2013. The satellite is part of the long-running Landsat programme led by USGS and NASA and carries the Operational Land Imager (OLI) and the Thermal Infrared Sensor (TIRS). The Operational Land Imager (OLI), on board Landsat-8 measures in the VIS, NIR and SWIR portions of the spectrum. Its images have 15 m panchromatic and 30 m multi-spectral spatial resolutions along a 185 km wide swath, covering wide areas of the Earth’s landscape while providing sufficient resolution to distinguish features like urban centres, farms, forests and other land uses. The entire Earth falls within view once every 16 days due to Landsat-8’s near-polar orbit. The Thermal Infra-Red Sensor instrument, on board Landsat-8, is a thermal imager operating in pushbroom mode with two Infra-Red channels: 10.8 µm and 12 µm with 100 m spatial resolution [https://creodias.eu/eodata/landsat-8/].",
+                "startDate": "2016-12-28T07:59:34.957912Z",
+                "completionDate": "2016-12-28T07:59:34.957912Z",
+                "productType": "L1GT",
+                "platform": "LANDSAT-8",
+                "resolution": 100.0,
+                "orbitNumber": 0,
+                "updated": "2016-12-28T12:55:09.675857Z",
+                "published": "2016-12-28T12:55:09.675857Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/86c8f3f5-5fb2-5765-836c-e20ab623c84f",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 86c8f3f5-5fb2-5765-836c-e20ab623c84f",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/LANDSAT-8-ESA/86c8f3f5-5fb2-5765-836c-e20ab623c84f.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        43.683705,
+                        51.676045
+                    ]
+                },
+                "instrument": "OLI_TIRS",
+                "phase": null,
+                "organisationName": "USGS",
+                "processingLevel": "LEVEL1GT",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Landsat-8/OLI_TIRS/L1GT/2016/12/28/LC81730242016363MTI00/LC81730242016363MTI00.png",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>41.90328,52.74858 45.46413,52.7881 45.44228,50.60056 42.04882,50.56399 41.90328,52.74858</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Landsat-8-ESA/OLI_TIRS/L1GT/2016/12/28/LC81730242016363MTI00",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "86c8f3f5-5fb2-5765-836c-e20ab623c84f"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            41.32798,
+                            51.32886
+                        ],
+                        [
+                            44.77725,
+                            51.38623
+                        ],
+                        [
+                            44.78725,
+                            49.1954
+                        ],
+                        [
+                            41.4924,
+                            49.1423
+                        ],
+                        [
+                            41.32798,
+                            51.32886
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "LANDSAT-8-ESA",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "LC81730252016363MTI00",
+                "description": "Landsat-8 was launched on 11 February 2013. The satellite is part of the long-running Landsat programme led by USGS and NASA and carries the Operational Land Imager (OLI) and the Thermal Infrared Sensor (TIRS). The Operational Land Imager (OLI), on board Landsat-8 measures in the VIS, NIR and SWIR portions of the spectrum. Its images have 15 m panchromatic and 30 m multi-spectral spatial resolutions along a 185 km wide swath, covering wide areas of the Earth’s landscape while providing sufficient resolution to distinguish features like urban centres, farms, forests and other land uses. The entire Earth falls within view once every 16 days due to Landsat-8’s near-polar orbit. The Thermal Infra-Red Sensor instrument, on board Landsat-8, is a thermal imager operating in pushbroom mode with two Infra-Red channels: 10.8 µm and 12 µm with 100 m spatial resolution [https://creodias.eu/eodata/landsat-8/].",
+                "startDate": "2016-12-28T07:59:58.840478Z",
+                "completionDate": "2016-12-28T07:59:58.840478Z",
+                "productType": "L1GT",
+                "platform": "LANDSAT-8",
+                "resolution": 100.0,
+                "orbitNumber": 0,
+                "updated": "2016-12-28T13:04:40.041101Z",
+                "published": "2016-12-28T13:04:40.041101Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/7b5e1582-26fc-518b-ba59-2c4964aa7533",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 7b5e1582-26fc-518b-ba59-2c4964aa7533",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/LANDSAT-8-ESA/7b5e1582-26fc-518b-ba59-2c4964aa7533.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        43.057615,
+                        50.264265
+                    ]
+                },
+                "instrument": "OLI_TIRS",
+                "phase": null,
+                "organisationName": "USGS",
+                "processingLevel": "LEVEL1GT",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Landsat-8/OLI_TIRS/L1GT/2016/12/28/LC81730252016363MTI00/LC81730252016363MTI00.png",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>41.32798,51.32886 44.77725,51.38623 44.78725,49.1954 41.4924,49.1423 41.32798,51.32886</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Landsat-8-ESA/OLI_TIRS/L1GT/2016/12/28/LC81730252016363MTI00",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "7b5e1582-26fc-518b-ba59-2c4964aa7533"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            31.51893,
+                            72.06492
+                        ],
+                        [
+                            38.72108,
+                            71.98651
+                        ],
+                        [
+                            38.12141,
+                            69.79598
+                        ],
+                        [
+                            31.675,
+                            69.86526
+                        ],
+                        [
+                            31.51893,
+                            72.06492
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "LANDSAT-8-ESA",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "LC81890102013085KIS00",
+                "description": "Landsat-8 was launched on 11 February 2013. The satellite is part of the long-running Landsat programme led by USGS and NASA and carries the Operational Land Imager (OLI) and the Thermal Infrared Sensor (TIRS). The Operational Land Imager (OLI), on board Landsat-8 measures in the VIS, NIR and SWIR portions of the spectrum. Its images have 15 m panchromatic and 30 m multi-spectral spatial resolutions along a 185 km wide swath, covering wide areas of the Earth’s landscape while providing sufficient resolution to distinguish features like urban centres, farms, forests and other land uses. The entire Earth falls within view once every 16 days due to Landsat-8’s near-polar orbit. The Thermal Infra-Red Sensor instrument, on board Landsat-8, is a thermal imager operating in pushbroom mode with two Infra-Red channels: 10.8 µm and 12 µm with 100 m spatial resolution [https://creodias.eu/eodata/landsat-8/].",
+                "startDate": "2013-03-26T09:32:08.181961Z",
+                "completionDate": "2013-03-26T09:32:08.181961Z",
+                "productType": "L1GT",
+                "platform": "LANDSAT-8",
+                "resolution": 100.0,
+                "orbitNumber": 0,
+                "updated": "2016-08-07T04:22:01.566926Z",
+                "published": "2016-08-07T04:22:01.566926Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/f9efcfcd-0c9d-57d1-a713-20489a34f8ae",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for f9efcfcd-0c9d-57d1-a713-20489a34f8ae",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/LANDSAT-8-ESA/f9efcfcd-0c9d-57d1-a713-20489a34f8ae.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        35.120005,
+                        70.93045
+                    ]
+                },
+                "instrument": "OLI_TIRS",
+                "phase": null,
+                "organisationName": "USGS",
+                "processingLevel": "LEVEL1GT",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>31.51893,72.06492 38.72108,71.98651 38.12141,69.79598 31.675,69.86526 31.51893,72.06492</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Landsat-8-ESA/OLI_TIRS/L1GT/2013/03/26/LC81890102013085KIS00",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "f9efcfcd-0c9d-57d1-a713-20489a34f8ae"
+        }
+    ],
+    "properties": {
+        "id": "dbb47cbe-7cc5-5482-b71a-8a62e22b25f8",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=L1GT"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

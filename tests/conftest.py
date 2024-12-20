@@ -3,9 +3,11 @@ from pathlib import Path
 
 import pytest
 import respx
+from data.test_data import STAC_COLLECTIONS, STAC_ITEMS
 from httpx import Response
 from pytest_mock import MockerFixture
-from test_data import STAC_COLLECTIONS, STAC_ITEMS
+
+DATA_DIR = Path(__file__).parent / "data"
 
 
 @pytest.fixture()
@@ -58,3 +60,33 @@ def mock_post_stac_api_collections_endpoint(respx_mock: respx.MockRouter):
         return_value=Response(204)
     )
     return post_mock
+
+
+@pytest.fixture()
+def mock_opensearch_describe(respx_mock: respx.MockRouter):
+    opensearch_data_dir = DATA_DIR / "opensearch" / "creodias_describe_all.xml"
+
+    with open(opensearch_data_dir) as f:
+        data = f.read()
+
+    mock = respx_mock.get(
+        "https://finder.creodias.eu/resto/api/collections/describe.xml"
+    ).mock(return_value=Response(200, content=data))
+
+    return mock
+
+
+@pytest.fixture()
+def mock_opensearch_search(respx_mock: respx.MockRouter, opensearch_product_type: str):
+    opensearch_data_dir = (
+        DATA_DIR / "opensearch" / f"creodias_search_{opensearch_product_type}.json"
+    )
+
+    with open(opensearch_data_dir) as f:
+        data = f.read()
+
+    mock = respx_mock.get(
+        f"https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType={opensearch_product_type}"
+    ).mock(return_value=Response(200, content=data))
+
+    return mock

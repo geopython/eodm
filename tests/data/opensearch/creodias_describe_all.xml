@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:time="http://a9.com/-/opensearch/extensions/time/1.0/" xmlns:geo="http://a9.com/-/opensearch/extensions/geo/1.0/" xmlns:eo="http://a9.com/-/opensearch/extensions/eo/1.0/" xmlns:parameters="http://a9.com/-/spec/opensearch/extensions/parameters/1.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:resto="http://mapshup.info/-/resto/2.0/" xml:lang="en">
+    <ShortName>Collections</ShortName>
+    <Description>Search on all collections</Description>
+    <Url type="application/json" rel="results" template="https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords={count?}&amp;index={startIndex?}&amp;page={startPage?}&amp;identifier={geo:uid?}&amp;geometry={geo:geometry?}&amp;box={geo:box?}&amp;lon={geo:lon?}&amp;lat={geo:lat?}&amp;radius={geo:radius?}&amp;startDate={time:start?}&amp;completionDate={time:end?}&amp;productIdentifier={eo:productIdentifier?}&amp;productType={eo:productType?}&amp;processingLevel={eo:processingLevel?}&amp;platform={eo:platform?}&amp;instrument={eo:instrument?}&amp;resolution={eo:resolution?}&amp;organisationName={eo:organisationName?}&amp;orbitNumber={eo:orbitNumber?}&amp;sensorMode={eo:sensorMode?}&amp;cloudCover={eo:cloudCover?}&amp;updated={dc:date?}&amp;publishedAfter={resto:publishedAfter?}&amp;publishedBefore={resto:publishedBefore?}&amp;sortParam={resto:sortParam?}&amp;sortOrder={resto:sortOrder?}&amp;status={resto:status?}&amp;exactCount={resto:exactCount?};phase={resto:phase?}&amp;cycle={resto:cycle?}&amp;bands={resto:bands?}&amp;path={resto:path?}&amp;row={resto:row?}&amp;sunAzimuth={resto:sunAzimuth?}&amp;sunElevation={resto:sunElevation?}&amp;version={resto:version?}&amp;orbitDirection={eo:orbitDirection?}&amp;timeliness={sentinel:timeliness?}&amp;relativeOrbitNumber={sentinel:relativeOrbitNumber?}&amp;processingBaseline={sentinel:processingBaseline?}&amp;polarisation={resto:polarisation?}&amp;swath={resto:swath?}&amp;tileId={eo:tileId?}">
+        <parameters:Parameter name="maxRecords" value="{count}" title="Number of results returned per page (default 20)" maxInclusive="2000" minInclusive="1"/>
+        <parameters:Parameter name="index" value="{startIndex}" maxInclusive="1000000000" minInclusive="1"/>
+        <parameters:Parameter name="page" value="{startPage}" maxInclusive="1000000000" minInclusive="1"/>
+        <parameters:Parameter name="identifier" value="{geo:uuid}" title="OpenSearch identifier" pattern="^[0-9a-fA-F-]"/>
+        <parameters:Parameter name="geometry" value="{geo:geometry}" title="Region of Interest defined in Well Known Text standard (WKT) with coordinates in decimal degrees (EPSG:4326)"/>
+        <parameters:Parameter name="box" value="{geo:box}" title="Region of Interest defined by 'west, south, east, north' coordinates of longitude, latitude, in decimal degrees (EPSG:4326)"/>
+        <parameters:Parameter name="lon" value="{geo:lon}" title="Longitude expressed in decimal degrees (EPSG:4326) - should be used with geo:lat" maxInclusive="180" minInclusive="-180"/>
+        <parameters:Parameter name="lat" value="{geo:lat}" title="Latitude expressed in decimal degrees (EPSG:4326) - should be used with geo:lon" maxInclusive="90" minInclusive="-90"/>
+        <parameters:Parameter name="radius" value="{geo:radius}" title="Expressed in meters - should be used with geo:lon and geo:lat" minInclusive="1"/>
+        <parameters:Parameter name="startDate" value="{time:start}" title="Beginning of the time slice of the search query. Format should follow RFC-3339" pattern="^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]+)?(|Z|[\+\-][0-9]{2}:[0-9]{2}))?$"/>
+        <parameters:Parameter name="completionDate" value="{time:end}" title="End of the time slice of the search query. Format should follow RFC-3339" pattern="^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]+)?(|Z|[\+\-][0-9]{2}:[0-9]{2}))?$"/>
+        <parameters:Parameter name="productIdentifier" value="{eo:productIdentifier}"/>
+        <parameters:Parameter name="productType" value="{eo:productType}">
+            <parameters:Option value="ASA_APP_1P"/>
+            <parameters:Option value="ASA_APS_1P"/>
+            <parameters:Option value="ASA_IMP_1P"/>
+            <parameters:Option value="ASA_IMS_1P"/>
+            <parameters:Option value="ASA_WSS_1P"/>
+            <parameters:Option value="FRS"/>
+            <parameters:Option value="DGE_30"/>
+            <parameters:Option value="DGE_90"/>
+            <parameters:Option value="DTE_30"/>
+            <parameters:Option value="DTE_90"/>
+            <parameters:Option value="S1SAR_L3_IW_MCM"/>
+            <parameters:Option value="S1SAR_L3_IW_MCY"/>
+            <parameters:Option value="S1SAR_L3_EW_MCM"/>
+            <parameters:Option value="S1SAR_L3_EW_MCY"/>
+            <parameters:Option value="S2MSI_L3__MCY"/>
+            <parameters:Option value="S2MSI_L3__MCQ"/>
+            <parameters:Option value="S2MSI_L3__WCY"/>
+            <parameters:Option value="L1G"/>
+            <parameters:Option value="L1T"/>
+            <parameters:Option value="GTC_1P"/>
+            <parameters:Option value="L1GT"/>
+            <parameters:Option value="L1TP"/>
+            <parameters:Option value="L2SP"/>
+            <parameters:Option value="GLC"/>
+            <parameters:Option value="CARD-BS"/>
+            <parameters:Option value="CARD-COH6"/>
+            <parameters:Option value="CARD-COH12"/>
+            <parameters:Option value="GRD"/>
+            <parameters:Option value="GRD-COG"/>
+            <parameters:Option value="OCN"/>
+            <parameters:Option value="RAW"/>
+            <parameters:Option value="SLC"/>
+            <parameters:Option value="S1_RAW__0S"/>
+            <parameters:Option value="S2_RAW__0S"/>
+            <parameters:Option value="S3_RAW__0S"/>
+            <parameters:Option value="S4_RAW__0S"/>
+            <parameters:Option value="S5_RAW__0S"/>
+            <parameters:Option value="S6_RAW__0S"/>
+            <parameters:Option value="IW_RAW__0S"/>
+            <parameters:Option value="EW_RAW__0S"/>
+            <parameters:Option value="S1_SLC__1S"/>
+            <parameters:Option value="S2_SLC__1S"/>
+            <parameters:Option value="S3_SLC__1S"/>
+            <parameters:Option value="S4_SLC__1S"/>
+            <parameters:Option value="S5_SLC__1S"/>
+            <parameters:Option value="S6_SLC__1S"/>
+            <parameters:Option value="IW_SLC__1S"/>
+            <parameters:Option value="EW_SLC__1S"/>
+            <parameters:Option value="WV_SLC__1S"/>
+            <parameters:Option value="S1_GRDF_1S"/>
+            <parameters:Option value="S2_GRDF_1S"/>
+            <parameters:Option value="S3_GRDF_1S"/>
+            <parameters:Option value="S4_GRDF_1S"/>
+            <parameters:Option value="S5_GRDF_1S"/>
+            <parameters:Option value="S6_GRDF_1S"/>
+            <parameters:Option value="S1_GRDH_1S"/>
+            <parameters:Option value="S2_GRDH_1S"/>
+            <parameters:Option value="S3_GRDH_1S"/>
+            <parameters:Option value="S4_GRDH_1S"/>
+            <parameters:Option value="S5_GRDH_1S"/>
+            <parameters:Option value="S6_GRDH_1S"/>
+            <parameters:Option value="S1_GRDM_1S"/>
+            <parameters:Option value="S2_GRDM_1S"/>
+            <parameters:Option value="S3_GRDM_1S"/>
+            <parameters:Option value="S4_GRDM_1S"/>
+            <parameters:Option value="S5_GRDM_1S"/>
+            <parameters:Option value="S6_GRDM_1S"/>
+            <parameters:Option value="IW_GRDH_1S"/>
+            <parameters:Option value="IW_GRDM_1S"/>
+            <parameters:Option value="EW_GRDH_1S"/>
+            <parameters:Option value="EW_GRDM_1S"/>
+            <parameters:Option value="WV_GRDM_1S"/>
+            <parameters:Option value="S1_OCN__2S"/>
+            <parameters:Option value="S2_OCN__2S"/>
+            <parameters:Option value="S3_OCN__2S"/>
+            <parameters:Option value="S4_OCN__2S"/>
+            <parameters:Option value="S5_OCN__2S"/>
+            <parameters:Option value="S6_OCN__2S"/>
+            <parameters:Option value="IW_OCN__2S"/>
+            <parameters:Option value="EW_OCN__2S"/>
+            <parameters:Option value="WV_OCN__2S"/>
+            <parameters:Option value="S1_GRDF_1S-COG"/>
+            <parameters:Option value="S2_GRDF_1S-COG"/>
+            <parameters:Option value="S3_GRDF_1S-COG"/>
+            <parameters:Option value="S4_GRDF_1S-COG"/>
+            <parameters:Option value="S5_GRDF_1S-COG"/>
+            <parameters:Option value="S6_GRDF_1S-COG"/>
+            <parameters:Option value="S1_GRDH_1S-COG"/>
+            <parameters:Option value="S2_GRDH_1S-COG"/>
+            <parameters:Option value="S3_GRDH_1S-COG"/>
+            <parameters:Option value="S4_GRDH_1S-COG"/>
+            <parameters:Option value="S5_GRDH_1S-COG"/>
+            <parameters:Option value="S6_GRDH_1S-COG"/>
+            <parameters:Option value="S1_GRDM_1S-COG"/>
+            <parameters:Option value="S2_GRDM_1S-COG"/>
+            <parameters:Option value="S3_GRDM_1S-COG"/>
+            <parameters:Option value="S4_GRDM_1S-COG"/>
+            <parameters:Option value="S5_GRDM_1S-COG"/>
+            <parameters:Option value="S6_GRDM_1S-COG"/>
+            <parameters:Option value="IW_GRDH_1S-COG"/>
+            <parameters:Option value="IW_GRDM_1S-COG"/>
+            <parameters:Option value="EW_GRDH_1S-COG"/>
+            <parameters:Option value="EW_GRDM_1S-COG"/>
+            <parameters:Option value="WV_GRDM_1S-COG"/>
+            <parameters:Option value="S1_ETA__AX"/>
+            <parameters:Option value="S2_ETA__AX"/>
+            <parameters:Option value="S3_ETA__AX"/>
+            <parameters:Option value="S4_ETA__AX"/>
+            <parameters:Option value="S5_ETA__AX"/>
+            <parameters:Option value="S6_ETA__AX"/>
+            <parameters:Option value="EW_ETA__AX"/>
+            <parameters:Option value="IW_ETA__AX"/>
+            <parameters:Option value="AUX_PP1"/>
+            <parameters:Option value="AUX_CAL"/>
+            <parameters:Option value="AUX_INS"/>
+            <parameters:Option value="AUX_PP2"/>
+            <parameters:Option value="AUX_SCS"/>
+            <parameters:Option value="AUX_PREORB"/>
+            <parameters:Option value="AUX_POEORB"/>
+            <parameters:Option value="AUX_RESORB"/>
+            <parameters:Option value="AUX_RESATT"/>
+            <parameters:Option value="AUX_GNSSRD"/>
+            <parameters:Option value="AUX_PROQUA"/>
+            <parameters:Option value="RTC"/>
+            <parameters:Option value="S2MSI1C"/>
+            <parameters:Option value="S2MSI2A"/>
+            <parameters:Option value="AUX_UT1UTC"/>
+            <parameters:Option value="GIP_ATMIMA"/>
+            <parameters:Option value="GIP_ATMSAD"/>
+            <parameters:Option value="GIP_DATATI"/>
+            <parameters:Option value="GIP_LREXTR"/>
+            <parameters:Option value="GIP_INVLOC"/>
+            <parameters:Option value="GIP_SPAMOD"/>
+            <parameters:Option value="GIP_BLINDP"/>
+            <parameters:Option value="GIP_CLOINV"/>
+            <parameters:Option value="GIP_CLOPAR"/>
+            <parameters:Option value="GIP_PRDLOC"/>
+            <parameters:Option value="GIP_R2PARA"/>
+            <parameters:Option value="GIP_R2SWIR"/>
+            <parameters:Option value="GIP_R2DEPI"/>
+            <parameters:Option value="GIP_R2NOMO"/>
+            <parameters:Option value="GIP_R2ABCA"/>
+            <parameters:Option value="GIP_R2BINN"/>
+            <parameters:Option value="GIP_R2CRCO"/>
+            <parameters:Option value="GIP_G2PARA"/>
+            <parameters:Option value="GIP_G2PARE"/>
+            <parameters:Option value="GIP_EARMOD"/>
+            <parameters:Option value="GIP_GEOPAR"/>
+            <parameters:Option value="GIP_INTDET"/>
+            <parameters:Option value="GIP_TILPAR"/>
+            <parameters:Option value="GIP_RESPAR"/>
+            <parameters:Option value="GIP_MASPAR"/>
+            <parameters:Option value="GIP_JP2KPA"/>
+            <parameters:Option value="GIP_ECMWFP"/>
+            <parameters:Option value="GIP_DECOMP"/>
+            <parameters:Option value="GIP_OLQCPA"/>
+            <parameters:Option value="GIP_CONVER"/>
+            <parameters:Option value="GIP_L2ACAC"/>
+            <parameters:Option value="GIP_L2ACSC"/>
+            <parameters:Option value="GIP_PROBA2"/>
+            <parameters:Option value="GIP_HRTPAR"/>
+            <parameters:Option value="GIP_VIEDIR_B01"/>
+            <parameters:Option value="GIP_VIEDIR_B02"/>
+            <parameters:Option value="GIP_VIEDIR_B03"/>
+            <parameters:Option value="GIP_VIEDIR_B04"/>
+            <parameters:Option value="GIP_VIEDIR_B05"/>
+            <parameters:Option value="GIP_VIEDIR_B06"/>
+            <parameters:Option value="GIP_VIEDIR_B07"/>
+            <parameters:Option value="GIP_VIEDIR_B08"/>
+            <parameters:Option value="GIP_VIEDIR_B09"/>
+            <parameters:Option value="GIP_VIEDIR_B10"/>
+            <parameters:Option value="GIP_VIEDIR_B11"/>
+            <parameters:Option value="GIP_VIEDIR_B12"/>
+            <parameters:Option value="GIP_VIEDIR_B8A"/>
+            <parameters:Option value="GIP_R2EQOG_B01"/>
+            <parameters:Option value="GIP_R2EQOG_B02"/>
+            <parameters:Option value="GIP_R2EQOG_B03"/>
+            <parameters:Option value="GIP_R2EQOG_B04"/>
+            <parameters:Option value="GIP_R2EQOG_B05"/>
+            <parameters:Option value="GIP_R2EQOG_B06"/>
+            <parameters:Option value="GIP_R2EQOG_B07"/>
+            <parameters:Option value="GIP_R2EQOG_B08"/>
+            <parameters:Option value="GIP_R2EQOG_B09"/>
+            <parameters:Option value="GIP_R2EQOG_B10"/>
+            <parameters:Option value="GIP_R2EQOG_B11"/>
+            <parameters:Option value="GIP_R2EQOG_B12"/>
+            <parameters:Option value="GIP_R2EQOG_B8A"/>
+            <parameters:Option value="GIP_R2DEFI_B01"/>
+            <parameters:Option value="GIP_R2DEFI_B02"/>
+            <parameters:Option value="GIP_R2DEFI_B03"/>
+            <parameters:Option value="GIP_R2DEFI_B04"/>
+            <parameters:Option value="GIP_R2DEFI_B05"/>
+            <parameters:Option value="GIP_R2DEFI_B06"/>
+            <parameters:Option value="GIP_R2DEFI_B07"/>
+            <parameters:Option value="GIP_R2DEFI_B08"/>
+            <parameters:Option value="GIP_R2DEFI_B09"/>
+            <parameters:Option value="GIP_R2DEFI_B10"/>
+            <parameters:Option value="GIP_R2DEFI_B11"/>
+            <parameters:Option value="GIP_R2DEFI_B12"/>
+            <parameters:Option value="GIP_R2DEFI_B8A"/>
+            <parameters:Option value="GIP_R2WAFI_B01"/>
+            <parameters:Option value="GIP_R2WAFI_B02"/>
+            <parameters:Option value="GIP_R2WAFI_B03"/>
+            <parameters:Option value="GIP_R2WAFI_B04"/>
+            <parameters:Option value="GIP_R2WAFI_B05"/>
+            <parameters:Option value="GIP_R2WAFI_B06"/>
+            <parameters:Option value="GIP_R2WAFI_B07"/>
+            <parameters:Option value="GIP_R2WAFI_B08"/>
+            <parameters:Option value="GIP_R2WAFI_B09"/>
+            <parameters:Option value="GIP_R2WAFI_B10"/>
+            <parameters:Option value="GIP_R2WAFI_B11"/>
+            <parameters:Option value="GIP_R2WAFI_B12"/>
+            <parameters:Option value="GIP_R2WAFI_B8A"/>
+            <parameters:Option value="GIP_R2L2NC_B01"/>
+            <parameters:Option value="GIP_R2L2NC_B02"/>
+            <parameters:Option value="GIP_R2L2NC_B03"/>
+            <parameters:Option value="GIP_R2L2NC_B04"/>
+            <parameters:Option value="GIP_R2L2NC_B05"/>
+            <parameters:Option value="GIP_R2L2NC_B06"/>
+            <parameters:Option value="GIP_R2L2NC_B07"/>
+            <parameters:Option value="GIP_R2L2NC_B08"/>
+            <parameters:Option value="GIP_R2L2NC_B09"/>
+            <parameters:Option value="GIP_R2L2NC_B10"/>
+            <parameters:Option value="GIP_R2L2NC_B11"/>
+            <parameters:Option value="GIP_R2L2NC_B12"/>
+            <parameters:Option value="GIP_R2L2NC_B8A"/>
+            <parameters:Option value="GIP_R2DENT_B01"/>
+            <parameters:Option value="GIP_R2DENT_B02"/>
+            <parameters:Option value="GIP_R2DENT_B03"/>
+            <parameters:Option value="GIP_R2DENT_B04"/>
+            <parameters:Option value="GIP_R2DENT_B05"/>
+            <parameters:Option value="GIP_R2DENT_B06"/>
+            <parameters:Option value="GIP_R2DENT_B07"/>
+            <parameters:Option value="GIP_R2DENT_B08"/>
+            <parameters:Option value="GIP_R2DENT_B09"/>
+            <parameters:Option value="GIP_R2DENT_B10"/>
+            <parameters:Option value="GIP_R2DENT_B11"/>
+            <parameters:Option value="GIP_R2DENT_B12"/>
+            <parameters:Option value="GIP_R2DENT_B8A"/>
+            <parameters:Option value="GIP_R2DECT_B01"/>
+            <parameters:Option value="GIP_R2DECT_B02"/>
+            <parameters:Option value="GIP_R2DECT_B03"/>
+            <parameters:Option value="GIP_R2DECT_B04"/>
+            <parameters:Option value="GIP_R2DECT_B05"/>
+            <parameters:Option value="GIP_R2DECT_B06"/>
+            <parameters:Option value="GIP_R2DECT_B07"/>
+            <parameters:Option value="GIP_R2DECT_B08"/>
+            <parameters:Option value="GIP_R2DECT_B09"/>
+            <parameters:Option value="GIP_R2DECT_B10"/>
+            <parameters:Option value="GIP_R2DECT_B11"/>
+            <parameters:Option value="GIP_R2DECT_B12"/>
+            <parameters:Option value="GIP_R2DECT_B8A"/>
+            <parameters:Option value="GIP_R2EOB2_B01"/>
+            <parameters:Option value="GIP_R2EOB2_B02"/>
+            <parameters:Option value="GIP_R2EOB2_B03"/>
+            <parameters:Option value="GIP_R2EOB2_B04"/>
+            <parameters:Option value="GIP_R2EOB2_B05"/>
+            <parameters:Option value="GIP_R2EOB2_B06"/>
+            <parameters:Option value="GIP_R2EOB2_B07"/>
+            <parameters:Option value="GIP_R2EOB2_B08"/>
+            <parameters:Option value="GIP_R2EOB2_B09"/>
+            <parameters:Option value="GIP_R2EOB2_B10"/>
+            <parameters:Option value="GIP_R2EOB2_B11"/>
+            <parameters:Option value="GIP_R2EOB2_B12"/>
+            <parameters:Option value="GIP_R2EOB2_B8A"/>
+            <parameters:Option value="OL_1_EFR___"/>
+            <parameters:Option value="OL_1_EFR___"/>
+            <parameters:Option value="OL_1_ERR___"/>
+            <parameters:Option value="OL_2_LFR___"/>
+            <parameters:Option value="OL_2_LRR___"/>
+            <parameters:Option value="SL_1_RBT___"/>
+            <parameters:Option value="SL_2_LST___"/>
+            <parameters:Option value="SR_1_SRA___"/>
+            <parameters:Option value="SR_1_SRA_A_"/>
+            <parameters:Option value="SR_2_LAN___"/>
+            <parameters:Option value="SR_2_LAN_HY"/>
+            <parameters:Option value="SR_2_LAN_LI"/>
+            <parameters:Option value="SR_2_LAN_SI"/>
+            <parameters:Option value="OL_2_WFR___"/>
+            <parameters:Option value="OL_2_WRR___"/>
+            <parameters:Option value="SL_2_WST___"/>
+            <parameters:Option value="SR_2_WAT___"/>
+            <parameters:Option value="SL_2_FRP___"/>
+            <parameters:Option value="SR_1_SRA_BS"/>
+            <parameters:Option value="SY_2_SYN___"/>
+            <parameters:Option value="SY_2_V10___"/>
+            <parameters:Option value="SY_2_VG1___"/>
+            <parameters:Option value="SY_2_VGP___"/>
+            <parameters:Option value="SY_2_AOD___"/>
+            <parameters:Option value="AUX_GNSSRD"/>
+            <parameters:Option value="AUX_PROQUA"/>
+            <parameters:Option value="AX___OSF_AX"/>
+            <parameters:Option value="AX___FPO_AX"/>
+            <parameters:Option value="AX___FRO_AX"/>
+            <parameters:Option value="SR___ROE_AX"/>
+            <parameters:Option value="SL_2_SSTAAX"/>
+            <parameters:Option value="SL_2_DIMSAX"/>
+            <parameters:Option value="SR___MGNPAX"/>
+            <parameters:Option value="SR___POEPAX"/>
+            <parameters:Option value="SR_2_PCPPAX"/>
+            <parameters:Option value="SR___ROE_AX"/>
+            <parameters:Option value="AUX_MOEORB"/>
+            <parameters:Option value="AUX_PRCPTF"/>
+            <parameters:Option value="SR___MDO_AX"/>
+            <parameters:Option value="SR___POE_AX"/>
+            <parameters:Option value="L1B_IR_SIR"/>
+            <parameters:Option value="L1B_IR_UVN"/>
+            <parameters:Option value="L1B_RA_BD1"/>
+            <parameters:Option value="L1B_RA_BD2"/>
+            <parameters:Option value="L1B_RA_BD3"/>
+            <parameters:Option value="L1B_RA_BD4"/>
+            <parameters:Option value="L1B_RA_BD5"/>
+            <parameters:Option value="L1B_RA_BD6"/>
+            <parameters:Option value="L1B_RA_BD7"/>
+            <parameters:Option value="L1B_RA_BD8"/>
+            <parameters:Option value="L2__AER_AI"/>
+            <parameters:Option value="L2__AER_LH"/>
+            <parameters:Option value="L2__CH4___"/>
+            <parameters:Option value="L2__CLOUD_"/>
+            <parameters:Option value="L2__CO____"/>
+            <parameters:Option value="L2__HCHO__"/>
+            <parameters:Option value="L2__NO2___"/>
+            <parameters:Option value="L2__NP_BD3"/>
+            <parameters:Option value="L2__NP_BD6"/>
+            <parameters:Option value="L2__NP_BD7"/>
+            <parameters:Option value="L2__O3____"/>
+            <parameters:Option value="L2__O3__PR"/>
+            <parameters:Option value="L2__O3_TCL"/>
+            <parameters:Option value="L2__SO2___"/>
+            <parameters:Option value="AUX_CTMFCT"/>
+            <parameters:Option value="AUX_CTMANA"/>
+            <parameters:Option value="AUX_L1_CKD"/>
+            <parameters:Option value="AUX_O3_M"/>
+            <parameters:Option value="MW_2__AMR____"/>
+            <parameters:Option value="P4_1B_LR_____"/>
+            <parameters:Option value="P4_2__LR_____"/>
+            <parameters:Option value="AX____MOED_AX"/>
+            <parameters:Option value="AX____POE__AX"/>
+            <parameters:Option value="AX____ROE__AX"/>
+            <parameters:Option value="MIR_BWLD1C"/>
+            <parameters:Option value="MIR_BWLF1C"/>
+            <parameters:Option value="MIR_BWSD1C"/>
+            <parameters:Option value="MIR_BWSF1C"/>
+            <parameters:Option value="MIR_OSUDP2"/>
+            <parameters:Option value="MIR_SC_D1B"/>
+            <parameters:Option value="MIR_SC_F1B"/>
+            <parameters:Option value="MIR_SCLD1C"/>
+            <parameters:Option value="MIR_SCLF1C"/>
+            <parameters:Option value="MIR_SCSD1C"/>
+            <parameters:Option value="MIR_SMUDP2"/>
+            <parameters:Option value="MCD43A1"/>
+            <parameters:Option value="MCD43A2"/>
+            <parameters:Option value="MCD43A4"/>
+            <parameters:Option value="VNP43IA1"/>
+            <parameters:Option value="VNP43IA2"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="processingLevel" value="{eo:processingLevel}">
+            <parameters:Option value="LEVEL1B"/>
+            <parameters:Option value="LEVEL1P"/>
+            <parameters:Option value="LEVEL1G"/>
+            <parameters:Option value="LEVEL1T"/>
+            <parameters:Option value="LEVEL1GT"/>
+            <parameters:Option value="LEVELTC_1P"/>
+            <parameters:Option value="LEVEL1"/>
+            <parameters:Option value="LEVEL2"/>
+            <parameters:Option value="LEVEL3"/>
+            <parameters:Option value="LEVEL2SP"/>
+            <parameters:Option value="LEVEL0"/>
+            <parameters:Option value="1"/>
+            <parameters:Option value="1B"/>
+            <parameters:Option value="2"/>
+            <parameters:Option value="L1b"/>
+            <parameters:Option value="L1"/>
+            <parameters:Option value="L2"/>
+            <parameters:Option value="S2MSI1C"/>
+            <parameters:Option value="S2MSI2A"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="platform" value="{eo:platform}">
+            <parameters:Option value="LANDSAT-5"/>
+            <parameters:Option value="LANDSAT-7"/>
+            <parameters:Option value="LANDSAT-8"/>
+            <parameters:Option value="S1A"/>
+            <parameters:Option value="S1B"/>
+            <parameters:Option value="S1C"/>
+            <parameters:Option value="S2A"/>
+            <parameters:Option value="S2B"/>
+            <parameters:Option value="S2C"/>
+            <parameters:Option value="S3A"/>
+            <parameters:Option value="S3B"/>
+            <parameters:Option value="S5P"/>
+            <parameters:Option value="S6A"/>
+            <parameters:Option value="SENTINEL-1"/>
+            <parameters:Option value="SENTINEL-2"/>
+            <parameters:Option value="TerraAqua"/>
+            <parameters:Option value="Envisat"/>
+            <parameters:Option value="SMOS"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="instrument" value="{eo:instrument}">
+            <parameters:Option value="AMR-C"/>
+            <parameters:Option value="ASAR"/>
+            <parameters:Option value="AUX"/>
+            <parameters:Option value="C-SAR"/>
+            <parameters:Option value="ETM"/>
+            <parameters:Option value="MERIS"/>
+            <parameters:Option value="MIRAS"/>
+            <parameters:Option value="MODIS"/>
+            <parameters:Option value="MSI"/>
+            <parameters:Option value="OLCI"/>
+            <parameters:Option value="OLI_TIRS"/>
+            <parameters:Option value="P4"/>
+            <parameters:Option value="SAR"/>
+            <parameters:Option value="SLSTR"/>
+            <parameters:Option value="SRAL"/>
+            <parameters:Option value="SYNERGY"/>
+            <parameters:Option value="TM"/>
+            <parameters:Option value="TROPOMI"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="resolution" value="{eo:resolution}" title="Spatial resolution expressed in meters" pattern="^(\[|\]|[0-9])?[0-9]+$|^[0-9]+?(\[|\])$|^(\[|\])[0-9]+,[0-9]+(\[|\])$"/>
+        <parameters:Parameter name="organisationName" value="{eo:organisationName}">
+            <parameters:Option value="ESA"/>
+            <parameters:Option value="USGS"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="orbitNumber" value="{eo:orbitNumber}" pattern="^(\[|\]|[0-9])?[0-9]+$|^[0-9]+?(\[|\])$|^(\[|\])[0-9]+,[0-9]+(\[|\])$" minInclusive="1"/>
+        <parameters:Parameter name="sensorMode" value="{eo:sensorMode}">
+            <parameters:Option value="BUMPER"/>
+            <parameters:Option value="Earth Observation"/>
+            <parameters:Option value="EW"/>
+            <parameters:Option value="INS-NOBS"/>
+            <parameters:Option value="INS-RAW"/>
+            <parameters:Option value="INS-VIC"/>
+            <parameters:Option value="IW"/>
+            <parameters:Option value="SAM"/>
+            <parameters:Option value="SM"/>
+            <parameters:Option value="WV"/>
+            <parameters:Option value="DUAL"/>
+            <parameters:Option value="FULL"/>
+            <parameters:Option value="FULL-DUAL"/>
+            <parameters:Option value="DEFAULT"/>
+            <parameters:Option value="RPRO"/>
+            <parameters:Option value="NRTI"/>
+            <parameters:Option value="OFFL"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="cloudCover" value="{eo:cloudCover}" title="Cloud cover expressed in percent" pattern="^(\[|\]|[0-9])?[0-9]+$|^[0-9]+?(\[|\])$|^(\[|\])[0-9]+,[0-9]+(\[|\])$"/>
+        <parameters:Parameter name="updated" value="{dc:date}" title="Last update of the product within database" pattern="^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]+)?(|Z|[\+\-][0-9]{2}:[0-9]{2}))?$"/>
+        <parameters:Parameter name="publishedAfter" value="{resto:publishedAfter}" title="Product publication within search engine after specified date and time" pattern="^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]+)?(|Z|[\+\-][0-9]{2}:[0-9]{2}))?$"/>
+        <parameters:Parameter name="publishedBefore" value="{resto:publishedBefore}" title="Product publication within search engine before specified date and time" pattern="^[0-9]{4}-[0-9]{2}-[0-9]{2}(T[0-9]{2}:[0-9]{2}:[0-9]{2}(\.[0-9]+)?(|Z|[\+\-][0-9]{2}:[0-9]{2}))?$"/>
+        <parameters:Parameter name="sortParam" value="{resto:sortParam}" title="Sort results by parameter">
+            <parameters:Option value="startDate"/>
+            <parameters:Option value="updated"/>
+            <parameters:Option value="published"/>
+            <parameters:Option value="identifier"/>
+            <parameters:Option value="completionDate"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="sortOrder" value="{resto:sortOrder}" title="Sorting order (ascending or descending)" pattern="^(asc|desc|ascending|descending)$"/>
+        <parameters:Parameter name="status" value="{resto:status}" title="Feature status">
+            <parameters:Option value="ONLINE"/>
+            <parameters:Option value="OFFLINE"/>
+            <parameters:Option value="ALL"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="exactCount" value="{resto:exactCount}" title="Return exact count of products (default: 0)" pattern="^0|1$"/>
+        <parameters:Parameter name="phase" value="{resto:phase}">
+            <parameters:Option value="2"/>
+            <parameters:Option value="3"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="cycle" value="{resto:cycle}" pattern="^(\[|\]|[0-9])?[0-9]+$|^[0-9]+?(\[|\])$|^(\[|\])[0-9]+,[0-9]+(\[|\])$" minInclusive="1"/>
+        <parameters:Parameter name="bands" value="{resto:bands}">
+            <parameters:Option value="3"/>
+            <parameters:Option value="7"/>
+            <parameters:Option value="9"/>
+            <parameters:Option value="10"/>
+            <parameters:Option value="12"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="path" value="{resto:path}"/>
+        <parameters:Parameter name="row" value="{resto:row}"/>
+        <parameters:Parameter name="sunAzimuth" value="{resto:sunAzimuth}"/>
+        <parameters:Parameter name="sunElevation" value="{resto:sunElevation}"/>
+        <parameters:Parameter name="version" value="{resto:version}">
+            <parameters:Option value="v1.0"/>
+            <parameters:Option value="v1.1"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="orbitDirection" value="{eo:orbitDirection}">
+            <parameters:Option value="ASCENDING"/>
+            <parameters:Option value="DESCENDING"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="timeliness" value="{sentinel:timeliness}" title="Timeliness is the elapsed time after data downlink">
+            <parameters:Option value="NRT-10m"/>
+            <parameters:Option value="NRT-3h"/>
+            <parameters:Option value="Fast-24h"/>
+            <parameters:Option value="Off-line"/>
+            <parameters:Option value="Reprocessing"/>
+            <parameters:Option value="NR"/>
+            <parameters:Option value="NT"/>
+            <parameters:Option value="ST"/>
+            <parameters:Option value="NTC"/>
+            <parameters:Option value="STC"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="relativeOrbitNumber" value="{sentinel:relativeOrbitNumber}" title="The relative orbit number is a count of orbits from 1 to the number of orbits contained in a repeat cycle" pattern="^(\[|\]|[0-9])?[0-9]+$|^[0-9]+?(\[|\])$|^(\[|\])[0-9]+,[0-9]+(\[|\])$"/>
+        <parameters:Parameter name="processingBaseline" value="{sentinel:processingBaseline}" title="A new processing baseline is delivered each time there is an update of an instrument processing facility (IPF), or an update of a set of auxiliary data files (ADFs), or both" pattern="^(\[|\]|[0-9\.])?[0-9\.]+$|^[0-9\.]+?(\[|\])$|^(\[|\])[0-9\.]+,[0-9\.]+(\[|\])$"/>
+        <parameters:Parameter name="polarisation" value="{resto:polarisation}">
+            <parameters:Option value="HH"/>
+            <parameters:Option value="VV"/>
+            <parameters:Option value="HH%26VH"/>
+            <parameters:Option value="VV%26VH"/>
+            <parameters:Option value="VH%26VV"/>
+            <parameters:Option value="VH%26HH"/>
+            <parameters:Option value="HH%26HV"/>
+            <parameters:Option value="VV%26HV"/>
+            <parameters:Option value="HV%26HH"/>
+            <parameters:Option value="HV%26VV"/>
+        </parameters:Parameter>
+        <parameters:Parameter name="swath" value="{resto:swath}"/>
+        <parameters:Parameter name="tileId" value="{eo:tileId}" pattern="^(0[1-9]|[1-5][0-9]|60)[A-Z]{3}$"/>
+    </Url>
+    <Contact>support@cloudferro.com</Contact>
+    <Tags>ESA EUMETSAT NASA USGS</Tags>
+    <LongName>All Collections</LongName>
+    <Query role="example" searchTerms="TBD"/>
+    <Developer>CloudFerro S.A.</Developer>
+    <Attribution>Copernicus Data Space Ecosystem, Copyright 2023, All Rights Reserved; ESA, Copyright 2023, All Rights Reserved; EUMETSAT, Copyright 2023, All Rights Reserve; NASA, Copyright 2023, All Rights Reserved; USGS, Copyright 2023, All Rights Reserved</Attribution>
+    <SyndicationRight>open</SyndicationRight>
+    <AdultContent>false</AdultContent>
+    <Language>en</Language>
+    <InputEncoding>UTF-8</InputEncoding>
+    <OutputEncoding>UTF-8</OutputEncoding>
+</OpenSearchDescription>

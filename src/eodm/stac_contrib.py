@@ -26,6 +26,3 @@ class FSSpecStacIO(StacIO):
         else:
             with fsspec.open(source, "r", *args, **kwargs) as f:
                 return f.read()
-
-
-__all__ = ["FSSpecStacIO"]

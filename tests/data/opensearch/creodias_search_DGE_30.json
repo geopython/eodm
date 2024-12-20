@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            100.0,
+                            72.0
+                        ],
+                        [
+                            101.0,
+                            72.0
+                        ],
+                        [
+                            101.0,
+                            73.0
+                        ],
+                        [
+                            100.0,
+                            73.0
+                        ],
+                        [
+                            100.0,
+                            72.0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "COP-DEM",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "DEM1_SAR_DGE_30_20101215T103647_20130405T103047_ADS_000000_oCX9",
+                "description": "The Copernicus DEM is a Digital Surface Model (DSM) that represents the surface of the Earth including buildings, infrastructure and vegetation. Data were acquired through the TanDEM-X mission between 2011 and 2015 [https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model].",
+                "startDate": "2010-12-15T10:36:47Z",
+                "completionDate": "2013-04-05T10:30:47Z",
+                "productType": "DGE_30",
+                "platform": "",
+                "resolution": 30.0,
+                "orbitNumber": 0,
+                "updated": "2021-06-22T04:02:13.890585Z",
+                "published": "2021-06-22T04:02:13.890585Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/d69054d7-6c40-5b6d-b94b-49614f3204a7",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for d69054d7-6c40-5b6d-b94b-49614f3204a7",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/COP-DEM/d69054d7-6c40-5b6d-b94b-49614f3204a7.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        100.5,
+                        72.5
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/auxdata/CopDEM/COP-DEM_GLO-30-DGED/DEM1_SAR_DGE_30_20101215T103647_20130405T103047_ADS_000000_oCX9.DEM/DEM1_SAR_DGE_30_20101215T103647_20130405T103047_ADS_000000_oCX9-ql.jpg",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>100,72 101,72 101,73 100,73 100,72</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/auxdata/CopDEM/COP-DEM_GLO-30-DGED/DEM1_SAR_DGE_30_20101215T103647_20130405T103047_ADS_000000_oCX9.DEM",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "d69054d7-6c40-5b6d-b94b-49614f3204a7"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            98.0,
+                            74.0
+                        ],
+                        [
+                            99.0,
+                            74.0
+                        ],
+                        [
+                            99.0,
+                            75.0
+                        ],
+                        [
+                            98.0,
+                            75.0
+                        ],
+                        [
+                            98.0,
+                            74.0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "COP-DEM",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "DEM1_SAR_DGE_30_20101215T103647_20130405T103047_ADS_000000_RHJx",
+                "description": "The Copernicus DEM is a Digital Surface Model (DSM) that represents the surface of the Earth including buildings, infrastructure and vegetation. Data were acquired through the TanDEM-X mission between 2011 and 2015 [https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model].",
+                "startDate": "2010-12-15T10:36:47Z",
+                "completionDate": "2013-04-05T10:30:47Z",
+                "productType": "DGE_30",
+                "platform": "",
+                "resolution": 30.0,
+                "orbitNumber": 0,
+                "updated": "2021-06-22T04:02:22.948018Z",
+                "published": "2021-06-22T04:02:22.948018Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/29e4dabe-117a-5f9f-ba6e-f9916bba226e",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 29e4dabe-117a-5f9f-ba6e-f9916bba226e",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/COP-DEM/29e4dabe-117a-5f9f-ba6e-f9916bba226e.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        98.5,
+                        74.5
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/auxdata/CopDEM/COP-DEM_GLO-30-DGED/DEM1_SAR_DGE_30_20101215T103647_20130405T103047_ADS_000000_RHJx.DEM/DEM1_SAR_DGE_30_20101215T103647_20130405T103047_ADS_000000_RHJx-ql.jpg",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>98,74 99,74 99,75 98,75 98,74</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/auxdata/CopDEM/COP-DEM_GLO-30-DGED/DEM1_SAR_DGE_30_20101215T103647_20130405T103047_ADS_000000_RHJx.DEM",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "29e4dabe-117a-5f9f-ba6e-f9916bba226e"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            100.0,
+                            -1.0
+                        ],
+                        [
+                            101.0,
+                            -1.0
+                        ],
+                        [
+                            101.0,
+                            0.0
+                        ],
+                        [
+                            100.0,
+                            0.0
+                        ],
+                        [
+                            100.0,
+                            -1.0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "COP-DEM",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "DEM1_SAR_DGE_30_20101212T230244_20140329T113710_ADS_000000_eAmG",
+                "description": "The Copernicus DEM is a Digital Surface Model (DSM) that represents the surface of the Earth including buildings, infrastructure and vegetation. Data were acquired through the TanDEM-X mission between 2011 and 2015 [https://spacedata.copernicus.eu/collections/copernicus-digital-elevation-model].",
+                "startDate": "2010-12-12T23:02:44Z",
+                "completionDate": "2014-03-29T11:37:10Z",
+                "productType": "DGE_30",
+                "platform": "",
+                "resolution": 30.0,
+                "orbitNumber": 0,
+                "updated": "2021-06-22T04:30:11.786441Z",
+                "published": "2021-06-22T04:30:11.786441Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/72c618e4-c942-5d6c-8ab6-629258334d88",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 72c618e4-c942-5d6c-8ab6-629258334d88",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/COP-DEM/72c618e4-c942-5d6c-8ab6-629258334d88.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        100.5,
+                        -0.5
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/auxdata/CopDEM/COP-DEM_GLO-30-DGED/DEM1_SAR_DGE_30_20101212T230244_20140329T113710_ADS_000000_eAmG.DEM/DEM1_SAR_DGE_30_20101212T230244_20140329T113710_ADS_000000_eAmG-ql.jpg",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>100,-1 101,-1 101,0 100,0 100,-1</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/auxdata/CopDEM/COP-DEM_GLO-30-DGED/DEM1_SAR_DGE_30_20101212T230244_20140329T113710_ADS_000000_eAmG.DEM",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "72c618e4-c942-5d6c-8ab6-629258334d88"
+        }
+    ],
+    "properties": {
+        "id": "e27b7012-c50e-5641-b67a-c3f9acedd7e8",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=DGE_30"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

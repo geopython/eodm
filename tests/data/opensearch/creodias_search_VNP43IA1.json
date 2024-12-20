@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -26.1081,
+                            40.0
+                        ],
+                        [
+                            -12.9884,
+                            40.0119
+                        ],
+                        [
+                            -11.486,
+                            29.8779
+                        ],
+                        [
+                            -23.0765,
+                            29.8681
+                        ],
+                        [
+                            -26.1081,
+                            40.0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "TERRAAQUA",
+                "status": "OFFLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "VNP43IA1.A2012021.h16v05.001.2018151113237",
+                "description": "Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands. MODIS (or Moderate Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra and Aqua satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon [https://modis.gsfc.nasa.gov/about/].",
+                "startDate": "2012-01-21T00:00:00Z",
+                "completionDate": "2012-01-28T23:59:59Z",
+                "productType": "VNP43IA1",
+                "platform": "TerraAqua",
+                "resolution": 500.0,
+                "orbitNumber": 0,
+                "updated": "2021-02-12T18:27:54.744692Z",
+                "published": "2021-02-12T18:27:54.744692Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/7bae858f-9abb-5238-b0c1-a9ccfb140c62",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 7bae858f-9abb-5238-b0c1-a9ccfb140c62",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/TERRAAQUA/7bae858f-9abb-5238-b0c1-a9ccfb140c62.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -18.43805803579313,
+                        35.04400021046464
+                    ]
+                },
+                "instrument": "MODIS",
+                "phase": null,
+                "organisationName": "USGS",
+                "processingLevel": "LEVEL3",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-26.1081,40.0 -12.9884,40.0119 -11.486,29.8779 -23.0765,29.8681 -26.1081,40.0</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": null,
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "7bae858f-9abb-5238-b0c1-a9ccfb140c62"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            19.9195,
+                            60.0276
+                        ],
+                        [
+                            40.0243,
+                            59.9981
+                        ],
+                        [
+                            31.0036,
+                            49.7331
+                        ],
+                        [
+                            15.4375,
+                            49.7442
+                        ],
+                        [
+                            19.9195,
+                            60.0276
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "TERRAAQUA",
+                "status": "OFFLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "VNP43IA1.A2012021.h19v03.001.2018151113251",
+                "description": "Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands. MODIS (or Moderate Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra and Aqua satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon [https://modis.gsfc.nasa.gov/about/].",
+                "startDate": "2012-01-21T00:00:00Z",
+                "completionDate": "2012-01-28T23:59:59Z",
+                "productType": "VNP43IA1",
+                "platform": "TerraAqua",
+                "resolution": 500.0,
+                "orbitNumber": 0,
+                "updated": "2021-02-12T19:31:02.548241Z",
+                "published": "2021-02-12T19:31:02.548241Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/8ac1c66c-d06c-5f28-9221-9b32abb6ff85",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 8ac1c66c-d06c-5f28-9221-9b32abb6ff85",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/TERRAAQUA/8ac1c66c-d06c-5f28-9221-9b32abb6ff85.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        26.737757640828256,
+                        55.09404773021657
+                    ]
+                },
+                "instrument": "MODIS",
+                "phase": null,
+                "organisationName": "USGS",
+                "processingLevel": "LEVEL3",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>19.9195,60.0276 40.0243,59.9981 31.0036,49.7331 15.4375,49.7442 19.9195,60.0276</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": null,
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "8ac1c66c-d06c-5f28-9221-9b32abb6ff85"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -0.0348,
+                            70.0158
+                        ],
+                        [
+                            29.2702,
+                            69.9973
+                        ],
+                        [
+                            19.8281,
+                            59.6255
+                        ],
+                        [
+                            0.0009,
+                            59.6252
+                        ],
+                        [
+                            -0.0348,
+                            70.0158
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "TERRAAQUA",
+                "status": "OFFLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "VNP43IA1.A2012021.h18v02.001.2018151113222",
+                "description": "Terra MODIS and Aqua MODIS are viewing the entire Earth's surface every 1 to 2 days, acquiring data in 36 spectral bands. MODIS (or Moderate Resolution Imaging Spectroradiometer) is a key instrument aboard the Terra and Aqua satellites. Terra's orbit around the Earth is timed so that it passes from north to south across the equator in the morning, while Aqua passes south to north over the equator in the afternoon [https://modis.gsfc.nasa.gov/about/].",
+                "startDate": "2012-01-21T00:00:00Z",
+                "completionDate": "2012-01-28T23:59:59Z",
+                "productType": "VNP43IA1",
+                "platform": "TerraAqua",
+                "resolution": 500.0,
+                "orbitNumber": 0,
+                "updated": "2021-02-12T19:55:39.410833Z",
+                "published": "2021-02-12T19:55:39.410833Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/072c7036-35d1-52b1-981b-ed22e8ee01b1",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 072c7036-35d1-52b1-981b-ed22e8ee01b1",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/TERRAAQUA/072c7036-35d1-52b1-981b-ed22e8ee01b1.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        12.414407023940791,
+                        65.14995757681312
+                    ]
+                },
+                "instrument": "MODIS",
+                "phase": null,
+                "organisationName": "USGS",
+                "processingLevel": "LEVEL3",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-0.0348,70.0158 29.2702,69.9973 19.8281,59.6255 0.0009,59.6252 -0.0348,70.0158</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": null,
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "072c7036-35d1-52b1-981b-ed22e8ee01b1"
+        }
+    ],
+    "properties": {
+        "id": "1f601865-2449-51e2-b864-7c5c6dedac0f",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=VNP43IA1"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -28.3212318,
+                            49.8312988
+                        ],
+                        [
+                            -25.4550705,
+                            49.8285332
+                        ],
+                        [
+                            -25.4950523,
+                            48.5274582
+                        ],
+                        [
+                            -28.287035,
+                            48.5301018
+                        ],
+                        [
+                            -28.3212318,
+                            49.8312988
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "LANDSAT-7",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "LS07_RNSG_ETM_GTC_1P_19991201T123047_19991201T123105_003348_0218_0026_4DF0",
+                "description": "Landsat-7 continues the goal of the Landsat programme to image repetitively Earth's land and coastal areas with the aim of monitoring changes to those areas over time. The satellite continues to provide data continuity for the Thematic Mapper aboard Landsat-4 and 5, utilising an enhanced version of the instrument. The Enhanced Thematic Mapper Plus (ETM+) is the main instrument on board Landsat-7 and has been operational since 1999. It provides 30 m resolution for visible (VIS), near infrared (NIR) and shortwave infrared (SWIR) as well as 60 m resolution for thermal infrared. Moreover, it adds 15 m resolution panchromatic band (PAN) [https://creodias.eu/eodata/landsat-7/].",
+                "startDate": "1999-12-01T12:31:02.226000Z",
+                "completionDate": "1999-12-01T12:31:02.226000Z",
+                "productType": "GTC_1P",
+                "platform": "LANDSAT-7",
+                "resolution": 60.0,
+                "orbitNumber": 3348,
+                "updated": "2016-09-12T20:06:10.917537Z",
+                "published": "2016-09-12T20:06:10.917537Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/d47018f8-09ae-58b3-91b0-7e90cd9c51cc",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for d47018f8-09ae-58b3-91b0-7e90cd9c51cc",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/LANDSAT-7/d47018f8-09ae-58b3-91b0-7e90cd9c51cc.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.88815115,
+                        49.1793785
+                    ]
+                },
+                "instrument": "ETM",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "LEVELTC_1P",
+                "sensorMode": "SAM",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Landsat-7/ETM/GTC_1P/1999/12/01/LS07_RNSG_ETM_GTC_1P_19991201T123047_19991201T123105_003348_0218_0026_4DF0/LS07_RNSG_ETM_GTC_1P_19991201T123047_19991201T123105_003348_0218_0026_4DF0.BP.PNG",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-28.3212318,49.8312988 -25.4550705,49.8285332 -25.4950523,48.5274582 -28.287035,48.5301018 -28.3212318,49.8312988</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Landsat-7/ETM/GTC_1P/1999/12/01/LS07_RNSG_ETM_GTC_1P_19991201T123047_19991201T123105_003348_0218_0026_4DF0",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "d47018f8-09ae-58b3-91b0-7e90cd9c51cc"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -28.0304661,
+                            51.2492294
+                        ],
+                        [
+                            -24.8077106,
+                            51.2332306
+                        ],
+                        [
+                            -24.8949852,
+                            49.2943954
+                        ],
+                        [
+                            -27.9894142,
+                            49.3093376
+                        ],
+                        [
+                            -28.0304661,
+                            51.2492294
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "LANDSAT-7",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "LS07_RNSG_ETM_GTC_1P_19991201T123024_19991201T123052_003348_0218_0025_C910",
+                "description": "Landsat-7 continues the goal of the Landsat programme to image repetitively Earth's land and coastal areas with the aim of monitoring changes to those areas over time. The satellite continues to provide data continuity for the Thematic Mapper aboard Landsat-4 and 5, utilising an enhanced version of the instrument. The Enhanced Thematic Mapper Plus (ETM+) is the main instrument on board Landsat-7 and has been operational since 1999. It provides 30 m resolution for visible (VIS), near infrared (NIR) and shortwave infrared (SWIR) as well as 60 m resolution for thermal infrared. Moreover, it adds 15 m resolution panchromatic band (PAN) [https://creodias.eu/eodata/landsat-7/].",
+                "startDate": "1999-12-01T12:30:38.343000Z",
+                "completionDate": "1999-12-01T12:30:38.343000Z",
+                "productType": "GTC_1P",
+                "platform": "LANDSAT-7",
+                "resolution": 60.0,
+                "orbitNumber": 3348,
+                "updated": "2016-09-12T20:06:17.447458Z",
+                "published": "2016-09-12T20:06:17.447458Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/32cfd1c1-c781-5a64-a91d-b254db160d84",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 32cfd1c1-c781-5a64-a91d-b254db160d84",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/LANDSAT-7/32cfd1c1-c781-5a64-a91d-b254db160d84.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -26.41908835,
+                        50.2718124
+                    ]
+                },
+                "instrument": "ETM",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "LEVELTC_1P",
+                "sensorMode": "SAM",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Landsat-7/ETM/GTC_1P/1999/12/01/LS07_RNSG_ETM_GTC_1P_19991201T123024_19991201T123052_003348_0218_0025_C910/LS07_RNSG_ETM_GTC_1P_19991201T123024_19991201T123052_003348_0218_0025_C910.BP.PNG",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-28.0304661,51.2492294 -24.8077106,51.2332306 -24.8949852,49.2943954 -27.9894142,49.3093376 -28.0304661,51.2492294</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Landsat-7/ETM/GTC_1P/1999/12/01/LS07_RNSG_ETM_GTC_1P_19991201T123024_19991201T123052_003348_0218_0025_C910",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "32cfd1c1-c781-5a64-a91d-b254db160d84"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -27.4464245,
+                            52.6695366
+                        ],
+                        [
+                            -24.1267681,
+                            52.6355324
+                        ],
+                        [
+                            -24.2468071,
+                            50.6992188
+                        ],
+                        [
+                            -27.4277458,
+                            50.7309532
+                        ],
+                        [
+                            -27.4464245,
+                            52.6695366
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "LANDSAT-7",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "LS07_RNSG_ETM_GTC_1P_19991201T123000_19991201T123028_003348_0218_0024_1638",
+                "description": "Landsat-7 continues the goal of the Landsat programme to image repetitively Earth's land and coastal areas with the aim of monitoring changes to those areas over time. The satellite continues to provide data continuity for the Thematic Mapper aboard Landsat-4 and 5, utilising an enhanced version of the instrument. The Enhanced Thematic Mapper Plus (ETM+) is the main instrument on board Landsat-7 and has been operational since 1999. It provides 30 m resolution for visible (VIS), near infrared (NIR) and shortwave infrared (SWIR) as well as 60 m resolution for thermal infrared. Moreover, it adds 15 m resolution panchromatic band (PAN) [https://creodias.eu/eodata/landsat-7/].",
+                "startDate": "1999-12-01T12:30:14.461000Z",
+                "completionDate": "1999-12-01T12:30:14.461000Z",
+                "productType": "GTC_1P",
+                "platform": "LANDSAT-7",
+                "resolution": 60.0,
+                "orbitNumber": 3348,
+                "updated": "2016-09-12T20:06:17.968451Z",
+                "published": "2016-09-12T20:06:17.968451Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/104554a7-ff12-5b1e-a731-fcb5ec36af65",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 104554a7-ff12-5b1e-a731-fcb5ec36af65",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/LANDSAT-7/104554a7-ff12-5b1e-a731-fcb5ec36af65.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -25.7865963,
+                        51.6843777
+                    ]
+                },
+                "instrument": "ETM",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "LEVELTC_1P",
+                "sensorMode": "SAM",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Landsat-7/ETM/GTC_1P/1999/12/01/LS07_RNSG_ETM_GTC_1P_19991201T123000_19991201T123028_003348_0218_0024_1638/LS07_RNSG_ETM_GTC_1P_19991201T123000_19991201T123028_003348_0218_0024_1638.BP.PNG",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-27.4464245,52.6695366 -24.1267681,52.6355324 -24.2468071,50.6992188 -27.4277458,50.7309532 -27.4464245,52.6695366</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Landsat-7/ETM/GTC_1P/1999/12/01/LS07_RNSG_ETM_GTC_1P_19991201T123000_19991201T123028_003348_0218_0024_1638",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "104554a7-ff12-5b1e-a731-fcb5ec36af65"
+        }
+    ],
+    "properties": {
+        "id": "8d78db80-0262-54fa-bd30-7013fd9dc8e8",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=GTC_1P"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

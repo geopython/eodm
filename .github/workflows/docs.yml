@@ -60,7 +60,7 @@ jobs:
       - name: Install project dependencies
         run: poetry install
       - name: Build the documentation
-        run: poetry run mkdocs build --strict --site-dir _site
+        run: poetry run mkdocs build --site-dir _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
 

@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            18.0,
+                            15.0
+                        ],
+                        [
+                            18.0,
+                            16.0
+                        ],
+                        [
+                            19.0,
+                            16.0
+                        ],
+                        [
+                            19.0,
+                            15.0
+                        ],
+                        [
+                            18.0,
+                            15.0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "GLOBAL-MOSAICS",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "ESA_WorldCover_10m_2020_v100_N15E018_S2RGBNIR_v2",
+                "description": null,
+                "startDate": "2020-01-01T00:00:00Z",
+                "completionDate": "2020-12-31T23:59:59.999000Z",
+                "productType": "S2MSI_L3__WCY",
+                "platform": "SENTINEL-2",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-02-13T10:08:23.971101Z",
+                "published": "2023-12-21T12:40:20.279500Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/ff9120e3-466e-4460-8673-2805f1e66058",
+                        "size": -1,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for ff9120e3-466e-4460-8673-2805f1e66058",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/GLOBAL-MOSAICS/ff9120e3-466e-4460-8673-2805f1e66058.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        18.5,
+                        15.5
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>18,15 18,16 19,16 19,15 18,15</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Global-Mosaics/ESA-WorldCover/S2MSI_L3__WCY/2020/01/01/ESA_WorldCover_10m_2020_v100_N15E018_S2RGBNIR_v2.tif",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "ff9120e3-466e-4460-8673-2805f1e66058"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -23.0,
+                            15.0
+                        ],
+                        [
+                            -23.0,
+                            16.0
+                        ],
+                        [
+                            -22.0,
+                            16.0
+                        ],
+                        [
+                            -22.0,
+                            15.0
+                        ],
+                        [
+                            -23.0,
+                            15.0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "GLOBAL-MOSAICS",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "ESA_WorldCover_10m_2020_v100_N15W023_S2RGBNIR_v2",
+                "description": null,
+                "startDate": "2020-01-01T00:00:00Z",
+                "completionDate": "2020-12-31T23:59:59.999000Z",
+                "productType": "S2MSI_L3__WCY",
+                "platform": "SENTINEL-2",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-02-13T10:08:24.008214Z",
+                "published": "2023-12-21T12:40:21.292874Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/76aebe86-21db-49dc-8acd-4bb834594dd7",
+                        "size": -1,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 76aebe86-21db-49dc-8acd-4bb834594dd7",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/GLOBAL-MOSAICS/76aebe86-21db-49dc-8acd-4bb834594dd7.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -22.5,
+                        15.5
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-23,15 -23,16 -22,16 -22,15 -23,15</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Global-Mosaics/ESA-WorldCover/S2MSI_L3__WCY/2020/01/01/ESA_WorldCover_10m_2020_v100_N15W023_S2RGBNIR_v2.tif",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "76aebe86-21db-49dc-8acd-4bb834594dd7"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            4.0,
+                            14.0
+                        ],
+                        [
+                            4.0,
+                            15.0
+                        ],
+                        [
+                            5.0,
+                            15.0
+                        ],
+                        [
+                            5.0,
+                            14.0
+                        ],
+                        [
+                            4.0,
+                            14.0
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "GLOBAL-MOSAICS",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "ESA_WorldCover_10m_2020_v100_N14E004_S2RGBNIR_v2",
+                "description": null,
+                "startDate": "2020-01-01T00:00:00Z",
+                "completionDate": "2020-12-31T23:59:59.999000Z",
+                "productType": "S2MSI_L3__WCY",
+                "platform": "SENTINEL-2",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-02-13T10:08:24.338200Z",
+                "published": "2023-12-21T12:40:00.826785Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/69084088-7b22-4eb6-8aed-9277245ed4d1",
+                        "size": -1,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 69084088-7b22-4eb6-8aed-9277245ed4d1",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/GLOBAL-MOSAICS/69084088-7b22-4eb6-8aed-9277245ed4d1.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        4.5,
+                        14.5
+                    ]
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>4,14 4,15 5,15 5,14 4,14</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Global-Mosaics/ESA-WorldCover/S2MSI_L3__WCY/2020/01/01/ESA_WorldCover_10m_2020_v100_N14E004_S2RGBNIR_v2.tif",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "69084088-7b22-4eb6-8aed-9277245ed4d1"
+        }
+    ],
+    "properties": {
+        "id": "544b0fb0-3b1e-52f4-b559-4232cb94eb11",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=S2MSI_L3__WCY"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

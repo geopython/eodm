@@ -3,6 +3,8 @@ from typing import Iterator
 import pystac_client
 from pystac import Collection, Item
 
+from .opensearch import OpenSearchClient, OpenSearchFeature
+
 
 def extract_stac_api_items(
     url: str,
@@ -13,7 +15,7 @@ def extract_stac_api_items(
     query: dict | None = None,
     filter: dict | None = None,
 ) -> Iterator[Item]:
-    """Extracts items from a STAC API
+    """Extracts STAC Items from a STAC API
 
     Args:
         url (str): Link to STAC API endpoint
@@ -43,7 +45,7 @@ def extract_stac_api_items(
 
 
 def extract_stac_api_collections(url: str) -> Iterator[Collection]:
-    """Extracts collections from a STAC API
+    """Extracts STAC Collections from a STAC API
 
     Args:
         url (str): Link to STAC API endpoint
@@ -54,3 +56,30 @@ def extract_stac_api_collections(url: str) -> Iterator[Collection]:
 
     client = pystac_client.Client.open(url)
     yield from client.get_collections()
+
+
+def extract_opensearch_features(
+    url: str,
+    product_types: list[str],
+    limit: int = 0,
+) -> Iterator[OpenSearchFeature]:
+    """Extracts OpenSearch Features from an OpenSearch API
+
+    Args:
+        url (str): Link to OpenSearch API endpoint
+        productTypes (list[str]): List of productTypes to search for
+
+    Yields:
+        Iterator[OpenSearchFeature]: OpenSearch Features
+    """
+    client = OpenSearchClient(url)
+
+    query = {}
+
+    # TODO: create mapper to map to STAC items
+    for product_type in product_types:
+        query["{eo:productType}"] = product_type
+        for i, feature in enumerate(client.search(query), start=1):
+            if limit and i >= limit:
+                break
+            yield feature

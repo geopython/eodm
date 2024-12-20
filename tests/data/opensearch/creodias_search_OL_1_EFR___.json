@@ -1,0 +1,818 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            103.231,
+                            10.2983
+                        ],
+                        [
+                            103.848,
+                            10.1754
+                        ],
+                        [
+                            104.467,
+                            10.0521
+                        ],
+                        [
+                            105.082,
+                            9.92836
+                        ],
+                        [
+                            105.703,
+                            9.80232
+                        ],
+                        [
+                            106.321,
+                            9.67563
+                        ],
+                        [
+                            106.937,
+                            9.54802
+                        ],
+                        [
+                            107.554,
+                            9.41976
+                        ],
+                        [
+                            108.167,
+                            9.29024
+                        ],
+                        [
+                            108.784,
+                            9.15874
+                        ],
+                        [
+                            109.399,
+                            9.02987
+                        ],
+                        [
+                            110.011,
+                            8.897
+                        ],
+                        [
+                            110.627,
+                            8.76496
+                        ],
+                        [
+                            111.24,
+                            8.62919
+                        ],
+                        [
+                            111.852,
+                            8.49351
+                        ],
+                        [
+                            112.464,
+                            8.354
+                        ],
+                        [
+                            113.078,
+                            8.21752
+                        ],
+                        [
+                            113.689,
+                            8.07899
+                        ],
+                        [
+                            114.299,
+                            7.93968
+                        ],
+                        [
+                            114.91,
+                            7.79872
+                        ],
+                        [
+                            115.532,
+                            10.4487
+                        ],
+                        [
+                            116.169,
+                            13.1001
+                        ],
+                        [
+                            116.823,
+                            15.7514
+                        ],
+                        [
+                            117.496,
+                            18.4003
+                        ],
+                        [
+                            116.86,
+                            18.549
+                        ],
+                        [
+                            116.224,
+                            18.6949
+                        ],
+                        [
+                            115.587,
+                            18.8387
+                        ],
+                        [
+                            114.946,
+                            18.9793
+                        ],
+                        [
+                            114.306,
+                            19.1216
+                        ],
+                        [
+                            113.666,
+                            19.2589
+                        ],
+                        [
+                            113.024,
+                            19.395
+                        ],
+                        [
+                            112.382,
+                            19.5254
+                        ],
+                        [
+                            111.737,
+                            19.6566
+                        ],
+                        [
+                            111.09,
+                            19.7819
+                        ],
+                        [
+                            110.442,
+                            19.9085
+                        ],
+                        [
+                            109.797,
+                            20.0319
+                        ],
+                        [
+                            109.148,
+                            20.1527
+                        ],
+                        [
+                            108.499,
+                            20.2716
+                        ],
+                        [
+                            107.848,
+                            20.3882
+                        ],
+                        [
+                            107.199,
+                            20.5019
+                        ],
+                        [
+                            106.543,
+                            20.614
+                        ],
+                        [
+                            105.889,
+                            20.7232
+                        ],
+                        [
+                            105.238,
+                            20.8306
+                        ],
+                        [
+                            104.753,
+                            18.1957
+                        ],
+                        [
+                            104.258,
+                            15.5614
+                        ],
+                        [
+                            103.75,
+                            12.9278
+                        ],
+                        [
+                            103.231,
+                            10.2983
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-3",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S3A_OL_1_EFR____20160501T023419_20160501T023719_20180207T115325_0179_003_317_2700_LR2_R_NT_002.SEN3",
+                "description": "Sentinel-3 is a constellation of two radar imaging satellites developed to support Copernicus ocean, land, atmospheric, emergency, security and cryospheric applications. Both S3A, launched in February 2016, and S3B, launched in April 2018, are part of the Copernicus Programme- the European Union’s Earth observation program, managed by the European Commission (COM) [https://www.eoportal.org/satellite-missions/copernicus-sentinel-3]. The spacecraft carries four main instruments: OLCI (Ocean and Land Colour Instrument), SLSTR (Sea and Land Surface Temperature Instrument), SRAL (SAR Radar Altimeter) and MWR (Microwave Radiometer). The SENTINEL-3 mission is jointly operated by the European Space Agency (ESA) and supported by EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites) [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-3].",
+                "startDate": "2016-05-01T02:34:18.569970Z",
+                "completionDate": "2016-05-01T02:37:18.569970Z",
+                "productType": "OL_1_EFR___",
+                "platform": "S3A",
+                "resolution": 0.0,
+                "orbitNumber": 1060,
+                "updated": "2018-09-28T01:04:24.163942Z",
+                "published": "2018-09-28T01:04:24.163942Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/9cfe223d-9a61-5737-8bdc-483051107aaa",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 9cfe223d-9a61-5737-8bdc-483051107aaa",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-3/9cfe223d-9a61-5737-8bdc-483051107aaa.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        110.3635,
+                        14.31466
+                    ]
+                },
+                "instrument": "OLCI",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "1",
+                "sensorMode": "Earth Observation",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Sentinel-3/OLCI/OL_1_EFR/2016/05/01/S3A_OL_1_EFR____20160501T023419_20160501T023719_20180207T115325_0179_003_317_2700_LR2_R_NT_002.SEN3/S3A_OL_1_EFR____20160501T023419_20160501T023719_20180207T115325_0179_003_317_2700_LR2_R_NT_002-ql.jpg",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>103.231,10.2983 103.848,10.1754 104.467,10.0521 105.082,9.92836 105.703,9.80232 106.321,9.67563 106.937,9.54802 107.554,9.41976 108.167,9.29024 108.784,9.15874 109.399,9.02987 110.011,8.897 110.627,8.76496 111.24,8.62919 111.852,8.49351 112.464,8.354 113.078,8.21752 113.689,8.07899 114.299,7.93968 114.91,7.79872 115.532,10.4487 116.169,13.1001 116.823,15.7514 117.496,18.4003 116.86,18.549 116.224,18.6949 115.587,18.8387 114.946,18.9793 114.306,19.1216 113.666,19.2589 113.024,19.395 112.382,19.5254 111.737,19.6566 111.09,19.7819 110.442,19.9085 109.797,20.0319 109.148,20.1527 108.499,20.2716 107.848,20.3882 107.199,20.5019 106.543,20.614 105.889,20.7232 105.238,20.8306 104.753,18.1957 104.258,15.5614 103.75,12.9278 103.231,10.2983</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-3/OLCI/OL_1_EFR/2016/05/01/S3A_OL_1_EFR____20160501T023419_20160501T023719_20180207T115325_0179_003_317_2700_LR2_R_NT_002.SEN3",
+                "orbitDirection": "DESCENDING",
+                "timeliness": "NT",
+                "relativeOrbitNumber": 317,
+                "processingBaseline": 0
+            },
+            "id": "9cfe223d-9a61-5737-8bdc-483051107aaa"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            98.4695,
+                            -10.7209
+                        ],
+                        [
+                            99.0795,
+                            -10.8775
+                        ],
+                        [
+                            99.6929,
+                            -11.0319
+                        ],
+                        [
+                            100.304,
+                            -11.1844
+                        ],
+                        [
+                            100.921,
+                            -11.337
+                        ],
+                        [
+                            101.537,
+                            -11.4877
+                        ],
+                        [
+                            102.149,
+                            -11.6361
+                        ],
+                        [
+                            102.767,
+                            -11.7839
+                        ],
+                        [
+                            103.383,
+                            -11.9305
+                        ],
+                        [
+                            104.0,
+                            -12.0761
+                        ],
+                        [
+                            104.621,
+                            -12.2173
+                        ],
+                        [
+                            105.24,
+                            -12.3602
+                        ],
+                        [
+                            105.859,
+                            -12.4987
+                        ],
+                        [
+                            106.478,
+                            -12.6391
+                        ],
+                        [
+                            107.098,
+                            -12.7771
+                        ],
+                        [
+                            107.72,
+                            -12.9165
+                        ],
+                        [
+                            108.344,
+                            -13.0505
+                        ],
+                        [
+                            108.966,
+                            -13.184
+                        ],
+                        [
+                            109.588,
+                            -13.3158
+                        ],
+                        [
+                            110.212,
+                            -13.447
+                        ],
+                        [
+                            110.787,
+                            -10.7968
+                        ],
+                        [
+                            111.362,
+                            -8.14153
+                        ],
+                        [
+                            111.94,
+                            -5.48513
+                        ],
+                        [
+                            112.521,
+                            -2.82696
+                        ],
+                        [
+                            111.914,
+                            -2.69191
+                        ],
+                        [
+                            111.307,
+                            -2.55701
+                        ],
+                        [
+                            110.7,
+                            -2.42168
+                        ],
+                        [
+                            110.094,
+                            -2.28775
+                        ],
+                        [
+                            109.486,
+                            -2.14902
+                        ],
+                        [
+                            108.88,
+                            -2.01291
+                        ],
+                        [
+                            108.276,
+                            -1.87611
+                        ],
+                        [
+                            107.669,
+                            -1.74183
+                        ],
+                        [
+                            107.062,
+                            -1.60437
+                        ],
+                        [
+                            106.454,
+                            -1.4703
+                        ],
+                        [
+                            105.849,
+                            -1.33308
+                        ],
+                        [
+                            105.242,
+                            -1.19523
+                        ],
+                        [
+                            104.638,
+                            -1.05896
+                        ],
+                        [
+                            104.032,
+                            -0.921415
+                        ],
+                        [
+                            103.426,
+                            -0.783581
+                        ],
+                        [
+                            102.817,
+                            -0.645126
+                        ],
+                        [
+                            102.214,
+                            -0.50794
+                        ],
+                        [
+                            101.608,
+                            -0.370018
+                        ],
+                        [
+                            101.003,
+                            -0.230883
+                        ],
+                        [
+                            100.403,
+                            -2.85954
+                        ],
+                        [
+                            99.7809,
+                            -5.48462
+                        ],
+                        [
+                            99.1369,
+                            -8.10736
+                        ],
+                        [
+                            98.4695,
+                            -10.7209
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-3",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S3A_OL_1_EFR____20160501T024019_20160501T024319_20180207T115755_0179_003_317_3060_LR2_R_NT_002.SEN3",
+                "description": "Sentinel-3 is a constellation of two radar imaging satellites developed to support Copernicus ocean, land, atmospheric, emergency, security and cryospheric applications. Both S3A, launched in February 2016, and S3B, launched in April 2018, are part of the Copernicus Programme- the European Union’s Earth observation program, managed by the European Commission (COM) [https://www.eoportal.org/satellite-missions/copernicus-sentinel-3]. The spacecraft carries four main instruments: OLCI (Ocean and Land Colour Instrument), SLSTR (Sea and Land Surface Temperature Instrument), SRAL (SAR Radar Altimeter) and MWR (Microwave Radiometer). The SENTINEL-3 mission is jointly operated by the European Space Agency (ESA) and supported by EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites) [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-3].",
+                "startDate": "2016-05-01T02:40:18.570027Z",
+                "completionDate": "2016-05-01T02:43:18.570027Z",
+                "productType": "OL_1_EFR___",
+                "platform": "S3A",
+                "resolution": 0.0,
+                "orbitNumber": 1060,
+                "updated": "2018-09-28T01:04:27.757042Z",
+                "published": "2018-09-28T01:04:27.757042Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/22c254cc-93e7-5159-a191-5cc982aad24a",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 22c254cc-93e7-5159-a191-5cc982aad24a",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-3/22c254cc-93e7-5159-a191-5cc982aad24a.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        105.49525,
+                        -6.8389415
+                    ]
+                },
+                "instrument": "OLCI",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "1",
+                "sensorMode": "Earth Observation",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Sentinel-3/OLCI/OL_1_EFR/2016/05/01/S3A_OL_1_EFR____20160501T024019_20160501T024319_20180207T115755_0179_003_317_3060_LR2_R_NT_002.SEN3/S3A_OL_1_EFR____20160501T024019_20160501T024319_20180207T115755_0179_003_317_3060_LR2_R_NT_002-ql.jpg",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>98.4695,-10.7209 99.0795,-10.8775 99.6929,-11.0319 100.304,-11.1844 100.921,-11.337 101.537,-11.4877 102.149,-11.6361 102.767,-11.7839 103.383,-11.9305 104.0,-12.0761 104.621,-12.2173 105.24,-12.3602 105.859,-12.4987 106.478,-12.6391 107.098,-12.7771 107.72,-12.9165 108.344,-13.0505 108.966,-13.184 109.588,-13.3158 110.212,-13.447 110.787,-10.7968 111.362,-8.14153 111.94,-5.48513 112.521,-2.82696 111.914,-2.69191 111.307,-2.55701 110.7,-2.42168 110.094,-2.28775 109.486,-2.14902 108.88,-2.01291 108.276,-1.87611 107.669,-1.74183 107.062,-1.60437 106.454,-1.4703 105.849,-1.33308 105.242,-1.19523 104.638,-1.05896 104.032,-0.921415 103.426,-0.783581 102.817,-0.645126 102.214,-0.50794 101.608,-0.370018 101.003,-0.230883 100.403,-2.85954 99.7809,-5.48462 99.1369,-8.10736 98.4695,-10.7209</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-3/OLCI/OL_1_EFR/2016/05/01/S3A_OL_1_EFR____20160501T024019_20160501T024319_20180207T115755_0179_003_317_3060_LR2_R_NT_002.SEN3",
+                "orbitDirection": "DESCENDING",
+                "timeliness": "NT",
+                "relativeOrbitNumber": 317,
+                "processingBaseline": 0
+            },
+            "id": "22c254cc-93e7-5159-a191-5cc982aad24a"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            105.239,
+                            20.8332
+                        ],
+                        [
+                            105.89,
+                            20.7258
+                        ],
+                        [
+                            106.544,
+                            20.6166
+                        ],
+                        [
+                            107.199,
+                            20.5045
+                        ],
+                        [
+                            107.848,
+                            20.3908
+                        ],
+                        [
+                            108.499,
+                            20.2742
+                        ],
+                        [
+                            109.149,
+                            20.1553
+                        ],
+                        [
+                            109.798,
+                            20.0345
+                        ],
+                        [
+                            110.443,
+                            19.9111
+                        ],
+                        [
+                            111.091,
+                            19.7845
+                        ],
+                        [
+                            111.737,
+                            19.6592
+                        ],
+                        [
+                            112.382,
+                            19.528
+                        ],
+                        [
+                            113.025,
+                            19.3976
+                        ],
+                        [
+                            113.666,
+                            19.2615
+                        ],
+                        [
+                            114.307,
+                            19.1242
+                        ],
+                        [
+                            114.947,
+                            18.9819
+                        ],
+                        [
+                            115.588,
+                            18.8413
+                        ],
+                        [
+                            116.225,
+                            18.6974
+                        ],
+                        [
+                            116.861,
+                            18.5516
+                        ],
+                        [
+                            117.497,
+                            18.4029
+                        ],
+                        [
+                            118.191,
+                            21.0437
+                        ],
+                        [
+                            118.911,
+                            23.6866
+                        ],
+                        [
+                            119.661,
+                            26.3252
+                        ],
+                        [
+                            120.444,
+                            28.9605
+                        ],
+                        [
+                            119.759,
+                            29.1203
+                        ],
+                        [
+                            119.071,
+                            29.2762
+                        ],
+                        [
+                            118.379,
+                            29.429
+                        ],
+                        [
+                            117.688,
+                            29.576
+                        ],
+                        [
+                            116.993,
+                            29.7241
+                        ],
+                        [
+                            116.296,
+                            29.8657
+                        ],
+                        [
+                            115.601,
+                            30.0042
+                        ],
+                        [
+                            114.9,
+                            30.1362
+                        ],
+                        [
+                            114.197,
+                            30.2674
+                        ],
+                        [
+                            113.491,
+                            30.3912
+                        ],
+                        [
+                            112.787,
+                            30.5143
+                        ],
+                        [
+                            112.078,
+                            30.6338
+                        ],
+                        [
+                            111.373,
+                            30.7479
+                        ],
+                        [
+                            110.673,
+                            30.8576
+                        ],
+                        [
+                            109.956,
+                            30.9659
+                        ],
+                        [
+                            109.248,
+                            31.0686
+                        ],
+                        [
+                            108.525,
+                            31.1692
+                        ],
+                        [
+                            107.813,
+                            31.2642
+                        ],
+                        [
+                            107.084,
+                            31.3583
+                        ],
+                        [
+                            106.635,
+                            28.7264
+                        ],
+                        [
+                            106.178,
+                            26.0956
+                        ],
+                        [
+                            105.713,
+                            23.4613
+                        ],
+                        [
+                            105.239,
+                            20.8332
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-3",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S3A_OL_1_EFR____20160501T023119_20160501T023419_20180207T115114_0179_003_317_2520_LR2_R_NT_002.SEN3",
+                "description": "Sentinel-3 is a constellation of two radar imaging satellites developed to support Copernicus ocean, land, atmospheric, emergency, security and cryospheric applications. Both S3A, launched in February 2016, and S3B, launched in April 2018, are part of the Copernicus Programme- the European Union’s Earth observation program, managed by the European Commission (COM) [https://www.eoportal.org/satellite-missions/copernicus-sentinel-3]. The spacecraft carries four main instruments: OLCI (Ocean and Land Colour Instrument), SLSTR (Sea and Land Surface Temperature Instrument), SRAL (SAR Radar Altimeter) and MWR (Microwave Radiometer). The SENTINEL-3 mission is jointly operated by the European Space Agency (ESA) and supported by EUMETSAT (European Organisation for the Exploitation of Meteorological Satellites) [https://sentinels.copernicus.eu/web/sentinel/missions/sentinel-3].",
+                "startDate": "2016-05-01T02:31:18.569970Z",
+                "completionDate": "2016-05-01T02:34:18.569970Z",
+                "productType": "OL_1_EFR___",
+                "platform": "S3A",
+                "resolution": 0.0,
+                "orbitNumber": 1060,
+                "updated": "2018-09-28T01:05:07.684459Z",
+                "published": "2018-09-28T01:05:07.684459Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/d7ca6916-2a9b-5357-8c16-e6162850f012",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for d7ca6916-2a9b-5357-8c16-e6162850f012",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-3/d7ca6916-2a9b-5357-8c16-e6162850f012.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        112.8415,
+                        24.8806
+                    ]
+                },
+                "instrument": "OLCI",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "1",
+                "sensorMode": "Earth Observation",
+                "quicklook": null,
+                "thumbnail": "https://catalogue.dataspace.copernicus.eu/get-object?path=/Sentinel-3/OLCI/OL_1_EFR/2016/05/01/S3A_OL_1_EFR____20160501T023119_20160501T023419_20180207T115114_0179_003_317_2520_LR2_R_NT_002.SEN3/S3A_OL_1_EFR____20160501T023119_20160501T023419_20180207T115114_0179_003_317_2520_LR2_R_NT_002-ql.jpg",
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>105.239,20.8332 105.89,20.7258 106.544,20.6166 107.199,20.5045 107.848,20.3908 108.499,20.2742 109.149,20.1553 109.798,20.0345 110.443,19.9111 111.091,19.7845 111.737,19.6592 112.382,19.528 113.025,19.3976 113.666,19.2615 114.307,19.1242 114.947,18.9819 115.588,18.8413 116.225,18.6974 116.861,18.5516 117.497,18.4029 118.191,21.0437 118.911,23.6866 119.661,26.3252 120.444,28.9605 119.759,29.1203 119.071,29.2762 118.379,29.429 117.688,29.576 116.993,29.7241 116.296,29.8657 115.601,30.0042 114.9,30.1362 114.197,30.2674 113.491,30.3912 112.787,30.5143 112.078,30.6338 111.373,30.7479 110.673,30.8576 109.956,30.9659 109.248,31.0686 108.525,31.1692 107.813,31.2642 107.084,31.3583 106.635,28.7264 106.178,26.0956 105.713,23.4613 105.239,20.8332</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-3/OLCI/OL_1_EFR/2016/05/01/S3A_OL_1_EFR____20160501T023119_20160501T023419_20180207T115114_0179_003_317_2520_LR2_R_NT_002.SEN3",
+                "orbitDirection": "DESCENDING",
+                "timeliness": "NT",
+                "relativeOrbitNumber": 317,
+                "processingBaseline": 0
+            },
+            "id": "d7ca6916-2a9b-5357-8c16-e6162850f012"
+        }
+    ],
+    "properties": {
+        "id": "c9bd5d8c-c188-5fba-bfbd-1529c74a2485",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=OL_1_EFR___"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

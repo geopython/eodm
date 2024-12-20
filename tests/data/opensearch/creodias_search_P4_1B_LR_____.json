@@ -1,0 +1,694 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                180.0,
+                                -52.46209128692645
+                            ],
+                            [
+                                175.54721,
+                                -56.040865
+                            ],
+                            [
+                                155.915028,
+                                -63.608943
+                            ],
+                            [
+                                127.561737,
+                                -66.645357
+                            ],
+                            [
+                                127.455842,
+                                -65.65098
+                            ],
+                            [
+                                155.556387,
+                                -62.675467
+                            ],
+                            [
+                                174.921556,
+                                -55.260764
+                            ],
+                            [
+                                180.0,
+                                -51.19651125068577
+                            ],
+                            [
+                                180.0,
+                                -52.46209128692645
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                -180.0,
+                                -51.19651125068577
+                            ],
+                            [
+                                -173.007236,
+                                -45.600238
+                            ],
+                            [
+                                -165.00356,
+                                -34.848411
+                            ],
+                            [
+                                -159.145782,
+                                -23.533259
+                            ],
+                            [
+                                -154.393695,
+                                -11.921428
+                            ],
+                            [
+                                -150.11828,
+                                -0.171276
+                            ],
+                            [
+                                -145.848649,
+                                11.600677
+                            ],
+                            [
+                                -141.114105,
+                                23.28136
+                            ],
+                            [
+                                -135.282264,
+                                34.728825
+                            ],
+                            [
+                                -127.313118,
+                                45.68573
+                            ],
+                            [
+                                -115.32655,
+                                55.605207
+                            ],
+                            [
+                                -96.200718,
+                                63.311015
+                            ],
+                            [
+                                -68.272987,
+                                66.639438
+                            ],
+                            [
+                                -66.670132,
+                                66.648899
+                            ],
+                            [
+                                -66.66423,
+                                65.648917
+                            ],
+                            [
+                                -68.267084,
+                                65.639455
+                            ],
+                            [
+                                -96.082264,
+                                62.318056
+                            ],
+                            [
+                                -114.952055,
+                                54.677978
+                            ],
+                            [
+                                -126.674395,
+                                44.916293
+                            ],
+                            [
+                                -134.472869,
+                                34.14156
+                            ],
+                            [
+                                -140.222852,
+                                22.827854
+                            ],
+                            [
+                                -144.921831,
+                                11.225166
+                            ],
+                            [
+                                -149.178193,
+                                -0.512212
+                            ],
+                            [
+                                -153.45397,
+                                -12.263357
+                            ],
+                            [
+                                -158.220273,
+                                -23.911986
+                            ],
+                            [
+                                -164.115435,
+                                -35.308012
+                            ],
+                            [
+                                -172.204794,
+                                -46.196968
+                            ],
+                            [
+                                -180.0,
+                                -52.46209128692645
+                            ],
+                            [
+                                -180.0,
+                                -51.19651125068577
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-6",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S6A_P4_1B_LR______20240803T200722_20240803T210335_20240823T201441_3373_137_171_085_EUM__OPE_NT_F09.SEN6",
+                "description": "The Sentinel-6 mission represents a groundbreaking advancement in Earth observation, providing invaluable insights for scientists, environmentalists, and stakeholders worldwide. At the heart of this mission is the cutting-edge radar altimeter instrument, designed to measure sea surface height and monitor key oceanographic parameters with unparalleled accuracy. The Sentinel-6 satellite collects precise data by employing advanced radar technology, allowing for a comprehensive understanding of sea level variations, ocean currents, and climate patterns [https://creodias.eu/eodata/sentinel-6/].",
+                "startDate": "2024-08-03T20:07:22.528331Z",
+                "completionDate": "2024-08-03T21:03:35.470223Z",
+                "productType": "P4_1B_LR_____",
+                "platform": "S6A",
+                "resolution": 0.0,
+                "orbitNumber": 17306,
+                "updated": "2024-08-23T21:16:32.636558Z",
+                "published": "2024-08-23T21:14:08.318221Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/27a54992-74aa-4357-a3d7-15101e852510",
+                        "size": 110888960,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 27a54992-74aa-4357-a3d7-15101e852510",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-6/27a54992-74aa-4357-a3d7-15101e852510.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -64.5789985230488,
+                        0.053708193553062
+                    ]
+                },
+                "instrument": "P4",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "L1",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:MultiPolygon srsName=\"EPSG:4326\"><gml:polygonMember><gml:Polygon><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>180.0,-52.4620912869265 175.54721,-56.040865 155.915028,-63.608943 127.561737,-66.645357 127.455842,-65.65098 155.556387,-62.675467 174.921556,-55.260764 180.0,-51.1965112506858 180.0,-52.4620912869265</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon></gml:polygonMember><gml:polygonMember><gml:Polygon><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-180,-51.1965112506858 -173.007236,-45.600238 -165.00356,-34.848411 -159.145782,-23.533259 -154.393695,-11.921428 -150.11828,-0.171276 -145.848649,11.600677 -141.114105,23.28136 -135.282264,34.728825 -127.313118,45.68573 -115.32655,55.605207 -96.200718,63.311015 -68.272987,66.639438 -66.670132,66.648899 -66.66423,65.648917 -68.267084,65.639455 -96.082264,62.318056 -114.952055,54.677978 -126.674395,44.916293 -134.472869,34.14156 -140.222852,22.827854 -144.921831,11.225166 -149.178193,-0.512212 -153.45397,-12.263357 -158.220273,-23.911986 -164.115435,-35.308012 -172.204794,-46.196968 -180,-52.4620912869265 -180,-51.1965112506858</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon></gml:polygonMember></gml:MultiPolygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-6/P4/P4_1B_LR_____/2024/08/03/S6A_P4_1B_LR______20240803T200722_20240803T210335_20240823T201441_3373_137_171_085_EUM__OPE_NT_F09.SEN6",
+                "orbitDirection": null,
+                "timeliness": "NT",
+                "relativeOrbitNumber": 85,
+                "processingBaseline": 0
+            },
+            "id": "27a54992-74aa-4357-a3d7-15101e852510"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -161.675341,
+                            -65.651233
+                        ],
+                        [
+                            -161.569465,
+                            -66.645612
+                        ],
+                        [
+                            -133.215576,
+                            -63.609636
+                        ],
+                        [
+                            -113.582892,
+                            -56.041954
+                        ],
+                        [
+                            -101.33454,
+                            -46.198413
+                        ],
+                        [
+                            -93.24488,
+                            -35.309674
+                        ],
+                        [
+                            -87.349548,
+                            -23.913886
+                        ],
+                        [
+                            -82.583154,
+                            -12.265535
+                        ],
+                        [
+                            -78.307416,
+                            -0.514887
+                        ],
+                        [
+                            -74.050639,
+                            11.223428
+                        ],
+                        [
+                            -69.350834,
+                            22.827925
+                        ],
+                        [
+                            -63.600689,
+                            34.14157
+                        ],
+                        [
+                            -55.802075,
+                            44.91611
+                        ],
+                        [
+                            -44.082245,
+                            54.675959
+                        ],
+                        [
+                            -25.2136,
+                            62.316469
+                        ],
+                        [
+                            2.604045,
+                            65.638593
+                        ],
+                        [
+                            4.206839,
+                            65.648055
+                        ],
+                        [
+                            4.200936,
+                            66.648038
+                        ],
+                        [
+                            2.598142,
+                            66.638576
+                        ],
+                        [
+                            -25.33207,
+                            63.309427
+                        ],
+                        [
+                            -44.456777,
+                            55.603173
+                        ],
+                        [
+                            -56.440807,
+                            45.685539
+                        ],
+                        [
+                            -64.410073,
+                            34.728849
+                        ],
+                        [
+                            -70.242081,
+                            23.281443
+                        ],
+                        [
+                            -74.977455,
+                            11.598945
+                        ],
+                        [
+                            -79.247501,
+                            -0.173946
+                        ],
+                        [
+                            -83.522876,
+                            -11.923596
+                        ],
+                        [
+                            -88.275051,
+                            -23.535146
+                        ],
+                        [
+                            -94.132996,
+                            -34.850055
+                        ],
+                        [
+                            -102.136966,
+                            -45.60166
+                        ],
+                        [
+                            -114.208522,
+                            -55.261834
+                        ],
+                        [
+                            -133.574192,
+                            -62.676151
+                        ],
+                        [
+                            -161.675341,
+                            -65.651233
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-6",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S6A_P4_1B_LR______20240907T082106_20240907T091719_20241003T120654_3373_141_039_019_EUM__OPE_NT_F09.SEN6",
+                "description": "The Sentinel-6 mission represents a groundbreaking advancement in Earth observation, providing invaluable insights for scientists, environmentalists, and stakeholders worldwide. At the heart of this mission is the cutting-edge radar altimeter instrument, designed to measure sea surface height and monitor key oceanographic parameters with unparalleled accuracy. The Sentinel-6 satellite collects precise data by employing advanced radar technology, allowing for a comprehensive understanding of sea level variations, ocean currents, and climate patterns [https://creodias.eu/eodata/sentinel-6/].",
+                "startDate": "2024-09-07T08:21:06.525123Z",
+                "completionDate": "2024-09-07T09:17:19.457236Z",
+                "productType": "P4_1B_LR_____",
+                "platform": "S6A",
+                "resolution": 0.0,
+                "orbitNumber": 17748,
+                "updated": "2024-10-03T12:47:26.120022Z",
+                "published": "2024-10-03T12:44:15.686891Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/5874a016-03b1-4e67-931c-2989cb87e6e3",
+                        "size": 110704640,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 5874a016-03b1-4e67-931c-2989cb87e6e3",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-6/5874a016-03b1-4e67-931c-2989cb87e6e3.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -78.604116769658,
+                        0.052270132344018
+                    ]
+                },
+                "instrument": "P4",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "L1",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-161.675341,-65.651233 -161.569465,-66.645612 -133.215576,-63.609636 -113.582892,-56.041954 -101.33454,-46.198413 -93.24488,-35.309674 -87.349548,-23.913886 -82.583154,-12.265535 -78.307416,-0.514887 -74.050639,11.223428 -69.350834,22.827925 -63.600689,34.14157 -55.802075,44.91611 -44.082245,54.675959 -25.2136,62.316469 2.604045,65.638593 4.206839,65.648055 4.200936,66.648038 2.598142,66.638576 -25.33207,63.309427 -44.456777,55.603173 -56.440807,45.685539 -64.410073,34.728849 -70.242081,23.281443 -74.977455,11.598945 -79.247501,-0.173946 -83.522876,-11.923596 -88.275051,-23.535146 -94.132996,-34.850055 -102.136966,-45.60166 -114.208522,-55.261834 -133.574192,-62.676151 -161.675341,-65.651233</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-6/P4/P4_1B_LR_____/2024/09/07/S6A_P4_1B_LR______20240907T082106_20240907T091719_20241003T120654_3373_141_039_019_EUM__OPE_NT_F09.SEN6",
+                "orbitDirection": null,
+                "timeliness": "NT",
+                "relativeOrbitNumber": 19,
+                "processingBaseline": 0
+            },
+            "id": "5874a016-03b1-4e67-931c-2989cb87e6e3"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "MultiPolygon",
+                "coordinates": [
+                    [
+                        [
+                            [
+                                180.0,
+                                -65.3077970428175
+                            ],
+                            [
+                                157.58077,
+                                -59.603616
+                            ],
+                            [
+                                142.698649,
+                                -50.523047
+                            ],
+                            [
+                                133.153966,
+                                -39.961481
+                            ],
+                            [
+                                126.487856,
+                                -28.703677
+                            ],
+                            [
+                                119.227593,
+                                -11.676863
+                            ],
+                            [
+                                114.953496,
+                                0.102821
+                            ],
+                            [
+                                110.678961,
+                                11.854814
+                            ],
+                            [
+                                105.929951,
+                                23.470623
+                            ],
+                            [
+                                100.078391,
+                                34.79168
+                            ],
+                            [
+                                92.086283,
+                                45.551307
+                            ],
+                            [
+                                80.035119,
+                                55.223009
+                            ],
+                            [
+                                60.698782,
+                                62.654413
+                            ],
+                            [
+                                32.609627,
+                                65.652611
+                            ],
+                            [
+                                32.716359,
+                                66.646898
+                            ],
+                            [
+                                61.058592,
+                                63.587439
+                            ],
+                            [
+                                80.661844,
+                                56.00225
+                            ],
+                            [
+                                92.889344,
+                                46.147205
+                            ],
+                            [
+                                100.966812,
+                                35.250708
+                            ],
+                            [
+                                106.85559,
+                                23.849029
+                            ],
+                            [
+                                111.618726,
+                                12.196633
+                            ],
+                            [
+                                115.893552,
+                                0.443844
+                            ],
+                            [
+                                120.14755,
+                                -11.284843
+                            ],
+                            [
+                                127.348707,
+                                -28.194821
+                            ],
+                            [
+                                133.896858,
+                                -39.29207
+                            ],
+                            [
+                                143.220602,
+                                -49.670073
+                            ],
+                            [
+                                157.827697,
+                                -58.634582
+                            ],
+                            [
+                                180.0,
+                                -64.29308646087642
+                            ],
+                            [
+                                180.0,
+                                -65.3077970428175
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                -180.0,
+                                -64.29308646087642
+                            ],
+                            [
+                                -178.900345,
+                                -64.573725
+                            ],
+                            [
+                                -161.597822,
+                                -65.649383
+                            ],
+                            [
+                                -161.65987,
+                                -66.647456
+                            ],
+                            [
+                                -178.962393,
+                                -65.571798
+                            ],
+                            [
+                                -180.0,
+                                -65.3077970428175
+                            ],
+                            [
+                                -180.0,
+                                -64.29308646087642
+                            ]
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-6",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S6A_P4_1B_LR______20240907T072454_20240907T082106_20241003T120418_3372_141_038_019_EUM__OPE_NT_F09.SEN6",
+                "description": "The Sentinel-6 mission represents a groundbreaking advancement in Earth observation, providing invaluable insights for scientists, environmentalists, and stakeholders worldwide. At the heart of this mission is the cutting-edge radar altimeter instrument, designed to measure sea surface height and monitor key oceanographic parameters with unparalleled accuracy. The Sentinel-6 satellite collects precise data by employing advanced radar technology, allowing for a comprehensive understanding of sea level variations, ocean currents, and climate patterns [https://creodias.eu/eodata/sentinel-6/].",
+                "startDate": "2024-09-07T07:24:54.528900Z",
+                "completionDate": "2024-09-07T08:21:06.474437Z",
+                "productType": "P4_1B_LR_____",
+                "platform": "S6A",
+                "resolution": 0.0,
+                "orbitNumber": 17748,
+                "updated": "2024-10-03T12:50:09.520313Z",
+                "published": "2024-10-03T12:47:16.255907Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/e883e9d3-3578-4d06-96ff-8fafd0bff543",
+                        "size": 106608640,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for e883e9d3-3578-4d06-96ff-8fafd0bff543",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-6/e883e9d3-3578-4d06-96ff-8fafd0bff543.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        86.8613630773355,
+                        -0.118647215430961
+                    ]
+                },
+                "instrument": "P4",
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": "L1",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:MultiPolygon srsName=\"EPSG:4326\"><gml:polygonMember><gml:Polygon><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>180.0,-65.3077970428175 157.58077,-59.603616 142.698649,-50.523047 133.153966,-39.961481 126.487856,-28.703677 119.227593,-11.676863 114.953496,0.102821 110.678961,11.854814 105.929951,23.470623 100.078391,34.79168 92.086283,45.551307 80.035119,55.223009 60.698782,62.654413 32.609627,65.652611 32.716359,66.646898 61.058592,63.587439 80.661844,56.00225 92.889344,46.147205 100.966812,35.250708 106.85559,23.849029 111.618726,12.196633 115.893552,0.443844 120.14755,-11.284843 127.348707,-28.194821 133.896858,-39.29207 143.220602,-49.670073 157.827697,-58.634582 180.0,-64.2930864608764 180.0,-65.3077970428175</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon></gml:polygonMember><gml:polygonMember><gml:Polygon><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-180,-64.2930864608764 -178.900345,-64.573725 -161.597822,-65.649383 -161.65987,-66.647456 -178.962393,-65.571798 -180,-65.3077970428175 -180,-64.2930864608764</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon></gml:polygonMember></gml:MultiPolygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-6/P4/P4_1B_LR_____/2024/09/07/S6A_P4_1B_LR______20240907T072454_20240907T082106_20241003T120418_3372_141_038_019_EUM__OPE_NT_F09.SEN6",
+                "orbitDirection": null,
+                "timeliness": "NT",
+                "relativeOrbitNumber": 19,
+                "processingBaseline": 0
+            },
+            "id": "e883e9d3-3578-4d06-96ff-8fafd0bff543"
+        }
+    ],
+    "properties": {
+        "id": "7791d43a-4423-5e51-b029-8a19d65c1672",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=P4_1B_LR_____"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

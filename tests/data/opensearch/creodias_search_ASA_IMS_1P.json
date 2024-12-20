@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            23.86,
+                            68.14
+                        ],
+                        [
+                            23.14,
+                            69.0
+                        ],
+                        [
+                            20.6,
+                            68.69
+                        ],
+                        [
+                            21.4,
+                            67.84
+                        ],
+                        [
+                            23.86,
+                            68.14
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "ENVISAT",
+                "status": "OFFLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "ASA_IMS_1PNESA20021018_193157_000000152010_00257_03317_0000.N1",
+                "description": "Envisat was ESA's successor to ERS. Launched on 1 March 2002 on an Ariane-5 rocket from Europe's spaceport in French Guiana, Envisat was the largest Earth observation spacecraft ever built with 10 instruments aboard and at eight tonnes was the largest civilian Earth observation mission ever launched. More advanced imaging radar, radar altimeter and temperature-measuring radiometer instruments extended ERS data sets. This was supplemented by new instruments including a medium-resolution spectrometer sensitive to both land features and ocean colour. Envisat also carried two atmospheric sensors monitoring trace gases. The Envisat mission ended on 8 April 2012, following the unexpected loss of contact with the satellite [https://earth.esa.int/eogateway/missions/Envisat].",
+                "startDate": "2002-10-18T19:31:57.954000Z",
+                "completionDate": "2002-10-18T19:32:13.044000Z",
+                "productType": "ASA_IMS_1P",
+                "platform": "Envisat",
+                "resolution": 30.0,
+                "orbitNumber": 3317,
+                "updated": "2020-01-15T21:10:41.604507Z",
+                "published": "2020-01-15T21:10:41.604507Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/09d9c41c-df63-5dbe-ab5f-0f5cc2599a15",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 09d9c41c-df63-5dbe-ab5f-0f5cc2599a15",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/ENVISAT/09d9c41c-df63-5dbe-ab5f-0f5cc2599a15.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        22.248021215830278,
+                        68.41979192166463
+                    ]
+                },
+                "instrument": "ASAR",
+                "phase": 2,
+                "organisationName": "ESA",
+                "processingLevel": "LEVEL1P",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>23.86,68.14 23.14,69.0 20.6,68.69 21.4,67.84 23.86,68.14</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": null,
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "09d9c41c-df63-5dbe-ab5f-0f5cc2599a15"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            31.56,
+                            41.31
+                        ],
+                        [
+                            31.32,
+                            40.43
+                        ],
+                        [
+                            32.57,
+                            40.22
+                        ],
+                        [
+                            32.83,
+                            41.1
+                        ],
+                        [
+                            31.56,
+                            41.31
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "ENVISAT",
+                "status": "OFFLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "ASA_IMS_1PNESA20021018_080727_000000152010_00250_03310_0000.N1",
+                "description": "Envisat was ESA's successor to ERS. Launched on 1 March 2002 on an Ariane-5 rocket from Europe's spaceport in French Guiana, Envisat was the largest Earth observation spacecraft ever built with 10 instruments aboard and at eight tonnes was the largest civilian Earth observation mission ever launched. More advanced imaging radar, radar altimeter and temperature-measuring radiometer instruments extended ERS data sets. This was supplemented by new instruments including a medium-resolution spectrometer sensitive to both land features and ocean colour. Envisat also carried two atmospheric sensors monitoring trace gases. The Envisat mission ended on 8 April 2012, following the unexpected loss of contact with the satellite [https://earth.esa.int/eogateway/missions/Envisat].",
+                "startDate": "2002-10-18T08:07:27.333000Z",
+                "completionDate": "2002-10-18T08:07:42.422000Z",
+                "productType": "ASA_IMS_1P",
+                "platform": "Envisat",
+                "resolution": 30.0,
+                "orbitNumber": 3310,
+                "updated": "2020-01-15T21:10:50.556272Z",
+                "published": "2020-01-15T21:10:50.556272Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/0a9e69e5-a855-55c4-b518-96288705447f",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 0a9e69e5-a855-55c4-b518-96288705447f",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/ENVISAT/0a9e69e5-a855-55c4-b518-96288705447f.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        32.07069548494503,
+                        40.76604810700651
+                    ]
+                },
+                "instrument": "ASAR",
+                "phase": 2,
+                "organisationName": "ESA",
+                "processingLevel": "LEVEL1P",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>31.56,41.31 31.32,40.43 32.57,40.22 32.83,41.1 31.56,41.31</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": null,
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "0a9e69e5-a855-55c4-b518-96288705447f"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -30.98,
+                            69.62
+                        ],
+                        [
+                            -31.73,
+                            68.76
+                        ],
+                        [
+                            -29.2,
+                            68.45
+                        ],
+                        [
+                            -28.35,
+                            69.3
+                        ],
+                        [
+                            -30.98,
+                            69.62
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "ENVISAT",
+                "status": "OFFLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "ASA_IMS_1PNESA20021018_130108_000000152010_00253_03313_0000.N1",
+                "description": "Envisat was ESA's successor to ERS. Launched on 1 March 2002 on an Ariane-5 rocket from Europe's spaceport in French Guiana, Envisat was the largest Earth observation spacecraft ever built with 10 instruments aboard and at eight tonnes was the largest civilian Earth observation mission ever launched. More advanced imaging radar, radar altimeter and temperature-measuring radiometer instruments extended ERS data sets. This was supplemented by new instruments including a medium-resolution spectrometer sensitive to both land features and ocean colour. Envisat also carried two atmospheric sensors monitoring trace gases. The Envisat mission ended on 8 April 2012, following the unexpected loss of contact with the satellite [https://earth.esa.int/eogateway/missions/Envisat].",
+                "startDate": "2002-10-18T13:01:08.190000Z",
+                "completionDate": "2002-10-18T13:01:23.280000Z",
+                "productType": "ASA_IMS_1P",
+                "platform": "Envisat",
+                "resolution": 30.0,
+                "orbitNumber": 3313,
+                "updated": "2020-01-15T21:10:45.607871Z",
+                "published": "2020-01-15T21:10:45.607871Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/1214acd3-3e31-5ff4-a637-dcd10507d906",
+                        "size": 0,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 1214acd3-3e31-5ff4-a637-dcd10507d906",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/ENVISAT/1214acd3-3e31-5ff4-a637-dcd10507d906.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -30.06196536338609,
+                        69.03514951788111
+                    ]
+                },
+                "instrument": "ASAR",
+                "phase": 2,
+                "organisationName": "ESA",
+                "processingLevel": "LEVEL1P",
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-30.98,69.62 -31.73,68.76 -29.2,68.45 -28.35,69.3 -30.98,69.62</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": null,
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": null,
+                "processingBaseline": null
+            },
+            "id": "1214acd3-3e31-5ff4-a637-dcd10507d906"
+        }
+    ],
+    "properties": {
+        "id": "566791e2-4108-5c25-b2f7-f9f2e6c454a0",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=ASA_IMS_1P"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

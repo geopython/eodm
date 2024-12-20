@@ -1,0 +1,314 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            71.382759,
+                            -66.378166
+                        ],
+                        [
+                            71.593582,
+                            -66.53907
+                        ],
+                        [
+                            72.01445,
+                            -66.448723
+                        ],
+                        [
+                            71.80146,
+                            -66.288383
+                        ],
+                        [
+                            71.382759,
+                            -66.378166
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1B_WV_SLC__1SSV_20160926T145601_20160926T150900_002241_003C47_A58B.SAFE",
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "startDate": "2016-09-26T14:56:01.633000Z",
+                "completionDate": "2016-09-26T15:09:00.862000Z",
+                "productType": "WV_SLC__1S",
+                "platform": "S1B",
+                "resolution": 0.0,
+                "orbitNumber": 2241,
+                "updated": "2023-08-15T05:11:33.410708Z",
+                "published": "2019-03-14T16:46:34.703722Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/14c095c3-1997-52ad-9d51-e2c41b3f4de8",
+                        "size": 5182531927,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 14c095c3-1997-52ad-9d51-e2c41b3f4de8",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/14c095c3-1997-52ad-9d51-e2c41b3f4de8.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        71.6981413769437,
+                        -66.4136614526042
+                    ]
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": "LEVEL1",
+                "sensorMode": "WV",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>71.382759,-66.378166 71.593582,-66.53907 72.01445,-66.448723 71.80146,-66.288383 71.382759,-66.378166</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/SAR/SLC/2016/09/26/S1B_WV_SLC__1SSV_20160926T145601_20160926T150900_002241_003C47_A58B.SAFE",
+                "orbitDirection": "ASCENDING",
+                "timeliness": "Fast-24h",
+                "relativeOrbitNumber": 115,
+                "processingBaseline": 0
+            },
+            "id": "14c095c3-1997-52ad-9d51-e2c41b3f4de8"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            156.728027,
+                            -1.815855
+                        ],
+                        [
+                            156.765976,
+                            -1.634957
+                        ],
+                        [
+                            156.583878,
+                            -1.595624
+                        ],
+                        [
+                            156.545868,
+                            -1.776486
+                        ],
+                        [
+                            156.728027,
+                            -1.815855
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1B_WV_SLC__1SSV_20160926T192218_20160926T192758_002244_003C67_F2EC.SAFE",
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "startDate": "2016-09-26T19:22:18.436000Z",
+                "completionDate": "2016-09-26T19:27:58.261000Z",
+                "productType": "WV_SLC__1S",
+                "platform": "S1B",
+                "resolution": 0.0,
+                "orbitNumber": 2244,
+                "updated": "2023-08-15T05:13:58.114055Z",
+                "published": "2019-03-14T16:45:28.507803Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/7736fdbf-f246-5ab5-9fbf-8d746c3b6d1c",
+                        "size": 2380912505,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 7736fdbf-f246-5ab5-9fbf-8d746c3b6d1c",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/7736fdbf-f246-5ab5-9fbf-8d746c3b6d1c.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        156.655937942027,
+                        -1.70573632360133
+                    ]
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": "LEVEL1",
+                "sensorMode": "WV",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>156.728027,-1.815855 156.765976,-1.634957 156.583878,-1.595624 156.545868,-1.776486 156.728027,-1.815855</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/SAR/SLC/2016/09/26/S1B_WV_SLC__1SSV_20160926T192218_20160926T192758_002244_003C67_F2EC.SAFE",
+                "orbitDirection": "DESCENDING",
+                "timeliness": "Fast-24h",
+                "relativeOrbitNumber": 118,
+                "processingBaseline": 0
+            },
+            "id": "7736fdbf-f246-5ab5-9fbf-8d746c3b6d1c"
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates": [
+                    [
+                        [
+                            -122.20562,
+                            30.869925
+                        ],
+                        [
+                            -122.162865,
+                            31.049784
+                        ],
+                        [
+                            -122.376022,
+                            31.086582
+                        ],
+                        [
+                            -122.418335,
+                            30.906713
+                        ],
+                        [
+                            -122.20562,
+                            30.869925
+                        ]
+                    ]
+                ]
+            },
+            "properties": {
+                "collection": "SENTINEL-1",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S1B_WV_SLC__1SSV_20160926T141704_20160926T142412_002241_003C43_C140.SAFE",
+                "description": "The Sentinel-1 mission is the European Radar Observatory for the Copernicus joint initiative of the European Commission (EC) and the European Space Agency (ESA). The Sentinel-1 mission includes C-band imaging operating in four exclusive imaging modes with different resolution (down to 5 m) and coverage (up to 400 km). It provides dual polarization capability, short revisit times and rapid product delivery. Additionally, precise measurements of spacecraft position and attitude are available for every observation [https://dataspace.copernicus.eu/explore-data/data-collections/sentinel-data/sentinel-1].",
+                "startDate": "2016-09-26T14:17:04.326000Z",
+                "completionDate": "2016-09-26T14:24:12.013000Z",
+                "productType": "WV_SLC__1S",
+                "platform": "S1B",
+                "resolution": 0.0,
+                "orbitNumber": 2241,
+                "updated": "2023-08-15T05:08:34.972292Z",
+                "published": "2019-03-14T16:46:44.325842Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/a87de19a-52b0-5f0b-a810-7ac6132b1de8",
+                        "size": 2983169628,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for a87de19a-52b0-5f0b-a810-7ac6132b1de8",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-1/a87de19a-52b0-5f0b-a810-7ac6132b1de8.json"
+                    }
+                ],
+                "centroid": {
+                    "type": "Point",
+                    "coordinates": [
+                        -122.290697102534,
+                        30.9782799641146
+                    ]
+                },
+                "instrument": "SAR",
+                "phase": null,
+                "organisationName": null,
+                "processingLevel": "LEVEL1",
+                "sensorMode": "WV",
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": "<gml:Polygon srsName=\"EPSG:4326\"><gml:outerBoundaryIs><gml:LinearRing><gml:coordinates>-122.20562,30.869925 -122.162865,31.049784 -122.376022,31.086582 -122.418335,30.906713 -122.20562,30.869925</gml:coordinates></gml:LinearRing></gml:outerBoundaryIs></gml:Polygon>",
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-1/SAR/SLC/2016/09/26/S1B_WV_SLC__1SSV_20160926T141704_20160926T142412_002241_003C43_C140.SAFE",
+                "orbitDirection": "DESCENDING",
+                "timeliness": "Fast-24h",
+                "relativeOrbitNumber": 115,
+                "processingBaseline": 0
+            },
+            "id": "a87de19a-52b0-5f0b-a810-7ac6132b1de8"
+        }
+    ],
+    "properties": {
+        "id": "5c5c990c-878c-5821-b128-42674bb24e7c",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=WV_SLC__1S"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

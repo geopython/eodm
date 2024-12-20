@@ -1,0 +1,227 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-6",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S6A_AX____ROE__AX_20241108T070516_20241108T090306_20241108T090716__________________CPOD_OPE_NR____.SEN6",
+                "startDate": "2024-11-08T07:05:16Z",
+                "completionDate": "2024-11-08T09:03:06Z",
+                "productType": "AX____ROE__AX",
+                "platform": "S6A",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-11-08T09:08:53.841093Z",
+                "published": "2024-11-08T09:08:53.122023Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/fa3dfb96-9db0-11ef-8308-0242ac120004",
+                        "size": 378880,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for fa3dfb96-9db0-11ef-8308-0242ac120004",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-6/fa3dfb96-9db0-11ef-8308-0242ac120004.json"
+                    }
+                ],
+                "description": "The Sentinel-6 mission represents a groundbreaking advancement in Earth observation, providing invaluable insights for scientists, environmentalists, and stakeholders worldwide. At the heart of this mission is the cutting-edge radar altimeter instrument, designed to measure sea surface height and monitor key oceanographic parameters with unparalleled accuracy. The Sentinel-6 satellite collects precise data by employing advanced radar technology, allowing for a comprehensive understanding of sea level variations, ocean currents, and climate patterns [https://creodias.eu/eodata/sentinel-6/].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-6/AUX/AX____ROE__AX/2024/11/08/S6A_AX____ROE__AX_20241108T070516_20241108T090306_20241108T090716__________________CPOD_OPE_NR____.SEN6.tar",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0
+            },
+            "id": "fa3dfb96-9db0-11ef-8308-0242ac120004"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-6",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S6A_AX____ROE__AX_20241204T143328_20241204T163048_20241204T163429__________________CPOD_OPE_NR____.SEN6",
+                "startDate": "2024-12-04T14:33:28Z",
+                "completionDate": "2024-12-04T16:30:48Z",
+                "productType": "AX____ROE__AX",
+                "platform": "S6A",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-12-04T16:36:15.860032Z",
+                "published": "2024-12-04T16:36:15.192217Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/ba31e802-b25d-11ef-9843-0242ac120004",
+                        "size": 378880,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for ba31e802-b25d-11ef-9843-0242ac120004",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-6/ba31e802-b25d-11ef-9843-0242ac120004.json"
+                    }
+                ],
+                "description": "The Sentinel-6 mission represents a groundbreaking advancement in Earth observation, providing invaluable insights for scientists, environmentalists, and stakeholders worldwide. At the heart of this mission is the cutting-edge radar altimeter instrument, designed to measure sea surface height and monitor key oceanographic parameters with unparalleled accuracy. The Sentinel-6 satellite collects precise data by employing advanced radar technology, allowing for a comprehensive understanding of sea level variations, ocean currents, and climate patterns [https://creodias.eu/eodata/sentinel-6/].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-6/AUX/AX____ROE__AX/2024/12/04/S6A_AX____ROE__AX_20241204T143328_20241204T163048_20241204T163429__________________CPOD_OPE_NR____.SEN6.tar",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0
+            },
+            "id": "ba31e802-b25d-11ef-9843-0242ac120004"
+        },
+        {
+            "type": "Feature",
+            "geometry": null,
+            "properties": {
+                "collection": "SENTINEL-6",
+                "status": "ONLINE",
+                "license": {
+                    "licenseId": "unlicensed",
+                    "hasToBeSigned": "never",
+                    "viewService": "public",
+                    "signatureQuota": -1,
+                    "description": {
+                        "shortName": "No license"
+                    },
+                    "grantedCountries": null,
+                    "grantedOrganizationCountries": null,
+                    "grantedFlags": null
+                },
+                "title": "S6A_AX____ROE__AX_20241108T090132_20241108T105832_20241108T110313__________________CPOD_OPE_NR____.SEN6",
+                "startDate": "2024-11-08T09:01:32Z",
+                "completionDate": "2024-11-08T10:58:32Z",
+                "productType": "AX____ROE__AX",
+                "platform": "S6A",
+                "resolution": 0.0,
+                "orbitNumber": 0,
+                "updated": "2024-11-08T11:04:58.248147Z",
+                "published": "2024-11-08T11:04:57.636119Z",
+                "services": {
+                    "download": {
+                        "url": "https://catalogue.dataspace.copernicus.eu/download/2e66b20e-9dc1-11ef-8f0f-0242ac120004",
+                        "size": 378880,
+                        "mimetype": null
+                    }
+                },
+                "links": [
+                    {
+                        "rel": "self",
+                        "type": "application/json",
+                        "title": "GeoJSON link for 2e66b20e-9dc1-11ef-8f0f-0242ac120004",
+                        "href": "https://catalogue.dataspace.copernicus.eu/resto/collections/SENTINEL-6/2e66b20e-9dc1-11ef-8f0f-0242ac120004.json"
+                    }
+                ],
+                "description": "The Sentinel-6 mission represents a groundbreaking advancement in Earth observation, providing invaluable insights for scientists, environmentalists, and stakeholders worldwide. At the heart of this mission is the cutting-edge radar altimeter instrument, designed to measure sea surface height and monitor key oceanographic parameters with unparalleled accuracy. The Sentinel-6 satellite collects precise data by employing advanced radar technology, allowing for a comprehensive understanding of sea level variations, ocean currents, and climate patterns [https://creodias.eu/eodata/sentinel-6/].",
+                "centroid": {
+                    "type": null,
+                    "features": null
+                },
+                "instrument": null,
+                "phase": null,
+                "organisationName": "ESA",
+                "processingLevel": null,
+                "sensorMode": null,
+                "quicklook": null,
+                "thumbnail": null,
+                "snowCover": 0,
+                "cloudClover": null,
+                "gmlgeometry": null,
+                "parentIdentifier": null,
+                "cycle": null,
+                "productIdentifier": "/eodata/Sentinel-6/AUX/AX____ROE__AX/2024/11/08/S6A_AX____ROE__AX_20241108T090132_20241108T105832_20241108T110313__________________CPOD_OPE_NR____.SEN6.tar",
+                "orbitDirection": null,
+                "timeliness": null,
+                "relativeOrbitNumber": 0,
+                "processingBaseline": 0
+            },
+            "id": "2e66b20e-9dc1-11ef-8f0f-0242ac120004"
+        }
+    ],
+    "properties": {
+        "id": "67083b6d-ec9a-5f14-ba8e-27b2640fa624",
+        "exactCount": 0,
+        "startIndex": 1,
+        "itemsPerPage": 3,
+        "links": [
+            {
+                "rel": "self",
+                "type": "application/json",
+                "title": "self",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/search.json?maxRecords=3&productType=AX____ROE__AX"
+            },
+            {
+                "rel": "search",
+                "type": "application/opensearchdescription+xml",
+                "title": "OpenSearch Description Document",
+                "href": "https://catalogue.dataspace.copernicus.eu/resto/api/collections/describe.xml"
+            }
+        ],
+        "totalResults": null
+    }
+}

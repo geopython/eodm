@@ -6,7 +6,7 @@ The section shows information about the API relevant for the developers.
 
 ::: eodm.extract.extract_stac_api_items
 ::: eodm.extract.extract_stac_api_collections
-::: eodm.extract.extract_opensearch_records
+::: eodm.extract.extract_opensearch_features
 
 ## Loaders
 

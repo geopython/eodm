@@ -5,16 +5,10 @@ from functools import cached_property
 from typing import Any, Generic, Iterator, List, Literal, Union
 
 import lxml.etree as ET
-from geojson_pydantic import (
-    Feature,
-    LineString,
-    MultiLineString,
-    MultiPolygon,
-    Point,
-    Polygon,
-)
+from geojson_pydantic import Feature, Point
 from geojson_pydantic.base import _GeoJsonBase
 from geojson_pydantic.features import Feat, Props
+from geojson_pydantic.geometries import Geometry
 from httpx import Client, HTTPTransport
 from pydantic import UUID5, BaseModel, Field
 
@@ -162,7 +156,7 @@ class OpenSearchFeatureProperties(BaseModel):
 # because opensearch returns a nonstandard properties field **shudders
 class FeatureCollection(_GeoJsonBase, Generic[Feat, Props]):
     """
-    FeatureCollection Model for OpenSearch, that are extended with nonstandard
+    FeatureCollection Model for creodias OpenSearch, that are extended with nonstandard
     `properties`
     """
 
@@ -183,9 +177,7 @@ class FeatureCollection(_GeoJsonBase, Generic[Feat, Props]):
         return self.features[index]
 
 
-OpenSearchFeatureType = Feature[
-    Polygon | MultiPolygon | MultiLineString | LineString, OpenSearchFeatureProperties
-]
+OpenSearchFeatureType = Feature[Geometry, OpenSearchFeatureProperties]
 
 
 # I've no idea how this works

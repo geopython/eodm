@@ -12,14 +12,7 @@ from eodm.cli._types import (
 )
 from eodm.extract import extract_stac_api_collections, extract_stac_api_items
 
-app = typer.Typer(no_args_is_help=True)
-
-
-@app.callback()
-def main():
-    """
-    Extract data from a STAC API
-    """
+app = typer.Typer(no_args_is_help=True, help="Extract data from a STAC API")
 
 
 @app.command(no_args_is_help=True)

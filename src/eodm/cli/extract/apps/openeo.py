@@ -6,14 +6,7 @@ from typing import Annotated
 import pystac
 import typer
 
-app = typer.Typer(no_args_is_help=True)
-
-
-@app.callback()
-def main():
-    """
-    Extract data from openEO results
-    """
+app = typer.Typer(no_args_is_help=True, help="Extract data from openEO results")
 
 
 @app.command(no_args_is_help=True)

@@ -7,7 +7,7 @@ from pystac import HREF, Catalog, StacIO
 
 from eodm.cli._errors import ExtractError
 
-app = typer.Typer(no_args_is_help=True)
+app = typer.Typer(no_args_is_help=True, help="Extract data from a STAC Catalog")
 
 
 class FSSpecStacIO(StacIO):
@@ -33,14 +33,6 @@ class FSSpecStacIO(StacIO):
 
 
 StacIO.set_default(FSSpecStacIO)
-
-
-@app.callback()
-def main():
-    """
-    Extract data from a STAC Catalog
-    """
-    pass
 
 
 @app.command(no_args_is_help=True)

@@ -9,14 +9,7 @@ from eodm.cli._types import (
 )
 from eodm.extract import extract_opensearch_features
 
-app = typer.Typer(no_args_is_help=True)
-
-
-@app.callback()
-def main():
-    """
-    Extract features from a OpenSearch API
-    """
+app = typer.Typer(no_args_is_help=True, help="Extract features from a OpenSearch API")
 
 
 @app.command(no_args_is_help=True)

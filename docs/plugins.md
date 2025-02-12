@@ -1,8 +1,7 @@
 # Plugins
 
-`eodm` offers an option to add plugins as there is a wide array of extract, transform,
-load functions in EO that are possible. Below is a minimal transform example
-example.
+`eodm` offers an option to add extract, transform or load plugins.
+Below is a minimal transform example.
 
 `pyproject.toml`
 
@@ -38,8 +37,9 @@ and a single command `test`:
 eodm transform plugin test
 ```
 
-The plugin should probaly work by accepting and outputting STAC items, in order to create
-a full pipeline.
+This is a sample to get you up to speed. A properly implemented plugin should work by
+accepting and outputting STAC items, in order to create a full pipeline and leverage
+existing functions around the plugin that work by taking STAC and outputting STAC.
 
 ## Docker
 

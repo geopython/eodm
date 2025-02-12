@@ -15,13 +15,11 @@ fsspec = "^2024.3.1"
 s3fs = "^2024.3.1"
 pystac = "^1.10.0"
 pystac-client = "^0.7.7"
-odc-stac = "^0.3.9"
-rioxarray = "^0.15.5"
-rio-cogeo = "^5.3.0"
-rio-stac = "^0.9.0"
 python-dateutil = "^2.9.0.post0"
 lxml = "^5.3.0"
 geojson-pydantic = "^1.1.2"
+rio-stac = "^0.10.1"
+rasterio = "^1.4.3"
 
 
 [tool.poetry.group.dev.dependencies]
@@ -50,6 +48,7 @@ version_scheme = "semver"
 version_provider = "poetry"
 update_changelog_on_bump = true
 major_version_zero = true
+
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"

@@ -1,7 +1,8 @@
 from typing import Any
 
 import fsspec
-from pystac import HREF, StacIO
+from pystac import StacIO
+from pystac.utils import HREF
 
 
 class FSSpecStacIO(StacIO):

@@ -1,5 +1,5 @@
 import json
-from typing import Any
+from typing import Any, Optional
 
 import fsspec
 import typer
@@ -60,7 +60,7 @@ def collection(stac_catalog_path: str, collection_id: str) -> None:
 @app.command(no_args_is_help=True)
 def items(
     stac_catalog_path: str,
-    collection_id: str | None = None,
+    collection_id: Optional[str] = None,
 ) -> None:
     """Extract items from a STAC Catalog"""
 

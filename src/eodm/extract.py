@@ -1,4 +1,4 @@
-from typing import Iterator
+from typing import Iterator, Optional
 
 import pystac_client
 from pystac import Collection, Item
@@ -8,23 +8,23 @@ from .opensearch import OpenSearchClient, OpenSearchFeature
 
 def extract_stac_api_items(
     url: str,
-    collections: list[str] | None = None,
-    bbox: tuple[float, float, float, float] | None = None,
-    datetime_interval: str | None = None,
-    limit: int | None = None,
-    query: dict | None = None,
-    filter: dict | None = None,
+    collections: Optional[list[str]] = None,
+    bbox: Optional[tuple[float, float, float, float]] = None,
+    datetime_interval: Optional[str] = None,
+    limit: Optional[int] = None,
+    query: Optional[dict] = None,
+    filter: Optional[dict] = None,
 ) -> Iterator[Item]:
     """Extracts STAC Items from a STAC API
 
     Args:
         url (str): Link to STAC API endpoint
-        collections (list[str] | None, optional): List of collections to extract items from. Defaults to None.
-        bbox (tuple[float, float, float, float] | None, optional): Bounding box to search. Defaults to None.
-        datetime_interval (str | None, optional): Datetime interval to search. Defaults to None.
-        limit (int, optional): Limit query to given number. Defaults to 10.
-        query (optional): STACAPI Query extension
-        filter (optional): STACAPI CQL Filter extension
+        collections (Optional[list[str]], optional): List of collections to extract items from. Defaults to None.
+        bbox (Optional[tuple[float, float, float, float]], optional): Bounding box to search. Defaults to None.
+        datetime_interval (Optional[str], optional): Datetime interval to search. Defaults to None.
+        limit (Optional[int], optional): Limit query to given number. Defaults to 10.
+        query (Optional[dict], optional): STACAPI Query extension
+        filter (Optional[dict], optional): STACAPI CQL Filter extension
 
     Yields:
         Iterator[Item]: pystac Items

@@ -1,7 +1,7 @@
 import json
 import os.path
 import sys
-from typing import Annotated
+from typing import Annotated, Optional
 from urllib.parse import urlparse
 
 import fsspec
@@ -96,8 +96,8 @@ def collections(
 def items(
     catalog_path: str,
     items: Annotated[typer.FileText, typer.Argument()] = sys.stdin,  # type: ignore
-    source_profile: str | None = None,
-    target_profile: str | None = None,
+    source_profile: Optional[str] = None,
+    target_profile: Optional[str] = None,
     chunk_size: int = 100000,
 ) -> None:
     """Load STAC Items to an existing STAC Catalog. Each item will be sorted to its

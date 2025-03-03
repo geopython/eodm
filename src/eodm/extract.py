@@ -3,6 +3,7 @@ from typing import Iterator, Optional
 import pystac_client
 from pystac import Collection, Item
 
+from .odata import ODataClient, ODataCollection, ODataQuery
 from .opensearch import OpenSearchClient, OpenSearchFeature
 
 
@@ -67,7 +68,7 @@ def extract_opensearch_features(
 
     Args:
         url (str): Link to OpenSearch API endpoint
-        productTypes (list[str]): List of productTypes to search for
+        product_types (list[str]): List of productTypes to search for
 
     Yields:
         Iterator[OpenSearchFeature]: OpenSearch Features
@@ -83,3 +84,20 @@ def extract_opensearch_features(
             if limit and i >= limit:
                 break
             yield feature
+
+
+def extract_odata_products(
+    url: str,
+    collections: list[ODataCollection],
+):
+    """Extracts OData Products from an OData API
+
+    Args:
+        url (str): Link to OData API endpoint
+        collections (list[ODataCollection]): List of collections to search for
+    """
+    client = ODataClient(url)
+    for collection in collections:
+        query = ODataQuery(collection=collection.value)
+        for product in client.search(query):
+            yield product

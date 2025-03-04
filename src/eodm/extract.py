@@ -3,7 +3,7 @@ from typing import Iterator, Optional
 import pystac_client
 from pystac import Collection, Item
 
-from .odata import ODataClient, ODataCollection, ODataQuery
+from .odata import ODataClient, ODataCollection, ODataProduct, ODataQuery
 from .opensearch import OpenSearchClient, OpenSearchFeature
 
 
@@ -89,7 +89,7 @@ def extract_opensearch_features(
 def extract_odata_products(
     url: str,
     collections: list[ODataCollection],
-):
+) -> Iterator[ODataProduct]:
     """Extracts OData Products from an OData API
 
     Args:

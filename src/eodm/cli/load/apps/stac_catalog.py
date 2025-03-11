@@ -99,6 +99,7 @@ def items(
     source_profile: Optional[str] = None,
     target_profile: Optional[str] = None,
     chunk_size: int = 100000,
+    update: bool = False,
 ) -> None:
     """Load STAC Items to an existing STAC Catalog. Each item will be sorted to its
     collection
@@ -137,15 +138,16 @@ def items(
             protocol = urlparse(str(asset.href)).scheme or "file"
             source_filesystem: fsspec.AbstractFileSystem = fsspec.filesystem(protocol)
 
-            with (
-                target_filesystem.open(final_path, "wb") as t,
-                source_filesystem.open(asset.href) as s,
-            ):
-                data = s.read(chunk_size)
-                while data:
-                    t.write(data)
+            if not target_filesystem.exists(final_path) or update:
+                with (
+                    target_filesystem.open(final_path, "wb") as t,
+                    source_filesystem.open(asset.href) as s,
+                ):
                     data = s.read(chunk_size)
-            item.assets[asset_name].href = final_path
+                    while data:
+                        t.write(data)
+                        data = s.read(chunk_size)
+                item.assets[asset_name].href = final_path
 
         collection.add_item(item)
         collection.update_extent_from_items()

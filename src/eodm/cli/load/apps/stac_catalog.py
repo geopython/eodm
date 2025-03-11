@@ -147,7 +147,7 @@ def items(
                     while data:
                         t.write(data)
                         data = s.read(chunk_size)
-                item.assets[asset_name].href = final_path
+            item.assets[asset_name].href = final_path
 
         collection.add_item(item)
         collection.update_extent_from_items()

@@ -102,7 +102,7 @@ def items(
     update: bool = False,
 ) -> None:
     """Load STAC Items to an existing STAC Catalog. Each item will be sorted to its
-    collection
+    collection, and the path will be infered based on catalog_path
     """
 
     if not os.path.basename(catalog_path) == "catalog.json":

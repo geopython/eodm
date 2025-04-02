@@ -136,7 +136,9 @@ def items(
             )
 
             protocol = urlparse(str(asset.href)).scheme or "file"
-            source_filesystem: fsspec.AbstractFileSystem = fsspec.filesystem(protocol)
+            source_filesystem: fsspec.AbstractFileSystem = fsspec.filesystem(
+                protocol, profile=source_profile
+            )
 
             if not target_filesystem.exists(final_path) or update:
                 with (

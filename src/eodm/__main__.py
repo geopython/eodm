@@ -40,7 +40,14 @@ except KeyError:
     pass
 app.add_typer(load)
 
-load_dotenv()
+
+@app.callback()
+def main(with_env: bool = False):
+    """
+    Create batch ETL of Earth Observation data for various sources and targets.
+    """
+    if with_env:
+        load_dotenv()
 
 
 @app.command()

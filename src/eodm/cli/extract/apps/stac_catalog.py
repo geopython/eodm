@@ -36,7 +36,7 @@ def collections(
             if collection.id not in skip_collection
         ]
     else:
-        collections = catalog.get_all_collections()
+        collections = list(catalog.get_all_collections())
     serialize(collections, output_type=output)
 
 

@@ -119,10 +119,12 @@ def items(
     target_filesystem = _get_fsspec_fs(protocol, profile=target_profile)
     catalog = Catalog.from_file(catalog_path, FSSpecStacIO(filesystem=target_filesystem))
 
+    collections: set[Collection] = set()
     for i in items:
         item = Item.from_dict(json.loads(i))
 
         collection_id = item.collection_id
+
         if not collection_id:
             raise LoadError("No collection id found in item", item)
 
@@ -131,6 +133,7 @@ def items(
         if not collection:
             raise LoadError("No collection found with given id", collection_id)
         assert isinstance(collection, Collection)
+        collections.add(collection)
 
         for asset_name, asset in item.assets.items():
             asset_file = asset.href.split("/")[-1]
@@ -152,11 +155,14 @@ def items(
             item.assets[asset_name].href = final_path
 
         collection.add_item(item)
-        collection.update_extent_from_items()
         print(json.dumps(item.to_dict()))
+
+    for collection in collections:
+        collection.update_extent_from_items()
 
     catalog.normalize_and_save(
         catalog_base_path,
         catalog_type=CatalogType.ABSOLUTE_PUBLISHED,
         skip_unresolved=True,
+        stac_io=FSSpecStacIO(filesystem=target_filesystem),
     )

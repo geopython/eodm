@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Annotated, Optional
 
 import typer
 from pystac import Catalog, StacIO
@@ -18,11 +18,26 @@ StacIO.set_default(FSSpecStacIO)
 def collections(
     stac_catalog_path: str,
     output: OutputType = Output.default,
+    skip_collection: Annotated[
+        Optional[list[str]],
+        typer.Option(
+            help="Skip collections. Can pass multiple --skip-collection col1 --skip-collection col2"
+        ),
+    ] = None,
 ) -> None:
     """Extract collections from a STAC Catalog"""
 
     catalog = Catalog.from_file(stac_catalog_path)
-    serialize(catalog.get_all_collections(), output_type=output)
+
+    if skip_collection:
+        collections = [
+            collection
+            for collection in catalog.get_all_collections()
+            if collection.id not in skip_collection
+        ]
+    else:
+        collections = catalog.get_all_collections()
+    serialize(collections, output_type=output)
 
 
 @app.command(no_args_is_help=True)

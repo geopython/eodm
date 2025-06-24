@@ -57,7 +57,7 @@ class ODataProduct(BaseModel):
 class ODataResult(BaseModel):
     odata_context: Annotated[str, Field(alias="@odata.context")]
     value: list[ODataProduct]
-    odata_nextlink: Annotated[str, Field(alias="@odata.nextLink")]
+    odata_nextlink: Annotated[str | None, Field(alias="@odata.nextLink")] = None
 
 
 class ODataQuery:
@@ -101,7 +101,7 @@ class ODataQuery:
             )
         if self.intersect_geometry:
             query.append(
-                f"OData.CSC.Intersects(area=geography'SRID=4326;{self.intersect_geometry.wkt})"
+                f"intersects(area=geography'SRID=4326;{self.intersect_geometry.wkt}')"
             )
         if self.online:
             query.append("Online eq true")

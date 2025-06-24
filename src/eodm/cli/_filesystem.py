@@ -28,4 +28,4 @@ def _get_fsspec_fs(protocol: str, profile: Optional[str]) -> fsspec.AbstractFile
                 "endpoint_url": endpoint_url,
             },
         )
-    return fsspec.filesystem(protocol, profile=profile)
+    return fsspec.filesystem(protocol)

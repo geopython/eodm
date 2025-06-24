@@ -102,6 +102,7 @@ def items(
     items: Annotated[typer.FileText, typer.Argument()] = sys.stdin,  # type: ignore
     source_profile: Optional[str] = None,
     target_profile: Optional[str] = None,
+    source_protocol: str = "file",
     chunk_size: int = 100000,
     update: bool = False,
 ) -> None:
@@ -114,9 +115,9 @@ def items(
 
     catalog_base_path = os.path.dirname(catalog_path)
 
-    protocol = urlparse(str(catalog_path)).scheme or "file"
-    source_filesystem = _get_fsspec_fs(protocol, profile=source_profile)
-    target_filesystem = _get_fsspec_fs(protocol, profile=target_profile)
+    target_protocol = urlparse(str(catalog_path)).scheme or "file"
+    source_filesystem = _get_fsspec_fs(source_protocol, profile=source_profile)
+    target_filesystem = _get_fsspec_fs(target_protocol, profile=target_profile)
     catalog = Catalog.from_file(catalog_path, FSSpecStacIO(filesystem=target_filesystem))
 
     collections: set[Collection] = set()
@@ -140,8 +141,6 @@ def items(
             final_path = os.path.join(
                 catalog_base_path, collection.id, item.id, asset_file
             )
-
-            protocol = urlparse(str(asset.href)).scheme or "file"
 
             if not target_filesystem.exists(final_path) or update:
                 with (

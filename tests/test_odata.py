@@ -5,7 +5,7 @@ from eodm.odata import ODataCollection, ODataProduct
 from geojson_pydantic import Feature
 
 
-def test_extract_odata_products():  # mock_odata_search):
+def test_extract_odata_products(mock_odata_search):
     url = "https://catalogue.dataspace.copernicus.eu/odata/v1/Products"
     collections = [ODataCollection.SENTINEL_2]
     datetime_range = (datetime(2020, 1, 1), datetime(2020, 1, 20))

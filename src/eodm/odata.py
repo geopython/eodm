@@ -50,7 +50,7 @@ class ODataProduct(BaseModel):
     eviction_date: Annotated[str, Field(alias="EvictionDate")]
     s3_path: Annotated[str, Field(alias="S3Path")]
     checksum: Annotated[list[ODataChecksum], Field(alias="Checksum")]
-    footprint: Annotated[Geometry | None, Field(alias="Footprint")]
+    footprint: Annotated[Geometry | str | None, Field(alias="Footprint")]
     geo_footprint: Annotated[Geometry | None, Field(alias="GeoFootprint")]
 
 
@@ -69,6 +69,10 @@ class ODataQuery:
         publication_date: tuple[datetime, datetime] | None = None,
         sensing_date: tuple[datetime, datetime] | None = None,
         intersect_geometry: Geometry | None = None,
+        online: bool = True,
+        cloud_cover_less_than: int | None = None,
+        name_contains: str | None = None,
+        name_not_contains: str | None = None,
     ):
         self.collection = collection
         self.name = name
@@ -76,6 +80,10 @@ class ODataQuery:
         self.publication_date = publication_date
         self.sensing_date = sensing_date
         self.intersect_geometry = intersect_geometry
+        self.online = online
+        self.cloud_cover_less_than = cloud_cover_less_than
+        self.name_contains = name_contains
+        self.name_not_contains = name_not_contains
 
     def to_params(self) -> dict:
         query = []
@@ -95,6 +103,16 @@ class ODataQuery:
             query.append(
                 f"OData.CSC.Intersects(area=geography'SRID=4326;{self.intersect_geometry.wkt})"
             )
+        if self.online:
+            query.append("Online eq true")
+        if self.cloud_cover_less_than:
+            query.append(
+                f"Attributes/OData.CSC.DoubleAttribute/any(att:att/Name eq 'cloudCover' and att/OData.CSC.DoubleAttribute/Value le {self.cloud_cover_less_than})"
+            )
+        if self.name_contains:
+            query.append(f"contains(Name, '{self.name_contains}')")
+        if self.name_not_contains:
+            query.append(f"not contains(Name, '{self.name_not_contains}')")
 
         return {
             "$filter": " and ".join(query),

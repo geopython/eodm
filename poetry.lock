@@ -1615,13 +1615,13 @@ requests = "*"
 
 [[package]]
 name = "packaging"
-version = "24.0"
+version = "25.0"
 description = "Core utilities for Python packages"
 optional = false
-python-versions = ">=3.7"
+python-versions = ">=3.8"
 files = [
-    {file = "packaging-24.0-py3-none-any.whl", hash = "sha256:2ddfb553fdf02fb784c234c7ba6ccc288296ceabec964ad2eae3777778130bc5"},
-    {file = "packaging-24.0.tar.gz", hash = "sha256:eb82c5e3e56209074766e6885bb04b8c38a0c015d0a30036ebe7ece34c9989e9"},
+    {file = "packaging-25.0-py3-none-any.whl", hash = "sha256:29572ef2b1f17581046b3a2227d5c611fb25ec70ca1ba8554b24b0e69331a484"},
+    {file = "packaging-25.0.tar.gz", hash = "sha256:d443872c98d677bf60f6a1f2f8c1cb748e8fe762d2bf9d3148b5599295b0fc4f"},
 ]
 
 [[package]]
@@ -1644,6 +1644,36 @@ files = [
     {file = "pathspec-0.12.1-py3-none-any.whl", hash = "sha256:a0d503e138a4c123b27490a4f7beda6a01c6f288df0e4a8b79c7eb0dc7b4cc08"},
     {file = "pathspec-0.12.1.tar.gz", hash = "sha256:a482d51503a1ab33b1c67a6c3813a26953dbdc71c31dacaef9a838c4e29f5712"},
 ]
+
+[[package]]
+name = "pip"
+version = "25.1.1"
+description = "The PyPA recommended tool for installing Python packages."
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "pip-25.1.1-py3-none-any.whl", hash = "sha256:2913a38a2abf4ea6b64ab507bd9e967f3b53dc1ede74b01b0931e1ce548751af"},
+    {file = "pip-25.1.1.tar.gz", hash = "sha256:3de45d411d308d5054c2168185d8da7f9a2cd753dbac8acbfa88a8909ecd9077"},
+]
+
+[[package]]
+name = "pipdeptree"
+version = "2.26.1"
+description = "Command line utility to show dependency tree of packages."
+optional = false
+python-versions = ">=3.9"
+files = [
+    {file = "pipdeptree-2.26.1-py3-none-any.whl", hash = "sha256:3849d62a2ed641256afac3058c4f9b85ac4a47e9d8c991ee17a8f3d230c5cffb"},
+    {file = "pipdeptree-2.26.1.tar.gz", hash = "sha256:92a8f37ab79235dacb46af107e691a1309ca4a429315ba2a1df97d1cd56e27ac"},
+]
+
+[package.dependencies]
+packaging = ">=24.1"
+pip = ">=24.2"
+
+[package.extras]
+graphviz = ["graphviz (>=0.20.3)"]
+test = ["covdefaults (>=2.3)", "diff-cover (>=9.1.1)", "pytest (>=8.3.2)", "pytest-console-scripts (>=1.4.1)", "pytest-cov (>=5)", "pytest-mock (>=3.14)", "virtualenv (>=20.26.4,<21)"]
 
 [[package]]
 name = "platformdirs"
@@ -2887,4 +2917,4 @@ multidict = ">=4.0"
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "f45f84331ae269450388e97f362f8a730a29ed0e4aaa1767ee57e1cd70d59d34"
+content-hash = "3ddb29737e4d249bba8a86317cbc89dcec02cf4bf4439d39eba3bc619ee0558d"

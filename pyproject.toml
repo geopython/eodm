@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "eodm"
-version = "0.0.0"
+version = "0.1.0"
 description = ""
 authors = ["Nikola Jankovic <jankovic.gd@gmail.com>"]
 readme = "README.md"
@@ -40,6 +40,7 @@ pytest-cov = "^6.0.0"
 pytest-mock = "^3.14.0"
 respx = "^0.21.1"
 types-lxml = "^2024.12.13"
+pipdeptree = "^2.26.1"
 
 
 [tool.commitizen]

@@ -105,7 +105,6 @@ def extract_ogcapi_records(
     datetime_interval: str | None = None,
     bbox: list[float] | None = None,
     filter: str | None = None,
-    cql: dict | None = None,
     limit: int | None = None,
 ) -> Iterator[dict]:
     """Extracts OGC API Records from an OGC API Records endpoint
@@ -117,7 +116,6 @@ def extract_ogcapi_records(
             datetime or interval Defaults to None.
         bbox (list[float, float, float, float] | None, optional): Bounding box to search.
         filter (str, optional): CQL filter to apply. Defaults to None.
-        cql (dict, optional): CQL JSON payload to apply. Defaults to None.
         limit (int | None, optional): Limit query to given number. Defaults to None.
 
     Yields:
@@ -131,7 +129,6 @@ def extract_ogcapi_records(
             bbox=bbox,
             datetime_=datetime_interval,
             filter=filter,
-            cql=cql,
             limit=limit,
         )["features"]:
             yield record

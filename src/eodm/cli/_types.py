@@ -64,6 +64,7 @@ def datetime_interval(value: str) -> DatetimeInterval:
 class Output(str, Enum):
     default = "default"
     json = "json"
+    id = "id"
 
 
 BBoxType = Annotated[

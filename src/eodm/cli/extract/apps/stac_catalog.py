@@ -1,51 +1,51 @@
-import json
-from typing import Any, Optional
+from typing import Annotated, Optional
 
-import fsspec
 import typer
-from pystac import HREF, Catalog, StacIO
+from pystac import Catalog, StacIO
 
 from eodm.cli._errors import ExtractError
+from eodm.cli._serialization import serialize
+from eodm.cli._types import Output, OutputType
+from eodm.stac_contrib import FSSpecStacIO
 
 app = typer.Typer(no_args_is_help=True, help="Extract data from a STAC Catalog")
-
-
-class FSSpecStacIO(StacIO):
-    """
-    Extension of StacIO to allow working with different filesystems using fsspec.
-    """
-
-    def write_text(self, dest: HREF, txt: str, *args: Any, **kwargs: Any) -> None:
-        if fs := kwargs.get("filesystem"):
-            with fs.open(dest, "w", *args, **kwargs) as f:
-                f.write(txt)
-        else:
-            with fsspec.open(dest, "w", *args, **kwargs) as f:
-                f.write(txt)
-
-    def read_text(self, source: HREF, *args: Any, **kwargs: Any) -> str:
-        if fs := kwargs.get("filesystem"):
-            with fs.open(source, "r", *args, **kwargs) as f:
-                return f.read()
-        else:
-            with fsspec.open(source, "r", *args, **kwargs) as f:
-                return f.read()
 
 
 StacIO.set_default(FSSpecStacIO)
 
 
 @app.command(no_args_is_help=True)
-def collections(stac_catalog_path: str) -> None:
+def collections(
+    stac_catalog_path: str,
+    output: OutputType = Output.default,
+    skip_collection: Annotated[
+        Optional[list[str]],
+        typer.Option(
+            help="Skip collections. Can pass multiple --skip-collection col1 --skip-collection col2"
+        ),
+    ] = None,
+) -> None:
     """Extract collections from a STAC Catalog"""
 
     catalog = Catalog.from_file(stac_catalog_path)
-    for collection in catalog.get_all_collections():
-        print(json.dumps(collection.to_dict()))
+
+    if skip_collection:
+        collections = [
+            collection
+            for collection in catalog.get_all_collections()
+            if collection.id not in skip_collection
+        ]
+    else:
+        collections = list(catalog.get_all_collections())
+    serialize(collections, output_type=output)
 
 
 @app.command(no_args_is_help=True)
-def collection(stac_catalog_path: str, collection_id: str) -> None:
+def collection(
+    stac_catalog_path: str,
+    collection_id: str,
+    output: OutputType = Output.default,
+) -> None:
     """Extract a collection from a STAC Catalog"""
 
     catalog = Catalog.from_file(stac_catalog_path)
@@ -54,13 +54,14 @@ def collection(stac_catalog_path: str, collection_id: str) -> None:
     if not collection:
         raise ExtractError("No collection found", collection_id)
 
-    print(json.dumps(collection.to_dict()))
+    serialize([collection], output_type=output)
 
 
 @app.command(no_args_is_help=True)
 def items(
     stac_catalog_path: str,
     collection_id: Optional[str] = None,
+    output: OutputType = Output.default,
 ) -> None:
     """Extract items from a STAC Catalog"""
 
@@ -75,5 +76,4 @@ def items(
     else:
         items = catalog.get_items(recursive=True)
 
-    for item in items:
-        print(json.dumps(item.to_dict()))
+    serialize(items, output_type=output)

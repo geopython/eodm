@@ -4,7 +4,6 @@ import sys
 from typing import Annotated, Optional
 from urllib.parse import urlparse
 
-import fsspec
 import typer
 from pystac import (
     Catalog,
@@ -15,6 +14,7 @@ from pystac import (
 )
 
 from eodm.cli._errors import LoadError
+from eodm.cli._filesystem import _get_fsspec_fs
 from eodm.cli._globals import DEFAULT_EXTENT
 from eodm.stac_contrib import FSSpecStacIO
 
@@ -89,7 +89,11 @@ def collections(
         collection = Collection.from_dict(json.loads(line))
         catalog.add_child(collection)
 
-    catalog.normalize_and_save(catalog_base_path)
+    catalog.normalize_and_save(
+        catalog_base_path,
+        catalog_type=CatalogType.ABSOLUTE_PUBLISHED,
+        skip_unresolved=True,
+    )
 
 
 @app.command(no_args_is_help=True)
@@ -98,27 +102,30 @@ def items(
     items: Annotated[typer.FileText, typer.Argument()] = sys.stdin,  # type: ignore
     source_profile: Optional[str] = None,
     target_profile: Optional[str] = None,
+    source_protocol: str = "file",
     chunk_size: int = 100000,
+    update: bool = False,
 ) -> None:
     """Load STAC Items to an existing STAC Catalog. Each item will be sorted to its
-    collection
+    collection, and the path will be infered based on catalog_path
     """
 
     if not os.path.basename(catalog_path) == "catalog.json":
         catalog_path = os.path.join(catalog_path, "catalog.json")
 
     catalog_base_path = os.path.dirname(catalog_path)
-    catalog = Catalog.from_file(catalog_path)
 
-    protocol = urlparse(str(catalog_path)).scheme or "file"
-    target_filesystem: fsspec.AbstractFileSystem = fsspec.filesystem(
-        protocol, profile=target_profile
-    )
+    target_protocol = urlparse(str(catalog_path)).scheme or "file"
+    source_filesystem = _get_fsspec_fs(source_protocol, profile=source_profile)
+    target_filesystem = _get_fsspec_fs(target_protocol, profile=target_profile)
+    catalog = Catalog.from_file(catalog_path, FSSpecStacIO(filesystem=target_filesystem))
 
+    collections: set[Collection] = set()
     for i in items:
         item = Item.from_dict(json.loads(i))
 
         collection_id = item.collection_id
+
         if not collection_id:
             raise LoadError("No collection id found in item", item)
 
@@ -127,28 +134,34 @@ def items(
         if not collection:
             raise LoadError("No collection found with given id", collection_id)
         assert isinstance(collection, Collection)
+        collections.add(collection)
 
-        for asset_name, asset in item.get_assets().items():
+        for asset_name, asset in item.assets.items():
             asset_file = asset.href.split("/")[-1]
             final_path = os.path.join(
                 catalog_base_path, collection.id, item.id, asset_file
             )
 
-            protocol = urlparse(str(asset.href)).scheme or "file"
-            source_filesystem: fsspec.AbstractFileSystem = fsspec.filesystem(protocol)
-
-            with (
-                target_filesystem.open(final_path, "wb") as t,
-                source_filesystem.open(asset.href) as s,
-            ):
-                data = s.read(chunk_size)
-                while data:
-                    t.write(data)
+            if not target_filesystem.exists(final_path) or update:
+                with (
+                    source_filesystem.open(asset.href) as s,
+                    target_filesystem.open(final_path, "wb") as t,
+                ):
                     data = s.read(chunk_size)
+                    while data:
+                        t.write(data)
+                        data = s.read(chunk_size)
             item.assets[asset_name].href = final_path
 
         collection.add_item(item)
-        collection.update_extent_from_items()
         print(json.dumps(item.to_dict()))
 
-    catalog.normalize_and_save(catalog_base_path)
+    for collection in collections:
+        collection.update_extent_from_items()
+
+    catalog.normalize_and_save(
+        catalog_base_path,
+        catalog_type=CatalogType.ABSOLUTE_PUBLISHED,
+        skip_unresolved=True,
+        stac_io=FSSpecStacIO(filesystem=target_filesystem),
+    )

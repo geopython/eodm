@@ -36,4 +36,4 @@ def features(
         product_types=[product_type],
         limit=limit,
     )
-    serialize(features, output_type=output)
+    serialize(features, output_type=output)  # type: ignore[arg-type]

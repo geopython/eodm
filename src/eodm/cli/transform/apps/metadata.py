@@ -24,6 +24,10 @@ def band_subset(
     for i in items:
         assets_rest = []
         item = pystac.Item.from_dict(json.loads(i))
+        for band in bands_:
+            if item.assets.get(band) is None:
+                raise ValueError(f"Band {band} not found in item")
+
         for asset_name, asset in item.assets.items():
             if asset_name not in bands_:
                 assets_rest.append(asset_name)

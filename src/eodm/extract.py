@@ -3,6 +3,7 @@ from typing import Iterator, Optional
 
 import pystac_client
 from geojson_pydantic.geometries import Geometry
+from owslib.ogcapi.records import Records
 from pystac import Collection, Item
 
 from .odata import ODataClient, ODataCollection, ODataProduct, ODataQuery
@@ -62,9 +63,7 @@ def extract_stac_api_collections(url: str) -> Iterator[Collection]:
 
 
 def extract_opensearch_features(
-    url: str,
-    product_types: list[str],
-    limit: int = 0,
+    url: str, product_types: list[str], limit: int = 0
 ) -> Iterator[OpenSearchFeature]:
     """Extracts OpenSearch Features from an OpenSearch API
 
@@ -122,3 +121,53 @@ def extract_odata_products(
         )
         for product in client.search(query):
             yield product
+
+
+def extract_ogcapi_records_catalogs(url: str) -> Iterator[dict]:
+    """Extracts OGC API Records from an OGC API Records endpoint
+
+    Args:
+        url (str): Link to OGC API Records endpoint
+
+    Yields:
+        Iterator[Item]: OGC API Records Catalogs(collections)
+    """
+
+    records = Records(url)
+    for record in records.collections()["collections"]:
+        yield record
+
+
+def extract_ogcapi_records(
+    url: str,
+    catalog_ids: list[str],
+    datetime_interval: str | None = None,
+    bbox: list[float] | None = None,
+    filter: str | None = None,
+    limit: int | None = None,
+) -> Iterator[dict]:
+    """Extracts OGC API Records from an OGC API Records endpoint
+
+    Args:
+        url (str): Link to OGC API Records endpoint
+        catalog_ids (list[str]): List of catalog/collection IDs to search for
+        datetime_interval (str | None, optional): Datetime interval to search. ISO8601
+            datetime or interval Defaults to None.
+        bbox (list[float, float, float, float] | None, optional): Bounding box to search.
+        filter (str, optional): CQL filter to apply. Defaults to None.
+        limit (int | None, optional): Limit query to given number. Defaults to None.
+
+    Yields:
+        Iterator[Item]: OGC API Records Items
+    """
+
+    records = Records(url)
+    for catalog_id in catalog_ids:
+        for record in records.collection_items(
+            catalog_id,
+            bbox=bbox,
+            datetime_=datetime_interval,
+            filter=filter,
+            limit=limit,
+        )["features"]:
+            yield record

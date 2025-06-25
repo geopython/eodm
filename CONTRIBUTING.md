@@ -337,6 +337,7 @@ git push && git push --tags
 - [Creodias OpenSearch](https://finder.creodias.eu/resto/api/collections/describe.xml)
   - [Creodias Sentinel1](https://finder.creodias.eu/resto/api/collections/Sentinel1/describe.xml)
   - [Creodias Sentinel2](https://finder.creodias.eu/resto/api/collections/Sentinel2/describe.xml)
+- [EOEPCA+ develop resource catalogue](https://resource-catalogue.apx.develop.eoepca.org/collections)
 
 ### Inspiration
 

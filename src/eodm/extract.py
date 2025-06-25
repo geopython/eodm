@@ -1,9 +1,12 @@
+from datetime import datetime
 from typing import Iterator, Optional
 
 import pystac_client
+from geojson_pydantic.geometries import Geometry
 from owslib.ogcapi.records import Records
 from pystac import Collection, Item
 
+from .odata import ODataClient, ODataCollection, ODataProduct, ODataQuery
 from .opensearch import OpenSearchClient, OpenSearchFeature
 
 
@@ -66,7 +69,7 @@ def extract_opensearch_features(
 
     Args:
         url (str): Link to OpenSearch API endpoint
-        productTypes (list[str]): List of productTypes to search for
+        product_types (list[str]): List of productTypes to search for
 
     Yields:
         Iterator[OpenSearchFeature]: OpenSearch Features
@@ -82,6 +85,42 @@ def extract_opensearch_features(
             if limit and i >= limit:
                 break
             yield feature
+
+
+def extract_odata_products(
+    url: str,
+    collections: list[ODataCollection],
+    datetime: tuple[datetime, datetime] | None = None,
+    intersect_geometry: Geometry | None = None,
+    online: bool = True,
+    cloud_cover_less_than: int | None = None,
+    name_contains: Optional[str] = None,
+    name_not_contains: Optional[str] = None,
+    top: int = 20,
+) -> Iterator[ODataProduct]:
+    """Extracts OData Products from an OData API
+
+    Args:
+        url (str): Link to OData API endpoint
+        collections (list[ODataCollection]): List of collections to search for
+        datetime (tuple[datetime, datetime], optional): Datetime interval to search. Defaults to None.
+        intersect_geometry (Geometry, optional): Geometry to intersect. Defaults to None.
+        online (bool, optional): Filter for online products. Defaults to True.
+    """
+    client = ODataClient(url)
+    for collection in collections:
+        query = ODataQuery(
+            collection=collection.value,
+            top=top,
+            sensing_date=datetime,
+            cloud_cover_less_than=cloud_cover_less_than,
+            intersect_geometry=intersect_geometry,
+            online=online,
+            name_contains=name_contains,
+            name_not_contains=name_not_contains,
+        )
+        for product in client.search(query):
+            yield product
 
 
 def extract_ogcapi_records_catalogs(url: str) -> Iterator[dict]:

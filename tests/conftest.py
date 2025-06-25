@@ -90,3 +90,19 @@ def mock_opensearch_search(respx_mock: respx.MockRouter, opensearch_product_type
     ).mock(return_value=Response(200, content=data))
 
     return mock
+
+
+@pytest.fixture()
+def mock_odata_search(
+    respx_mock: respx.MockRouter,
+):
+    odata_data = DATA_DIR / "odata.json"
+
+    with open(odata_data) as f:
+        data = f.read()
+
+    mock = respx_mock.get(
+        "https://catalogue.dataspace.copernicus.eu/odata/v1/Products"
+    ).mock(return_value=Response(200, content=data))
+
+    return mock

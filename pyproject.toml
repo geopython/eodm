@@ -21,6 +21,7 @@ geojson-pydantic = "^1.1.2"
 rio-stac = "^0.10.1"
 rasterio = "^1.4.3"
 owslib = "^0.34.1"
+python-json-logger = "^3.3.0"
 
 
 [tool.poetry.group.dev.dependencies]

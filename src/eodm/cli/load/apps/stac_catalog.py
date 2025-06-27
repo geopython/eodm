@@ -1,4 +1,5 @@
 import json
+import logging
 import os.path
 import sys
 from typing import Annotated, Optional
@@ -23,6 +24,7 @@ app = typer.Typer(name="stac-catalog", no_args_is_help=True)
 HEADERS = {"Content-Type": "application/json"}
 
 StacIO.set_default(FSSpecStacIO)
+LOGGER = logging.getLogger(__name__)
 
 
 @app.callback()
@@ -123,6 +125,7 @@ def items(
     collections: set[Collection] = set()
     for i in items:
         item = Item.from_dict(json.loads(i))
+        LOGGER.info("Loading item", extra={"id": item.id})
 
         collection_id = item.collection_id
 
@@ -137,6 +140,7 @@ def items(
         collections.add(collection)
 
         for asset_name, asset in item.assets.items():
+            LOGGER.info("Loading asset", extra={"asset": asset_name})
             asset_file = asset.href.split("/")[-1]
             final_path = os.path.join(
                 catalog_base_path, collection.id, item.id, asset_file

@@ -1,3 +1,4 @@
+import importlib.metadata
 import json
 import sys
 from datetime import datetime
@@ -35,6 +36,38 @@ def band_subset(
         for asset_name in assets_rest:
             item.assets.pop(asset_name)
 
+        print(json.dumps(item.to_dict()))
+
+
+@app.command(no_args_is_help=True)
+def update_metadata(
+    remove_earthsearch: bool = True,
+    remove_canonical_link: bool = True,
+    items: Annotated[typer.FileText, typer.Argument()] = sys.stdin,  # type: ignore
+) -> None:
+    """
+    Update metadata of STAC ITEMS from FILES read from STDIN.
+    """
+    for i in items:
+        item = pystac.Item.from_dict(json.loads(i))
+        item.properties["created"] = datetime.now().isoformat()
+        item.properties["updated"] = datetime.now().isoformat()
+
+        if remove_earthsearch:
+            item.properties.pop("earthsearch:s3_path", None)
+            item.properties.pop("earthsearch:payload_id", None)
+            item.properties.pop("earthsearch:boa_offset_applied", None)
+
+        if remove_canonical_link:
+            item.links = [
+                link for link in item.links if link.rel != pystac.RelType.CANONICAL
+            ]
+
+        for ext in item.stac_extensions:
+            if "processing" in ext:
+                item.properties["processing:software"] = {
+                    "eodm": importlib.metadata.version("eodm")
+                }
         print(json.dumps(item.to_dict()))
 
 

@@ -1,5 +1,50 @@
 # Examples
 
+## CLI Usage
+
+The following list of commands moves data from Element84 into a private bucket creating a
+static collection and additionally to a STAC API.
+
+The example assumes AWS credentials (~/.aws/credentials) file and my-bucket exists:
+
+```ini
+[my-bucket]
+aws_access_key_id = ***
+aws_secret_access_key = ***
+```
+
+```shell
+# extract from stac api
+eodm extract stac-api items https://earth-search.aws.element84.com/v1 sentinel-2-l2a --bbox 15.4,48.5,15.7,48.7 --datetime-interval 2024-05-01/2024-05-31 > extract
+
+# transform (subset assets) some metadata
+eodm transform metadata band-subset red,green,blue,nir,visual,scl extract > transform
+
+# transform metadata to perform some updates like dates and remove earthsearch relevant data
+eodm transform metadata update-metadata transform > transform1
+
+export AWS_PROFILE=my-bucket
+export AWS_DEFAULT_PROFILE=my-bucket
+
+# Create catalog
+eodm load stac-catalog catalog s3://my-bucket/catalog.json agri-test "Catalog for agri testing" "agri-test"
+
+# Create collection
+eodm load stac-catalog collection s3://my-bucket/catalog.json sentinel-2-l2a "Sentinel 2 L2A subset from Element84 for demonstration" "Sentinel 2 L2A"
+
+# load items into catalog collection WARNING: takes a while
+eodm load stac-catalog items --target-profile my-bucket s3://my-bucket/catalog.json --source-protocol http transform1 > load
+
+# create stac-api collection
+eodm load stac-api collection https://eoapi.hub-int.eox.at/stac sentinel-2-l2a "Sentinel 2 L2A subset from Element84 for demonstration" "Sentinel 2 L2A"
+
+# load items into stac-api --update not necessary if the collection is empty
+eodm load stac-api items https://eoapi.hub-int.eox.at/stac --update load >> load1
+```
+
+The files created `extract`, `transform`, `load` etc. are artifacts and are result of writing
+STAC items to STDOUT.
+
 ## Argo workflows
 
 The following `Workflow` how a single run can be executed in argo workflows

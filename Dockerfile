@@ -1,6 +1,11 @@
 # The builder image, used to build the virtual environment
 FROM python:3.10-buster as builder
 
+LABEL org.opencontainers.image.source=https://github.com/geopython/eodm
+LABEL org.opencontainers.image.description="eodm"
+LABEL org.opencontainers.image.licenses=MIT
+
+
 RUN pip install poetry==1.4.2
 
 ENV POETRY_NO_INTERACTION=1 \

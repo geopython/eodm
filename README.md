@@ -2,7 +2,7 @@
 
 ![build](https://github.com/geopython/eodm/actions/workflows/main.yml/badge.svg)
 
-Library and CLI application for ETL (extract, transform, load) operations on EO data.
+Library and extensible CLI application for ETL (extract, transform, load) operations on EO data.
 
 ## Concept
 
@@ -30,6 +30,33 @@ with some custom implementations for certain sources.
 
 ### Extract
 
+| extract features | CLI | lib |
+|---|---|---|
+| stac-api items | ✅ | ✅ |
+| stac-api collection(s) | ✅ | ❌ |
+| stac-catalog items | ✅ | ✅ |
+| stac-catalog collection(s) | ✅ | ❌ |
+| OData | ❌ | ✅ |
+| Opensearch | ❌ | ✅ |
+| OGCAPI - Records | ❌ | ✅ |
+
 ### Transform
 
+| transform features | CLI | lib |
+|---|---|---|
+| subset bands | ✅ | ❌ |
+| clean metadata | ✅ | ❌ |
+
 ### Load
+
+| extract features | CLI | lib |
+|---|---|---|
+| stac-api items | ✅ | ✅ |
+| stac-api collection(s) | ✅ | ❌ |
+| stac-catalog items | ✅ | ✅ |
+| stac-catalog collection(s) | ✅ | ❌ |
+
+### Plugins
+
+There is support for writing plugins for extract and load from and to custom endpoints as
+well as transformers. Refer to the docs for more information.

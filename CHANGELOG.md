@@ -1,3 +1,10 @@
+## 0.2.0 (2025-07-17)
+
+### Feat
+
+- added cli option for metadata updates
+- add logging support
+
 ## 0.1.0 (2025-06-25)
 
 ### Feat

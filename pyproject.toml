@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "eodm"
-version = "0.1.0"
+version = "0.2.0"
 description = "Library and extensible CLI application for ETL (extract, transform, load) operations on EO data."
 authors = ["Nikola Jankovic <jankovic.gd@gmail.com>"]
 readme = "README.md"

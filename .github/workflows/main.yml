@@ -17,6 +17,10 @@ on:
     types:
       - released
 
+permissions:
+  contents: read
+  packages: write
+
 jobs:
   test:
     runs-on: ubuntu-24.04
@@ -71,6 +75,7 @@ jobs:
         run: docker build -t ${{ steps.vars.outputs.tag }} .
 
       - name: Push Docker image
+        if: startsWith(github.ref, 'refs/tags/')
         run: docker push ${{ steps.vars.outputs.tag }}
 
       - name: Tag and push latest (on main only)
